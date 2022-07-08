@@ -1,0 +1,21 @@
+.banner{
+    width: 100%;
+    background-color: #111;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    font-size: 60px;
+    text-decoration: red;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    margin: 50px 120px;
+}
+
+.menu{
+    
+}
