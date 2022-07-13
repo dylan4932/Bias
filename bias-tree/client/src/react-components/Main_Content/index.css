@@ -1,0 +1,11 @@
+.main-content{
+    position: fixed;
+    background-color: grey;
+    width: 70%;
+    top: 250px;
+    left: 10%;
+    height: 500px;
+}
+
+
+

@@ -1,0 +1,27 @@
+.menu{
+    width: 100%;
+    background-color: #ADACD9;
+    height: 32px;
+    position: fixed;
+    top: 168px;
+    left: 0;
+    padding-top: 10px;
+}
+
+.menu list{
+    margin-left: 60px;
+}
+
+.menu_list li{
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    cursor: pointer;
+}
+
+.menu_list li:hover{
+    background-color: #898FC4;
+}
