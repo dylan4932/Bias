@@ -1,0 +1,11 @@
+{
+  "name": "bias-tree",
+  "version": "1.0.0",
+  "description": "A tree structure of bias webpage build by BJHPA RDG group.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BJHPA RDG group",
+  "license": "ISC"
+}

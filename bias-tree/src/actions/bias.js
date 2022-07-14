@@ -1,12 +1,12 @@
-function getBiasItems(home) {
-    const url = "/api/myItems";
+export const getBiasItems = (home) => {
+    const url = "/api/bias";
 
     fetch(url)
         .then(res => {
             if (res.status === 200) {
                 return res.json()
             } else {
-                console.log('Empty inventory')
+                console.log('Error loading bias.')
             }
         })
         .then(json => {
@@ -14,8 +14,6 @@ function getBiasItems(home) {
         })
         .catch(error => {
             console.log(error)
-        }).readAsBinaryString(file)
+        });
 
 }
-
-getBiasItems()

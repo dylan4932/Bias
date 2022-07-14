@@ -1,0 +1,10 @@
+.side-bar{
+    margin-left: 50px;
+    width: 300px;
+    height: auto;
+    z-index: 0;
+}
+
+Button{
+    margin-left: 10px;
+}

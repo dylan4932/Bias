@@ -1,20 +1,19 @@
 .menu{
     width: 100%;
     background-color: #ADACD9;
-    height: 32px;
+    height: 35px;
     position: fixed;
     top: 168px;
     left: 0;
-    padding-top: 10px;
+    z-index: 99;
 }
 
 .menu list{
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .menu_list li{
-    padding: 10px 20px;
-    font-weight: 500;
+    padding: 8px 10px;
     font-size: medium;
     text-decoration: none;
     color: white;
@@ -22,6 +21,6 @@
     cursor: pointer;
 }
 
-.menu_list li:hover{
+/* .menu_list li:hover{
     background-color: #898FC4;
-}
+} */

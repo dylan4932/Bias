@@ -1,0 +1,111 @@
+.homepage{
+    overflow: scroll;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    background-color: #9c64a7;
+    height: 168px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    margin: 50px 120px;
+    cursor: default;
+}
+
+
+
+.adv{
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+    --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+    --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+    --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --MuiDocs-header-height: 64px;
+    --MuiDocs-navDrawer-width: 300px;
+    --MuiDocs-toc-width: 240px;
+    --docsearch-icon-stroke-width: 1.4;
+    --docsearch-highlight-color: var(--docsearch-primary-color);
+    --docsearch-container-background: rgba(101,108,133,0.8);
+    --docsearch-modal-width: 560px;
+    --docsearch-modal-height: 600px;
+    --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0,0%,100%,0.5),0 3px 8px 0 #555a64;
+    --docsearch-searchbox-height: 56px;
+    --docsearch-searchbox-background: #ebedf0;
+    --docsearch-hit-height: 56px;
+    --docsearch-hit-color: #444950;
+    --docsearch-hit-background: #fff;
+    --docsearch-key-gradient: linear-gradient(-225deg,#d5dbe4,#f8f8f8);
+    --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,0.4);
+    --docsearch-footer-height: 44px;
+    --docsearch-primary-color: #007FFF;
+    --docsearch-text-color: #1A2027;
+    --docsearch-muted-color: #6F7E8C;
+    --docsearch-searchbox-shadow: 0;
+    --docsearch-hit-shadow: 0;
+    --docsearch-footer-shadow: 0;
+    --docsearch-spacing: 12px;
+    --docsearch-hit-active-color: #0072E5;
+    --docsearch-logo-color: #6F7E8C;
+    --docsearch-searchbox-focus-background: unset;
+    --docsearch-footer-background: unset;
+    --docsearch-modal-background: #fff;
+    color-scheme: light;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    text-decoration: none;
+    text-transform: initial;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 0.875rem;
+    line-height: 1.75;
+    scroll-margin-top: calc(var(--MuiDocs-header-height) + 32px);
+    min-height: 36px;
+    border-radius: 50%;
+    padding: 0;
+    min-width: 0;
+    width: 40px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.87);
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 10;
+    background-color: #C2E0FF;
+    box-shadow: 0px 4px 20px rgba(170, 180, 190, 0.3);
+    transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+
+
+
+

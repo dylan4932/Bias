@@ -17,17 +17,9 @@ const { Bias } = require("./models/bias");
 const multipart = require('connect-multiparty');
 const multipartMiddleware = multipart();
 
-// cloudinary: configure using credentials found on your Cloudinary Dashboard
-// sign up for a free account here: https://cloudinary.com/users/register/free
-const cloudinary = require('cloudinary');
-cloudinary.config({
-    cloud_name: 'onetrade-team40',
-    api_key: '823466749188792',
-    api_secret: 'xAGjWtBWirKbIGgYaZ0CIbpMuQM'
-});
 
 // to validate object IDs
-const { ObjectID } = require("mongodb");
+// const { ObjectID } = require("mongodb");
 
 // body-parser: middleware for parsing HTTP JSON body into a usable object
 const bodyParser = require("body-parser");
@@ -35,7 +27,6 @@ app.use(bodyParser.json());
 
 // express-session for managing user sessions
 const session = require("express-session");
-const item = require("./models/bias");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 function isMongoError(error) { // checks for first error returned by promise rejection if Mongo database suddently disconnects
@@ -87,7 +78,7 @@ app.use(express.static(path.join(__dirname, "/client/build")));
 // All routes other than above will go to index.html
 app.get("*", (req, res) => {
     // check for page routes that we expect in the frontend to provide correct status code.
-    const goodPageRoutes = ["/", "/home"];
+    const goodPageRoutes = ["/"];
     if (!goodPageRoutes.includes(req.url)) {
         // if url not in expected page routes, set status to 404.
         res.status(404);
@@ -99,7 +90,7 @@ app.get("*", (req, res) => {
 
 /*************************************************/
 // Express server listening...
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9000;
 app.listen(port, () => {
     log(`Listening on port ${port}...`);
 });
