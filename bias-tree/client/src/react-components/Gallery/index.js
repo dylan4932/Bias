@@ -28,36 +28,34 @@ class Gallery extends React.Component {
     render(){
         // const { bias } = this.props;
         return (
-            <div className='main-content'>
-                <div className='post-content'>
-                    {this.state.bias.map( post => (
-                        <Card sx={{ maxWidth: 325 , cursor: 'default'}}>
-                        <CardMedia
-                            component="img"
-                            height="120"
-                            image={post.img}
-                            alt="图片"/>
-                        <CardContent >
-                            <Typography  gutterBottom variant="body1" component="div">
-                            {post.post}
-                            </Typography>
-                            <Typography fontSize={1} color="text.secondary">
-                            {post.line1}
-                            
-                            </Typography>
-                            <Typography  fontSize={1} color="text.secondary">
-                            {post.line2}
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button sz={{position:'fixed', botoom: 20}} size="small">了解更多</Button>
-                        </CardActions>
-                        </Card>
-                    ))}
+            <div className='post-content'>
+                {this.state.bias.map( post => (
+                    <Card sx={{ maxWidth: 325 , cursor: 'default'}}>
+                    <CardMedia
+                        component="img"
+                        height="120"
+                        image={post.img}
+                        alt="图片"/>
+                    <CardContent >
+                        <Typography  gutterBottom variant="body1" component="div">
+                        {post.post}
+                        </Typography>
+                        <Typography fontSize={1} color="text.secondary">
+                        {post.line1}
+                        
+                        </Typography>
+                        <Typography  fontSize={1} color="text.secondary">
+                        {post.line2}
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button sz={{position:'fixed', botoom: 20}} size="small">了解更多</Button>
+                    </CardActions>
+                    </Card>
+                ))}
 
-                </div>
-                <Sidebar sx={{float: 'right'}}/>
             </div>
+                
             
         )
     }

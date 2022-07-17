@@ -1,0 +1,10 @@
+
+.bias-content{
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 50px;
+    z-index: 10;
+}

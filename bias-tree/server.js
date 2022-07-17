@@ -19,7 +19,7 @@ const multipartMiddleware = multipart();
 
 
 // to validate object IDs
-// const { ObjectID } = require("mongodb");
+const { ObjectID } = require("mongodb");
 
 // body-parser: middleware for parsing HTTP JSON body into a usable object
 const bodyParser = require("body-parser");
@@ -64,6 +64,23 @@ app.get('/api/bias', mongoChecker, async (req, res) => {
     try {
         const items = await Bias.find()
         res.send({ items })
+    } catch(error) {
+        log(error)
+        res.status(500).send("Internal Server Error")
+    }
+
+})
+
+app.get("/bias/:id", mongoChecker, async (req, res) => {
+
+    const id = req.params.id
+    if (!ObjectID.isValid(id)) {
+		res.status(404).send('Invalid id')
+		return;
+    }
+    try {
+        const bias = await Bias.findById({_id: id})
+        res.send({ bias })
     } catch(error) {
         log(error)
         res.status(500).send("Internal Server Error")

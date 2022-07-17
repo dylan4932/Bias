@@ -1,30 +1,27 @@
 const { IntegerKind } = require('@sinclair/typebox')
 const mongoose = require('mongoose')
 
-const Item = mongoose.model('Item', {
-    count: {
-        type: String,
-        required: true,
-    },
+const Bias = mongoose.model('Bias', {
+    
     name_en:{
         type: String,
 		required: true,
-		minlegth: 5, 
+		minlegth: 10
     },
 	name: {
 		type: String,
 		required: true,
-		minlegth: 5,
+		minlegth: 10
     },
     definition: {
         type: String,
 		minlegth: 10,
-		trim: true
+		minlegth: 10
     },
     definition_en: {
         type: String,
 		minlegth: 10,
-		trim: true
+		minlegth: 10
     },
     background: {
         type: String,
@@ -46,12 +43,12 @@ const Item = mongoose.model('Item', {
         required: true,
         minlegth: 10,
     },
-    Impact: {
+    impact: {
         type: String,
 		required: true,
 		minlegth: 1,
 	},
-    Impact_en: {
+    impact_en: {
         type: String,
 		required: true,
 		minlegth: 1,
@@ -66,7 +63,7 @@ const Item = mongoose.model('Item', {
 		required: true,
 		minlegth: 1,
     },
-	source: {
+	sources: {
 		type: Array,
 		required: true
 	},
@@ -77,4 +74,4 @@ const Item = mongoose.model('Item', {
     
 })
 
-module.exports = { Item }
+module.exports = { Bias }

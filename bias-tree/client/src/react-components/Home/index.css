@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-content{
+    position: absolute;
+    height: 80%;
+    top: 100px;
+    padding-bottom: 50px;
+    width: calc(100% - 150px);
+    left: 150px;
+    transition: all 0.5s ease;
+    overflow: scroll;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.sidebar.active ~ .main-content{
+    width: calc(100% - 300px);
+    left: 300px;
+    
+}
+
+
+
+
+
+
+
+
+
