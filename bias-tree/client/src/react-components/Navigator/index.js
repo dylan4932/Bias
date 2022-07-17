@@ -2,10 +2,14 @@ import React from 'react';
 
 import './index.css';
 
-import {withRouter} from 'react-router' 
+import { withRouter } from 'react-router' 
+import { BsCardList } from "react-icons/bs"
+import { HiOutlineHome } from "react-icons/hi";
 import { BiPlanet, BiAlignLeft, BiCategory, BiSearch } from "react-icons/bi";
-import {btn_activator} from '../../actions/bias'
-import { Button } from '@mui/material';
+import { AiOutlineAppstore } from "react-icons/ai"
+import { btn_activator} from '../../actions/bias'
+import { IoIosPeople, IoIosAperture } from "react-icons/io";
+import { TbMessageCircle } from "react-icons/tb"
 
 class Navigator extends React.Component {
    
@@ -19,7 +23,7 @@ class Navigator extends React.Component {
                   <div clas='logo_name'>Categue of Bias</div>
               </div>
               <i id="btn" onClick={()=>btn_activator()}>
-                  <BiAlignLeft />
+                  <BsCardList />
               </i>
               
           </div>
@@ -29,10 +33,9 @@ class Navigator extends React.Component {
               <input placeholder='搜索...'></input>
               </li> */}
               <li>
-                  <a
-                   href='./../'>
+                  <a href='./../'>
                       <i>
-                      <BiCategory/>
+                      <HiOutlineHome />
                       </i>
                       
                       <span class="links_name">主页</span>
@@ -40,9 +43,9 @@ class Navigator extends React.Component {
                   <span class="tooltip">主页</span>
               </li>
               <li>
-                  <a href='./Bias_Page'>
+                  <a href='./../Bias_Page'>
                       <i>
-                      <BiCategory/>
+                      <AiOutlineAppstore/>
                       </i>
                       
                       <span class="links_name">偏倚</span>
@@ -52,7 +55,7 @@ class Navigator extends React.Component {
               <li>
                   <a href='#'>
                       <i>
-                      <BiCategory/>
+                      <IoIosPeople />
                       </i>
                       
                       <span class="links_name">论坛</span>
@@ -62,7 +65,7 @@ class Navigator extends React.Component {
               <li>
                   <a href='#'>
                       <i>
-                      <BiCategory/>
+                      <TbMessageCircle />
                       </i>
                       
                       <span class="links_name">联系我们</span>
@@ -72,7 +75,7 @@ class Navigator extends React.Component {
               <li>
                   <a href='#'>
                       <i>
-                      <BiCategory/>
+                      <IoIosAperture />
                       </i>
                       
                       <span class="links_name">关于我们</span>

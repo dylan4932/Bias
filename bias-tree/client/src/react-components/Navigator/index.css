@@ -16,9 +16,10 @@
 }
 
 .sidebar .logo_content .logo{
+    margin-left: 5px;
     color: #fff;
     display: flex;
-    height: 50px;
+    height: 60px;
     width: 100%;
     align-items: center;
     opacity: 0;
@@ -26,7 +27,7 @@
 }
 
 .sidebar .logo_content .logo i{
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 10px;
 }
 
@@ -44,9 +45,9 @@
     position: absolute;
     color:#fff;
     left: 50%;
-    top: 6px;
+    top: 15px;
     font-size: 20px;
-    height: 50px;
+    height: 60px;
     width: 50px;
     text-align: center;
     line-height: 50px;
@@ -66,12 +67,13 @@
 .sidebar .nav_list li{
     position:relative;
     height: 50px;
-    width: 100%;
+    width: 80%;
     margin: 0 5px;
     list-style: none;
     line-height: 50px;
     z-index: 99;
 }
+
 
 .sidebar .nav_list li input{
     position: absolute;
@@ -122,7 +124,6 @@
 
 .sidebar.active .links_name{
     opacity: 1;
-
     pointer-events: auto;
 }
 
@@ -157,7 +158,9 @@
     border-radius: 12px;
     line-height: 50px;
     text-align: center;
+    font-size: 20px;
 }
+
 
 
 
