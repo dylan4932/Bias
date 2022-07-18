@@ -16,18 +16,18 @@ class Navigator extends React.Component {
     
     render(){
         return (
-          <div class='sidebar'>
-          <div class='logo_content'>
-              <div class='logo'>
+          <div className='sidebar'>
+          <div className='logo_content'>
+              <div className='logo'>
                   <i><BiPlanet/></i>
-                  <div clas='logo_name'>偏倚目录</div>
+                  <div className='logo_name'>偏倚目录</div>
               </div>
               <i id="btn" onClick={()=>btn_activator()}>
                   <BsCardList />
               </i>
               
           </div>
-          <div class='nav_list'>
+          <div className='nav_list'>
               {/* <li>
               <i class='search'><BiSearch/></i> 
               <input placeholder='搜索...'></input>
@@ -38,9 +38,9 @@ class Navigator extends React.Component {
                       <HiOutlineHome />
                       </i>
                       
-                      <span class="links_name">主页</span>
+                      <span className="links_name">主页</span>
                   </a>
-                  <span class="tooltip">主页</span>
+                  <span className="tooltip">主页</span>
               </li>
               <li>
                   <a href='./../Bias_Page'>
@@ -48,9 +48,9 @@ class Navigator extends React.Component {
                       <AiOutlineAppstore/>
                       </i>
                       
-                      <span class="links_name">偏倚</span>
+                      <span className="links_name">偏倚</span>
                   </a>
-                  <span class="tooltip">偏倚</span>
+                  <span className="tooltip">偏倚</span>
               </li>
               <li>
                   <a href='#'>
@@ -58,9 +58,9 @@ class Navigator extends React.Component {
                       <IoIosPeople />
                       </i>
                       
-                      <span class="links_name">论坛</span>
+                      <span className="links_name">论坛</span>
                   </a>
-                  <span class="tooltip">论坛</span>
+                  <span className="tooltip">论坛</span>
               </li>
               <li>
                   <a href='#'>
@@ -68,9 +68,9 @@ class Navigator extends React.Component {
                       <TbMessageCircle />
                       </i>
                       
-                      <span class="links_name">联系我们</span>
+                      <span className="links_name">联系我们</span>
                   </a>
-                  <span class="tooltip">联系我们</span>
+                  <span className="tooltip">联系我们</span>
               </li>
               <li>
                   <a href='#'>
@@ -78,9 +78,9 @@ class Navigator extends React.Component {
                       <IoIosAperture />
                       </i>
                       
-                      <span class="links_name">关于我们</span>
+                      <span className="links_name">关于我们</span>
                   </a>
-                  <span class="tooltip">关于我们</span>
+                  <span className="tooltip">关于我们</span>
               </li>
           </div>
       </div> 

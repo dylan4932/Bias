@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "react-image-gallery": "^1.2.8",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "react-uid": "^2.3.2"
   }
 }

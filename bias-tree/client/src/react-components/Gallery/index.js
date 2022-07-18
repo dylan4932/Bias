@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 
 import {withRouter} from 'react-router' 
 import './index.css';
+import { uid } from 'react-uid';
 
 
 class Gallery extends React.Component {
@@ -29,7 +30,7 @@ class Gallery extends React.Component {
         return (
             <div className='post-content'>
                 {this.state.bias.map( post => (
-                    <Card sx={{ maxWidth: 325 , cursor: 'default'}}>
+                    <Card key={uid(post)} sx={{ maxWidth: 325 , cursor: 'default'}}>
                     <CardMedia
                         component="img"
                         height="120"

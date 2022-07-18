@@ -7,7 +7,6 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
-
 class Advertisment extends React.Component {
     
     // myRenderItem() {

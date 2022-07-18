@@ -17,11 +17,11 @@ class Home extends React.Component {
         return (
             <div className='homepage'>
                 <Navigator />
-                <div class='adv'>
+                <div className='adv'>
                     <Advertisment/>
                 </div>
                    
-                <div class='main-content'> 
+                <div className='main-content'> 
                     <Gallery />
                     <Sidebar />
                 </div>      

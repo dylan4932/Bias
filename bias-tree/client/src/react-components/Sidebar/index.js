@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useId } from 'react';
 import './index.css';
+import { uid } from "react-uid";
 import { withRouter } from 'react-router' 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -36,9 +37,9 @@ class Sidebar extends React.Component {
                         <br />
                         {this.state.often.map( bias => (
                             
-                            <Typography sx={{cursor:'default'}} variant="h7" component="div">
+                            <Typography key={uid(bias)}sx={{cursor:'default'}} variant="h7" component="div">
                                 {bias.name}
-                            <Typography sx={{ fontSize: 10, cursor:'default' , mb: 1 }}  color="text.secondary">
+                            <Typography key={uid(bias)}sx={{ fontSize: 10, cursor:'default' , mb: 1 }}  color="text.secondary">
                                 {bias.class}
                             </Typography>
                             </Typography>
