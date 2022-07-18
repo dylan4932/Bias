@@ -1,0 +1,50 @@
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+    position: absolute;
+    margin-top: -20%;
+    height: 10px;
+    z-index: 99;
+    background-color: transparent;
+    border: none;
+}
+
+.image-gallery-left-nav i, 
+.image-gallery-right-nav i{
+    transition: all ease 0.5s;
+    color: #fff;
+}
+
+.image-gallery-left-nav:hover i,
+.image-gallery-right-nav:hover i{
+    color: #4678B2;
+}
+
+.image-gallery-description {
+    font-size: 25px;
+    font-weight: bold;
+    top: 0%;
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    line-height: 1;
+    position: absolute;
+    white-space: normal;
+    
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .image-gallery-description {
+    font-size: 18px;
+    font-weight: bold;
+    top: 20%;
+    height: 66px;
+    width: 100%;
+    line-height: 1;
+    position: absolute;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+

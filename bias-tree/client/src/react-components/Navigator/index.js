@@ -5,7 +5,7 @@ import './index.css';
 import { withRouter } from 'react-router' 
 import { BsCardList } from "react-icons/bs"
 import { HiOutlineHome } from "react-icons/hi";
-import { BiPlanet, BiAlignLeft, BiCategory, BiSearch } from "react-icons/bi";
+import { BiPlanet } from "react-icons/bi";
 import { AiOutlineAppstore } from "react-icons/ai"
 import { btn_activator} from '../../actions/bias'
 import { IoIosPeople, IoIosAperture } from "react-icons/io";
@@ -20,7 +20,7 @@ class Navigator extends React.Component {
           <div class='logo_content'>
               <div class='logo'>
                   <i><BiPlanet/></i>
-                  <div clas='logo_name'>Categue of Bias</div>
+                  <div clas='logo_name'>偏倚目录</div>
               </div>
               <i id="btn" onClick={()=>btn_activator()}>
                   <BsCardList />

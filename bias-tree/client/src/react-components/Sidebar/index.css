@@ -1,6 +1,12 @@
+@media (max-width: 1200px) {
+    .side-bar {
+        display: none;
+    }
+}
+
 .side-bar{
-    margin-left: 50px;
-    width: 300px;
+    margin-top: 20px;
+    width: 260px;
     height: auto;
     z-index: 0;
 }

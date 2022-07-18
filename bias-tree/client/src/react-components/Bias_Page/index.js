@@ -11,6 +11,7 @@ import Pagination from '@mui/material/Pagination';
 
 import { getBiasItems } from "../../actions/bias";
 import Sidebar from '../Sidebar';
+import Advertisment from '../Advertisment';
 
 
 class BiasList extends React.Component {
@@ -27,10 +28,14 @@ class BiasList extends React.Component {
         return (
             <div className='homepage'>
                 <Navigator />
+                <div class='adv'>
+                    <Advertisment/>
+                </div>
                 <div class='main-content'> 
                     <Content bias={this.state.bias} />
                     <Sidebar/>
                 </div> 
+                <Pagination></Pagination>
             </div>
             
         )

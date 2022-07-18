@@ -1,5 +1,5 @@
 export const btn_activator = () => {
-    let btn = document.querySelector('#btn')
+    // let btn = document.querySelector('#btn')
     let sidebar = document.querySelector('.sidebar')
     // let searchBtn = document.querySelector('#btn')
 
@@ -8,7 +8,6 @@ export const btn_activator = () => {
 
 export const getBiasItems = (home) => {
     const url = "/api/bias";
-
 
     fetch(url)
         .then(res => {

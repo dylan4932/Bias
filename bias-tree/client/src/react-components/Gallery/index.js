@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography';
 
 import {withRouter} from 'react-router' 
 import './index.css';
-import Sidebar from '../Sidebar';
 
 
 class Gallery extends React.Component {

@@ -8,3 +8,38 @@
     gap: 50px;
     z-index: 10;
 }
+
+.bias-list{
+    margin-left: 10px;
+}
+
+
+
+.bias-item{
+    margin-left: 10%;
+    width: 70%;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.bias-list-item{
+    position: relative;
+    width: 100%;
+    cursor: default;
+}
+
+.bias-btn{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-image: linear-gradient(90deg, #7CBEA2, #6DA5C8);
+    border:none;
+    color: white;
+    float: right;
+
+}

@@ -25,10 +25,10 @@ class Sidebar extends React.Component {
                     disablePortal
                     id="combo-box-demo"
                     options={ biases }
-                    sx={{ width: 300 }}
+                    sx={{ width: 260 }}
                     renderInput={(params) => <TextField {...params} label="搜索偏倚" />}
                     />
-                <Card sx={{ minWidth: 275, marginTop: 10}}>
+                <Card sx={{ minWidth: 260, marginTop: 10}}>
                     <CardContent>
                         <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
                         常见偏倚

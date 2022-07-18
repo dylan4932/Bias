@@ -3,11 +3,11 @@ import React from 'react';
 import './index.css';
 import Navigator from '../Navigator';
 
-import {btn_activator} from '../../actions/bias'
 import {withRouter} from 'react-router' 
 import Gallery from '../Gallery';
-import { BiPlanet, BiAlignLeft, BiCategory, BiSearch } from "react-icons/bi";
 import Sidebar from '../Sidebar';
+import Advertisment from '../Advertisment';
+
 
 
 class Home extends React.Component {
@@ -17,6 +17,10 @@ class Home extends React.Component {
         return (
             <div className='homepage'>
                 <Navigator />
+                <div class='adv'>
+                    <Advertisment/>
+                </div>
+                   
                 <div class='main-content'> 
                     <Gallery />
                     <Sidebar />
