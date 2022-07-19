@@ -5,22 +5,21 @@
 
 .main-content{
     position: absolute;
-    height: 70%;
+    height: 80%;
     top: 28%;
     padding-bottom: 50px;
-    width: calc(100% - 220px);
-    left: 150px;
+    width: 900px;
+    left: calc(40% - 240px);
     transition: all 0.5s ease;
     z-index: 0;
     display: grid;
     grid-template-columns: 75% 25%;
-    gap: 20px
-;
+    gap: 20px;
 }
 
 .sidebar.active ~ .main-content{
-    width: calc(100% - 330px);
-    left: 300px;  
+    width: 900px;
+    left: calc(35% - 100px);
 }
 
 @media (max-width: 768px) {
@@ -53,7 +52,7 @@
     left: 185px;
     transition: all 0.5s ease;
     overflow: hidden;
-    z-index: 99;
+    z-index: 90;
     border-radius: 10px;
     
 }

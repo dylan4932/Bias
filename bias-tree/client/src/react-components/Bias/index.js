@@ -17,7 +17,6 @@ class Bias extends React.Component {
     
     constructor(props) {
         super(props)
-        
         getBiasInfo(this, props.location.pathname)
     }
     state = {

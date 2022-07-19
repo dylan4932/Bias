@@ -53,7 +53,7 @@ class Navigator extends React.Component {
                   <span className="tooltip">偏倚</span>
               </li>
               <li>
-                  <a href='#'>
+                  <a href='./../Discussion_Page'>
                       <i>
                       <IoIosPeople />
                       </i>
@@ -63,7 +63,7 @@ class Navigator extends React.Component {
                   <span className="tooltip">论坛</span>
               </li>
               <li>
-                  <a href='#'>
+                  <a href='./../Contact_Page'>
                       <i>
                       <TbMessageCircle />
                       </i>
@@ -73,7 +73,7 @@ class Navigator extends React.Component {
                   <span className="tooltip">联系我们</span>
               </li>
               <li>
-                  <a href='#'>
+                  <a href='./../About_Page'>
                       <i>
                       <IoIosAperture />
                       </i>

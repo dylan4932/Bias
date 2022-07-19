@@ -18,20 +18,20 @@ class BiasList extends React.Component {
     constructor(props) {
         super(props)
         getBiasItems(this)   
-        
     }
     state={
         bias:[]
     }
     
     render(){
+          
         return (
             <div className='homepage'>
                 <Navigator />
-                <div class='adv'>
-                    <Advertisment/>
+                <div className='adv'>
+                    <Advertisment title='偏倚汇总'/>
                 </div>
-                <div class='main-content'> 
+                <div className='main-content'> 
                     <Content bias={this.state.bias} />
                     <Sidebar/>
                 </div> 

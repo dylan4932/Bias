@@ -18,7 +18,7 @@ class Home extends React.Component {
             <div className='homepage'>
                 <Navigator />
                 <div className='adv'>
-                    <Advertisment/>
+                    <Advertisment title='欢迎访问'/>
                 </div>
                    
                 <div className='main-content'> 

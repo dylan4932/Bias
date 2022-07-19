@@ -16,7 +16,7 @@ class Sidebar extends React.Component {
             {name: '检测偏倚', class: '分类: 选择性偏倚-目标人群诊断不均匀'}, 
             {name: '观察者偏倚偏倚', class: '分类: 信息偏倚-错分偏倚'},
             {name: '检出症候', class: '分类:选择性偏倚-诊断偏倚'}, 
-            {name: '开始时间偏倚', class: '选择性偏倚-时间相关偏倚'}
+            {name: '开始时间偏倚', class: '分类:选择性偏倚-时间相关偏倚'}
         ]
     } 
     render(){

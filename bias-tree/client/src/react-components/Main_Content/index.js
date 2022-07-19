@@ -39,12 +39,12 @@ class Content extends React.Component {
     render(){
         const { bias } = this.props;
         return (
-            <div class='bias-list'>
+            <div className='bias-list'>
                 <List sx={{ minwidth: '300px', bgcolor: 'background.paper', float: 'left'}}>
                     {bias.map(item => (
                         
-                        <div class='bias-item'>
-                            <div class='bias-list-item'>
+                        <div className='bias-item'>
+                            <div className='bias-list-item'>
                                 <ListItem disablePadding>
                                 {/* <ListItemAvatar>
                                     <ImageIcon />
@@ -56,11 +56,8 @@ class Content extends React.Component {
                                 </ListItem>
                             </div>
                             
-                            <button class='bias-btn' onClick={() => this.goto(item._id)} >了解更多</button>
-                        </div>
-                                
-                            
-                        
+                            <button className='bias-btn' onClick={() => this.goto(item._id)} >了解更多</button>
+                        </div>     
                     ))}
                 </List> 
             </div>

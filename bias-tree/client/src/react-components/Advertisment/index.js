@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {withRouter} from 'react-router' 
 import './index.css';
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -14,8 +14,7 @@ class Advertisment extends React.Component {
     //   }
     FirstItem () {
         return <div>
-              <img className="image-gallery-image" src="https://picsum.photos/id/1018/1000/600/" title="主页" alt='主页'/>
-              <span className="image-gallery-description">偏倚汇总</span>   
+               
           </div>;
     }
     SecondItem () {
@@ -85,11 +84,13 @@ class Advertisment extends React.Component {
                 }
               ]
             };
-
+            const{ title } = this.props;
         return (
             <div className='advertisment'>
-                <ImageGallery 
-                {...properties} />
+                <img className="image-gallery-image" src="https://picsum.photos/id/1015/1000/600/" title="主页" alt='主页'/>
+                <div className="image-gallery-description">{ title }</div>  
+                {/* <ImageGallery 
+                {...properties} /> */}
                 
             </div>
            

@@ -23,6 +23,8 @@ export const getBiasItems = (home) => {
         .catch(error => {
             console.log(error)
         });
+    // const jsonData = require('./bias.json');
+    // console.log('1')
 
 }
 

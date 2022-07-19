@@ -1,10 +1,17 @@
 .post-content{
     padding: 100px 0;
-    min-width: 550px;
-    min-height: 520px;
+    /* min-height: 520px; */
+    height: 580px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     z-index: 0;
     padding: 2px 10px;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+    .post-content {
+        margin-left: 30px;
+    }
 }
