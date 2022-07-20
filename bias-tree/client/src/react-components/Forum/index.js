@@ -4,43 +4,34 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
+import InputLabel from '@mui/material/InputLabel';
 import {BiLike, BiDislike} from "react-icons/bi";
 // import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 
-
 import {withRouter} from 'react-router' 
 import './index.css';
-import { ListItemButton } from '@mui/material';
-import Paper from '@mui/material/Paper'
-import Button from '@mui/material/Button';
+import { Divider, TextField, Button } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import { getComments, addComment, updateComment } from '../../actions/comment';
 
 class Forum extends React.Component {
     
     constructor(props){
 		super(props)
+        
 	}
-    goto(id){
-        console.log(this)
-        const myurl = '/Bias/'+id
-        this.props.history.push(myurl)
-    }
     state = {
-        bias: [
-            {name:'一切都好文学偏见（引用偏倚）', definition:'当出版物（报告、文献）忽略或淡化争议或不同的结果时发生。', time:'2022-06', like: 100, dislike: 0},
-            {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。", time:'2022-06', like: 99, dislike: 0},
-            {name:'入院率偏倚', definition: "非常有用!感谢分享~", time:'2022-07', like: 99, dislike: 0},
-            {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。", time:'2022-06', like: 99, dislike: 0},
-            {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。", time:'2022-06', like: 99, dislike: 0},
-            {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。", time:'2022-06', like: 99, dislike: 0}]
+        comment: '',
+        date: '',
+        like: 0,
+        dislike: 0,
     }
     render(){
-        const { bias } = this.props;
+        const { commentsToShow } = this.props;
         return (
             <div className='bias-list'>
                 <List sx={{ minwidth: '300px', bgcolor: 'background.paper', float: 'left'}}>
-                    {this.state.bias.map(item => (
+                    {commentsToShow.map(item => (
                         
                         <div className='forum-item'>
                             <Paper>
@@ -50,20 +41,46 @@ class Forum extends React.Component {
                                         <Avatar />
                                     </ListItemAvatar>
                                     <ListItemText 
-                                        primary={item.definition} 
-                                        secondary={item.time} />
+                                        primary={item.comment} 
+                                        secondary={item.date} />
                                 
                                     </ListItem>
                                     <Button color='error'> <BiDislike /> {'('+item.dislike+')'}</Button>
-                                    <Button> <BiLike />{'('+item.like+')'}</Button>
+                                    <Button onClick={ () => likeComment() }> <BiLike />{'('+item.like+')'}</Button>
                                 </div>
                                 
                             </Paper>
-                            
+
                             {/* <button className='bias-btn' onClick={() => this.goto(item._id)} >了解更多</button> */}
                         </div>     
                     ))}
                 </List> 
+                <Divider/>
+                <div className='submit-container'>
+                    
+                    <InputLabel htmlFor="comment-input">提交您的看法: </InputLabel>
+                    <TextField
+                        required
+                        id='comment-input'
+                        multiline
+                        fullWidth
+                        autoFocus
+                        minRows={5}
+                        margin="dense"
+                        name="comment" 
+                        type="comment"
+                        onChange={e => updateComment(this, e.target)}/>
+                    <div className='comment-btn'>
+                        <Button
+                            color='secondary'
+                            fullWidth
+                            variant="contained"
+                            onClick={ () => addComment(this)}
+                            >
+                            提交
+                        </Button>
+                    </div>               
+                </div>
             </div>
 
             

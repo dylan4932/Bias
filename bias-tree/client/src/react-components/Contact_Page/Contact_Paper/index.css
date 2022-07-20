@@ -1,0 +1,19 @@
+.contact-paper{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 20px;
+}
+
+.contact-info{
+    width: 520px;
+    margin-left: 50px;
+}
+
+.submit-btn{
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+

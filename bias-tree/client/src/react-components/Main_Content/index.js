@@ -20,7 +20,6 @@ class Content extends React.Component {
 		super(props)
 	}
     goto(id){
-        console.log(this)
         const myurl = '/Bias/'+id
         this.props.history.push(myurl)
     }

@@ -1,13 +1,19 @@
 .forum-item{
-    margin-left: 20px;
-    width: 85%;
+
+    width: 88%;
     border-bottom: 1px solid #F2F2F2;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 15px;
     padding-top: 10px;
 }
 
 .forum-list-item{
     padding: 10px 20px;
+}
+
+.submit-container{
+    margin-left: 60px;
+    width: 500px;
+    margin-bottom: 50px;
 }

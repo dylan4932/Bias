@@ -1,4 +1,3 @@
-const { IntegerKind } = require('@sinclair/typebox')
 const mongoose = require('mongoose')
 
 const Bias = mongoose.model('Bias', {
@@ -6,12 +5,12 @@ const Bias = mongoose.model('Bias', {
     name_en:{
         type: String,
 		required: true,
-		minlegth: 10
+		minlegth: 1
     },
 	name: {
 		type: String,
 		required: true,
-		minlegth: 10
+		minlegth: 1
     },
     definition: {
         type: String,

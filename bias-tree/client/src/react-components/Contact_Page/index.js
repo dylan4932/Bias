@@ -27,10 +27,10 @@ class Contact extends React.Component {
         return (
             <div className='homepage'>
                 <Navigator />
-                <div class='adv'>
+                <div className='adv'>
                     <Advertisment title='联系我们'/>
                 </div>
-                <div class='main-content'> 
+                <div className='main-content'> 
                     <Contact_Paper />
                     <Sidebar/>
                 </div> 
