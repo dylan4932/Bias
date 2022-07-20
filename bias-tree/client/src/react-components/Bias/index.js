@@ -10,7 +10,7 @@ import { getBiasInfo } from '../../actions/bias';
 import Sidebar from '../Sidebar';
 import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box';
-
+import Advertisment from '../Advertisment';
 
 
 class Bias extends React.Component {
@@ -26,7 +26,11 @@ class Bias extends React.Component {
         return (
             <div className='homepage'>
                 <Navigator />
+                <div className='adv'>
+                    <Advertisment title={this.state.bias.name}/>
+                </div>
                 <div class='main-content'> 
+                
                     <div>
                         <Box
                             sx={{
@@ -38,20 +42,13 @@ class Bias extends React.Component {
                                 
                                 },
                             }}>
-                            <Paper
-                                sx={{
-                                    paddingLeft: 5
-                                }} 
-                                elvation={3}>
-                                <h1>
-                                    {this.state.bias.name}
-                                </h1>
-                            </Paper>
+                            
+                            <Paper elevation={0}>
                                 <h2>定义：</h2>
                                 <p>
                                     {this.state.bias.definition}
                                 </p>
-                            <Paper />
+                            </Paper>
                             <Paper elevation={0}>
                                 <h2>背景：</h2>
                                 <p>

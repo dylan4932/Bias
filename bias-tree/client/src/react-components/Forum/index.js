@@ -12,7 +12,7 @@ import {withRouter} from 'react-router'
 import './index.css';
 import { Divider, TextField, Button } from '@mui/material';
 import Paper from '@mui/material/Paper';
-import { getComments, addComment, updateComment } from '../../actions/comment';
+import {  addComment, updateComment } from '../../actions/comment';
 
 class Forum extends React.Component {
     
@@ -46,7 +46,7 @@ class Forum extends React.Component {
                                 
                                     </ListItem>
                                     <Button color='error'> <BiDislike /> {'('+item.dislike+')'}</Button>
-                                    <Button onClick={ () => likeComment() }> <BiLike />{'('+item.like+')'}</Button>
+                                    <Button> <BiLike />{'('+item.like+')'}</Button>
                                 </div>
                                 
                             </Paper>
