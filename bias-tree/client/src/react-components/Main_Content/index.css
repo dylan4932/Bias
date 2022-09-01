@@ -41,5 +41,11 @@
     border:none;
     color: white;
     float: right;
+}
 
+.bias-btn:hover{
+    border: 2px solid rgba(120, 120, 255, 0.8);
+    cursor: pointer;
+    color: rgba(120, 120, 255, 0.8);
+    font-weight: bold;
 }
