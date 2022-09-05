@@ -20,7 +20,7 @@ class BiasList extends React.Component {
         getBiasItems(this)   
     }
     state={
-        bias:[]
+        biases:[]
     }
     
     render(){
@@ -32,8 +32,8 @@ class BiasList extends React.Component {
                     <Advertisment title='偏倚汇总'/>
                 </div>
                 <div className='main-content'> 
-                    <Content bias={this.state.bias} />
-                    <Sidebar/>
+                    <Content bias_list={this.state.biases} />
+                    <Sidebar biases={this.state.biases}/>
                 </div> 
                 <Pagination></Pagination>
             </div>

@@ -5,7 +5,7 @@ import Navigator from '../Navigator';
 
 
 import {withRouter} from 'react-router' 
-import { getBiasInfo } from '../../actions/bias';
+import { getBiasInfo, getBiasItems } from '../../actions/bias';
 
 import Sidebar from '../Sidebar';
 import Paper from '@mui/material/Paper'
@@ -16,12 +16,15 @@ import Advertisment from '../Advertisment';
 class Bias extends React.Component {
     
     constructor(props) {
-        super(props)
-        getBiasInfo(this, props.location.pathname)
+        super(props);
+        getBiasInfo(this, props.location.pathname);
+        getBiasItems(this);
     }
     state = {
-        bias: {}
+        bias: {},
+        biases: []
     }
+    
     render(){
         return (
             <div className='homepage'>
@@ -88,7 +91,7 @@ class Bias extends React.Component {
                     
                         </Box>
                     </div> 
-                    <Sidebar/>
+                    <Sidebar biases={this.state.biases}/>
                 </div> 
             </div>
             

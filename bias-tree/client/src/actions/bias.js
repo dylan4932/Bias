@@ -18,7 +18,7 @@ export const getBiasItems = (home) => {
             }
         })
         .then(json => {
-            home.setState({ bias: json.items })
+            home.setState({ biases: json.items })
         })
         .catch(error => {
             console.log(error)

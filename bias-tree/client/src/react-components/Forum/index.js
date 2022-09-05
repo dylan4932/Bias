@@ -45,8 +45,9 @@ class Forum extends React.Component {
                                         secondary={item.date} />
                                 
                                     </ListItem>
-                                    <Button color='error'> <BiDislike /> {'('+item.dislike+')'}</Button>
                                     <Button> <BiLike />{'('+item.like+')'}</Button>
+                                    <Button color='error'> <BiDislike /> {'('+item.dislike+')'}</Button>
+                                    
                                 </div>
                                 
                             </Paper>

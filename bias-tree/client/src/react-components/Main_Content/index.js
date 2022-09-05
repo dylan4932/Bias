@@ -28,11 +28,11 @@ class Content extends React.Component {
     //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"}]
     // }
     render(){
-        const { bias } = this.props;
+        const { bias_list } = this.props;
         return (
             <div className='bias-list'>
                 <List sx={{ minwidth: '300px', bgcolor: 'background.paper', float: 'left'}}>
-                    {bias.map(item => (
+                    {bias_list.map(item => (
                         
                         <div className='bias-item'>
                             <div className='bias-list-item'>
