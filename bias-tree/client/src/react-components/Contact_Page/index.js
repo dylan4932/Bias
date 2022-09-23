@@ -12,15 +12,16 @@ import Sidebar from '../Sidebar';
 import Advertisment from '../Advertisment';
 import Forum from '../Forum';
 import Contact_Paper from './Contact_Paper';
+import { getBiasItems } from '../../actions/bias';
 
 
 class Contact extends React.Component {
     constructor(props) {
         super(props) 
-        
+        getBiasItems(this)
     }
     state={
-        bias:[]
+        biases: []
     }
     
     render(){
@@ -32,7 +33,7 @@ class Contact extends React.Component {
                 </div>
                 <div className='main-content'> 
                     <Contact_Paper />
-                    <Sidebar/>
+                    <Sidebar biases={this.state.biases}/>
                 </div> 
                 <Pagination></Pagination>
             </div>

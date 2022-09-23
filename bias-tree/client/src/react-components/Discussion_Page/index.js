@@ -11,14 +11,17 @@ import Sidebar from '../Sidebar';
 import Advertisment from '../Advertisment';
 import Forum from '../Forum';
 import { getComments } from "../../actions/comment";
+import { getBiasItems } from '../../actions/bias';
 
 class Discussion extends React.Component {
     constructor(props) {
         super(props) 
         getComments(this);
+        getBiasItems(this);
     }
     state={
-        commentsToShow:[]
+        commentsToShow:[],
+        biases: []
     }
     
     render(){
@@ -30,7 +33,7 @@ class Discussion extends React.Component {
                 </div>
                 <div class='main-content'> 
                     <Forum commentsToShow={this.state.commentsToShow} />
-                    <Sidebar/>
+                    <Sidebar biases={this.state.biases}/>
                 </div> 
                 <Pagination></Pagination>
             </div>
