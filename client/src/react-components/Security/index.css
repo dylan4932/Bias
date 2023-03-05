@@ -1,0 +1,32 @@
+.security-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 900px;
+    margin: 60px auto;
+    padding-bottom: 120px;
+}
+
+
+.security-container .security-content{
+    width: 280px;
+    margin: auto 0;
+    cursor: default;
+}
+
+.security-container .security-img img{
+    width: 450px;
+}
+
+.security-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 60px auto;
+    width: 1200px;
+    padding-left: 60px;
+}
+
+.security-list .subtitle-col{
+    margin: 20px 20px;
+    width: 300px;
+}

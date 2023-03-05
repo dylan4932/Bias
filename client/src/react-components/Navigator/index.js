@@ -33,7 +33,7 @@ class Navigator extends React.Component {
               <input placeholder='搜索...'></input>
               </li> */}
               <li>
-                  <a href='./../'>
+                  <a href='./../Bias-home'>
                       <i>
                       <HiOutlineHome />
                       </i>

@@ -1,0 +1,35 @@
+.portal-page{
+    padding: 0;
+    width: 102%;
+    margin-left: -8px;
+    margin-bottom: -20xpx;
+}
+
+.main-container{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 800px;
+    margin: 8% auto;
+}
+
+
+.grid-container .grid-content{
+    width: 280px;
+    margin: auto 0;
+    cursor: default;
+}
+
+.grid-container .grid-img{
+    width: 40%;
+}
+
+.grid-container .grid-img img{
+    width: 450px;
+}

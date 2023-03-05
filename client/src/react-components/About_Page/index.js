@@ -10,7 +10,7 @@ import Pagination from '@mui/material/Pagination';
 
 import Sidebar from '../Sidebar';
 import Advertisment from '../Advertisment';
-import Forum from '../Forum';
+import Forum from '../Forum_Page';
 import About_Paper from './About_Paper';
 import { getBiasItems } from '../../actions/bias';
 

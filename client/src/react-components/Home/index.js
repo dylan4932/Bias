@@ -1,13 +1,16 @@
 import React from 'react';
 
 import './index.css';
-import Navigator from '../Navigator';
-
 import {withRouter} from 'react-router' 
-import Gallery from '../Gallery';
+import { getBiasItems } from '../../actions/bias';
+
+import Navigator from '../Navigator';
+import Gallery from './Gallery';
 import Sidebar from '../Sidebar';
 import Advertisment from '../Advertisment';
-import { getBiasItems } from '../../actions/bias';
+
+
+
 
 
 

@@ -1,0 +1,43 @@
+.demo-space{
+    height: 200px;
+}
+
+.demo-subtitle{
+    font-weight: bold;
+    font-size: large;
+}
+
+.demo-text{
+    width: 360px;
+}
+
+.demo-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    width: 900px;
+    margin: 50px auto;
+}
+
+
+.demo-container .demo-content{
+    width: 280px;
+    margin: auto 0;
+    cursor: default;
+}
+
+.demo-container .grid-img img{
+    width: 450px;
+}
+
+.demo-container .demo-large-img img{
+    width: 550px;
+}
+
+.demo-container .demo-img{
+    margin-left: 120px;
+}
+
+.demo-container .demo-img img{
+    width: 450px;
+}

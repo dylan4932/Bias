@@ -1,0 +1,30 @@
+.education-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    grid-gap: 200px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.education-grid .grid-img{
+    width: 30%;
+}
+
+.education-grid .grid-img img{
+    width: 400px;
+}
+
+.education-text{
+    font-size: x-large;
+}
+
+.education-block1{
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.education-block1 .education-li{
+    width: 800px;
+}

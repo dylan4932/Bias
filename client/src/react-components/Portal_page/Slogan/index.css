@@ -1,0 +1,42 @@
+.green-text{
+    color: rgb(65, 217, 181);
+}
+
+.slogan{
+    width: 50%;
+    min-width: 700px;
+    height: 10%;
+    margin: 20% auto;
+    opacity: 1;
+}
+
+.slogan h1{
+    padding-left: 60px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.slogan p{
+    text-align: center;
+}
+
+.slogan .login-btn{
+    width: 150px;
+    margin: 30px auto;
+    align-items: center;
+    opacity: 90;
+}
+
+.slogan .login-btn .button{
+    background-color: rgb(13, 128, 101);
+    height: 40px;
+    color: white;
+    border: 0px;
+    font-family: "Microsoft Yahei";
+}
+
+/* html:not([data-scroll='0'])  {
+    .slogan .login-btn .button {
+        display: none;
+    }
+} */

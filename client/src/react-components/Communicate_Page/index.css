@@ -1,0 +1,26 @@
+.communicate-text{
+    width: 400px;
+    font-size: x-large;
+}
+
+.communicate-list{
+    margin-left: -20px;
+}
+
+.communicate-list li{
+    width: 400px;
+}
+
+.grid-container .communicate-img{
+    width: 40%;
+}
+
+.grid-container .communicate-img img{
+    margin-top: 120px;
+    width: 450px;
+}
+
+#communicate-img1{
+    margin-left: 120px;
+}
+

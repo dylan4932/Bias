@@ -1,0 +1,76 @@
+.introduction{
+    width: 102%;
+    margin-left: -8px;
+}
+
+.intro-paper .paper-title{
+    margin: 30px auto;
+    width: 670px;
+}
+
+.intro-paper .paper-title p{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.intro-paper .paper-container{
+    margin: 100px 0;
+}
+
+.intro-paper .paper-container .paper-content{
+    margin: 50px auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.intro-paper .paper-container .paper-content .paper-left{
+    width: 650px;
+    border-radius: 5px;
+}
+
+.intro-paper .paper-container .paper-content .paper-right{
+    margin: auto 0;
+}
+
+#first-line{
+    margin-top: 80px;
+}
+
+.intro-paper .paper-container .paper-content .left-img{
+    width: 40%;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .left-img img{
+    width: 450px;
+}
+
+.intro-paper .paper-container .paper-content .right-content{
+    width: 550px;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .left-content{
+    width: 530px;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .right-img{
+    width: 40%;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .right-img img{
+    height: 150px;
+    margin-left: -170px;
+}
+
+
+
+
+
+
+
+

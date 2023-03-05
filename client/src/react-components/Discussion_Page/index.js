@@ -9,7 +9,7 @@ import {withRouter} from 'react-router'
 import Pagination from '@mui/material/Pagination';
 import Sidebar from '../Sidebar';
 import Advertisment from '../Advertisment';
-import Forum from '../Forum';
+import Forum from '../Forum_Page';
 import { getComments } from "../../actions/comment";
 import { getBiasItems } from '../../actions/bias';
 
