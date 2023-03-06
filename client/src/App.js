@@ -31,21 +31,21 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path='/' render={props => 
                             (<Portal {...props} app={this}/>)}/>
-                        <Route exact path='/Bias-home' render={props => 
+                        <Route exact path='/Bias-home?id=100027816925' render={props => 
                             (<Home {...props} app={this}/>)}/>
-                        <Route exact path='/Onion-intro' render={props => 
+                        <Route exact path='/Onion-intro?id=100027816925' render={props => 
                             (<Onion {...props} app={this}/>)}/>
-                        <Route exact path='/Researcher' render={props => 
+                        <Route exact path='/Researcher?id=100027816925' render={props => 
                             (<Researcher {...props} app={this}/>)}/>
-                        <Route exact path='/Communicate' render={props => 
+                        <Route exact path='/Communicate?id=100027816925' render={props => 
                             (<Communicate {...props} app={this}/>)}/>
-                        <Route exact path='/Education' render={props => 
+                        <Route exact path='/Education?id=100027816925' render={props => 
                             (<Education {...props} app={this}/>)}/>
-                        <Route exact path='/Demo' render={props => 
+                        <Route exact path='/Demo?id=100027816925' render={props => 
                             (<Demo {...props} app={this}/>)}/>
-                        <Route exact path='/Plan' render={props => 
+                        <Route exact path='/Plan?id=100027816925' render={props => 
                             (<Plan {...props} app={this}/>)}/>
-                        <Route exact path='/Data-Security' render={props => 
+                        <Route exact path='/Data-Security?id=100027816925' render={props => 
                             (<Security {...props} app={this}/>)}/>
 
                         <Route exact path='/Bias_Page' render={props => 

@@ -22,48 +22,48 @@ class Portal_list extends React.Component {
                 <div className='banner_list'>
                     <ul id='horizontal-list'>
                         <li>
-                        <a href='./../Onion-intro'>
+                        <a href='./../Onion-intro?id=100027816925'>
                             <span className='bold-text'>Onion 是谁?</span> 
                         </a>
                         </li>
                         <li>
-                            <a href='./../Researcher'>
+                            <a href='./../Researcher?id=100027816925'>
                                 <span className='bold-text'>我是研究者</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href='./../Communicate'>
+                            <a href='./../Communicate?id=100027816925'>
                                 <span className="bold-text">与 KOL 沟通互动</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href='./../Education'>
+                            <a href='./../Education?id=100027816925'>
                                 <span className='bold-text'>医学生整体研究水平提升</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href='./../Demo'>
+                            <a href='./../Demo?id=100027816925'>
                                 <span className='bold-text'>演示</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href='./../Plan'>
+                            <a href='./../Plan?id=100027816925'>
                                 <span className="bold-text">Onion 服务计划</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href='./../Data-Security'>
+                            <a href='./../Data-Security?id=100027816925'>
                                 <span className='bold-text'>数据安全</span>
                             </a>
                         </li>
                     </ul>
                    <div className='right-content'>
-                        <a href='./../Contact-Us'>
+                        <a href='./../Contact-Us?id=100027816925'>
                             <span className="bold-text">联系我们</span>
                         </a>
                    </div>
