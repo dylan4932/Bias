@@ -1,8 +1,3 @@
-.introduction{
-    width: 102%;
-    margin-left: -8px;
-}
-
 .intro-paper .paper-title{
     margin: 30px auto;
     width: 670px;
@@ -48,7 +43,7 @@
 }
 
 .intro-paper .paper-container .paper-content .right-content{
-    width: 550px;
+    width: 480px;
     margin: auto 0;
 }
 

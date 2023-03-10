@@ -3,7 +3,6 @@ import * as React from 'react';
 import {withRouter} from 'react-router' 
 import './index.css';
 // import ImageGallery from "react-image-gallery";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
@@ -31,60 +30,7 @@ class Advertisment extends React.Component {
     }
     render(){
         
-        function renderLeftNav(onClick, disabled) {
-            return (
-              <button
-                type="button"
-                className="image-gallery-left-nav"
-                aria-label="Prev Slide"
-                disabled={disabled}
-                onClick={onClick}
-              ><i>
-                <FaArrowLeft size={30} />
-              </i>
-                
-              </button>
-            );
-          }
-          function renderRightNav(onClick, disabled) {
-            return (
-              <button
-                type="button"
-                className="image-gallery-right-nav"
-                aria-label="Next Slide"
-                disabled={disabled}
-                onClick={onClick}
-              ><i>
-                <FaArrowRight size={30} />
-              </i>
-                
-              </button>
-            );
-        }
-        const properties = {
-            
-            useBrowserFullscreen: false,
-            showPlayButton: false,
-            lazyLoad: true,
-            showFullscreenButton:false,
-            showThumbnails:false,
-            renderLeftNav: renderLeftNav,
-            renderRightNav:renderRightNav,
-            // renderItem: this.myRenderItem.bind(this),
-            
-            items:[
-                {
-                    renderItem: this.FirstItem
-                },
-                {
-                    renderItem: this.SecondItem
-                },
-                {
-                  renderItem: this.ThirdItem
-                }
-              ]
-            };
-            const{ title } = this.props;
+        const{ title } = this.props;
         return (
             <div className='advertisment'>
                 <img className="image-gallery-image" src="https://picsum.photos/id/1015/1000/600/" title="主页" alt='主页'/>

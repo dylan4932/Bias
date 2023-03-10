@@ -1,24 +1,21 @@
 import React from 'react';
 
 import './index.css';
-import Navigator from '../Navigator';
 
 
 import {withRouter} from 'react-router' 
 
-import Pagination from '@mui/material/Pagination';
-
+import BiasList from '../BiasList';
 import Sidebar from '../Sidebar';
-import Advertisment from '../Advertisment';
-import Forum from '../Forum_Page';
-import Contact_Paper from './Contact_Paper';
+import ContactPaper from './Contact_Paper';
 import { getBiasItems } from '../../actions/bias';
+import Footer from '../footer';
 
 
 class Contact extends React.Component {
     constructor(props) {
-        super(props) 
-        getBiasItems(this)
+        super(props); 
+        getBiasItems(this);
     }
     state={
         biases: []
@@ -26,16 +23,16 @@ class Contact extends React.Component {
     
     render(){
         return (
-            <div className='homepage'>
-                <Navigator />
-                <div className='adv'>
-                    <Advertisment title='联系我们'/>
+            <div className='bias-main-homepage'>
+                <div className='bias-header'>
+                    <BiasList/>  
                 </div>
-                <div className='main-content'> 
-                    <Contact_Paper />
+                <div className='bias-main-content-container'> 
+                    <ContactPaper />
                     <Sidebar biases={this.state.biases}/>
                 </div> 
-                <Pagination></Pagination>
+                <Footer/>
+                {/* <Pagination></Pagination> */}
             </div>
             
         )

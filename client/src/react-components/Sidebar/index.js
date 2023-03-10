@@ -1,10 +1,6 @@
-import React, { useId } from 'react';
+import React from 'react';
 import './index.css';
-import { uid } from "react-uid";
 import { withRouter } from 'react-router' 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
@@ -33,16 +29,21 @@ class Sidebar extends React.Component {
         const { biases } = this.props;
         return (
             <div className='side-bar'>
-                <Autocomplete
-                    disablePortal
-                    id="combo-box-demo"
-                    options={ biases }
-                    getOptionLabel={option => option.name}
-                    onChange={this.onTagsChange}
-                    sx={{ width: 260 }}
-                    renderInput={(params) => <TextField {...params} label="搜索偏倚" />}
+                <div className='side-bar-search'>
+                    <p className='side-bar-title'> 所有的Biases （偏倚）</p>
+                    <div className='side-bar-search-border'></div>
+                    <Autocomplete
+                        disablePortal
+                        id="combo-box-demo"
+                        options={ biases }
+                        getOptionLabel={option => option.name}
+                        onChange={this.onTagsChange}
+                        sx={{ width: 220, marginLeft: '20px' }}
+                        renderInput={(params) => <TextField {...params} label="选择您要查询的偏倚" />}
                     />
-                <Card sx={{ minWidth: 260, marginTop: 10}}>
+                </div>
+                
+                {/* <Card sx={{ minWidth: 260, marginTop: 10}}>
                     <CardContent>
                         <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
                         常见偏倚
@@ -61,7 +62,23 @@ class Sidebar extends React.Component {
                         
                         
                     </CardContent>
-            </Card>
+                </Card> */}
+                <div className='side-bar-bias-list'>
+                    <p className='side-bar-title'>检索最多的Bias（偏倚）</p>
+                    <div className='side-bar-bias-list-border'></div>
+                    <ul>
+                        <li className='red'>Confounding bias</li>
+                        <li className='blue'>Collider bias</li>
+                        <li className='green'>Selection bias</li>
+                        <li className='purple'>Information bias</li>
+                        <li className='cyan'>Recall bias</li>
+                        <li className='red'>Detection bias</li>
+                        <li className='blue'>Neyman bias</li>
+                        <li className='green'>Admission bias</li>
+                        <li className='purple'>Follow-up bias</li>
+                        <li className='cyan'>Interviewer bias</li>
+                    </ul>
+                </div>
             </div>  
         )
     }

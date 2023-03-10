@@ -1,45 +1,34 @@
 import React from 'react';
 
 import './index.css';
-import Content from '../Main_Content';
-import Navigator from '../Navigator';
-
+import Content from './Main_Content';
 
 import {withRouter} from 'react-router' 
 
-import Pagination from '@mui/material/Pagination';
-
-import { getBiasItems } from "../../actions/bias";
+import BiasList from '../BiasList';
 import Sidebar from '../Sidebar';
-import Advertisment from '../Advertisment';
+import Footer from '../footer';
 
 
-class BiasList extends React.Component {
-    constructor(props) {
-        super(props)
-        getBiasItems(this)   
-    }
-    state={
-        biases:[]
-    }
+class BiasPage extends React.Component {
     
     render(){
-          
         return (
-            <div className='homepage'>
-                <Navigator />
-                <div className='adv'>
-                    <Advertisment title='偏倚汇总'/>
+            <div className='bias-main-homepage'>
+                <div className='bias-header'>
+                    <BiasList/>  
                 </div>
-                <div className='main-content'> 
-                    <Content bias_list={this.state.biases} />
-                    <Sidebar biases={this.state.biases}/>
+                <div className='bias-main-content-container'> 
+
+                    <Content />
+                    <Sidebar />
+                    
                 </div> 
-                <Pagination></Pagination>
+                <Footer/>
             </div>
             
         )
     }
 }
 
-export default withRouter(BiasList);
+export default withRouter(BiasPage);

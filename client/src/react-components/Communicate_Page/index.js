@@ -3,9 +3,13 @@ import React from 'react';
 import './index.css';
 
 import { withRouter } from 'react-router' 
-import Portal_list from '../Portal_list';
+import PortalList from '../Portal_list';
 import Footer from '../footer';
 import CommunicateIntro from './Communicate_intro';
+import communicate_col1 from '../../onion_icons/communicate-col1.png'
+import communicate_col2 from '../../onion_icons/communicate-col2.png'
+import communicate_col3 from '../../onion_icons/communicate-col3.png'
+import communicate_col4 from '../../onion_icons/communicate-col4.png'
 import communicate_img1 from '../../content-img/communicate-img1.png'
 import communicate_img2 from '../../content-img/communicate-img2.png'
 import communicate_img3 from '../../content-img/communicate-img3.png'
@@ -17,8 +21,26 @@ class Communicate_Page extends React.Component {
     render(){
         return (
             <div className='introduction'>
-                <Portal_list/>
+                <PortalList/>
                 <CommunicateIntro/>
+                <div className='communicate-subtitle'>
+                    <div className='subtitle-col'>
+                        <img src={communicate_col1} alt='research-colomn-icon1'></img>
+                        <p>如何找到对 KOL 有价值的话题？如何获得与 KOL 沟通中的学术优势，并与KOL 进行同一高度的互动？</p>
+                    </div>
+                    <div className='subtitle-col'>
+                        <img id='check' src={communicate_col2} alt='research-colomn-icon2'></img>
+                        <p>如何成为临床研究的咨询专家？如何建立 KOL对您个人、品牌 & 组织的认可度？</p>
+                    </div>
+                    <div className='subtitle-col'>
+                        <img src={communicate_col3} alt='research-colomn-icon3'></img>
+                        <p>怎样进行研究类的项目？如何提高KOL 的覆盖？如何优化 KOL的诊疗观念，使您的产品以正确的时机、正确的用法使用于正确的患者？</p>
+                    </div>
+                    <div className='subtitle-col'>
+                        <img src={communicate_col4} alt='research-colomn-icon4'></img>
+                        <p>真实世界证据，有机会引导新产品快速准入，支撑未来政策谈判。如何获得真实世界证据？</p>
+                    </div>
+                </div>
                 <div className='grid-container '>
                     <div className='grid-content'>
                         <p className='communicate-text'>With Onion！成为“Solution 专家”，提高客户满意度</p>

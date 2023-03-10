@@ -1,19 +1,16 @@
 import React from 'react';
 
 import './index.css';
-import Navigator from '../Navigator';
 
 
 import {withRouter} from 'react-router' 
 
-import Pagination from '@mui/material/Pagination';
 
 import Sidebar from '../Sidebar';
-import Advertisment from '../Advertisment';
-import Forum from '../Forum_Page';
-import About_Paper from './About_Paper';
+import AboutPaper from './About_Paper';
 import { getBiasItems } from '../../actions/bias';
-
+import BiasList from '../BiasList';
+import Footer from '../footer';
 
 class About extends React.Component {
     constructor(props) {
@@ -26,16 +23,16 @@ class About extends React.Component {
     
     render(){
         return (
-            <div className='homepage'>
-                <Navigator />
-                <div class='adv'>
-                    <Advertisment title='关于我们'/>
+            <div className='bias-main-homepage'>
+                <div className='bias-header'>
+                    <BiasList/>  
                 </div>
-                <div class='main-content'> 
-                    <About_Paper />
+                <div class='bias-main-content-container'> 
+                    <AboutPaper />
                     <Sidebar biases={this.state.biases}/>
                 </div> 
-                <Pagination></Pagination>
+                {/* <Pagination></Pagination> */}
+                <Footer/>
             </div>
             
         )

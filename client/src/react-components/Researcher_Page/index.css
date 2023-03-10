@@ -24,8 +24,33 @@ ul li{
 }
 
 .grid-container .research-img img{
+    width: 450px;
+}
+
+.grid-container .research-img-down img{
     margin-top: 200px;
     margin-left: 100px;
     width: 450px;
+}
+
+.research-subtitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px auto;
+    width: 85%;
+}
+
+.research-subtitle .subtitle-col{
+    margin: 20px 20px;
+    width: 220px;
+}
+
+.research-subtitle .subtitle-col img{
+    width: 50px;
+}
+
+.research-subtitle .subtitle-col p{
+    width: 200px;
+    cursor: default;
 }
 

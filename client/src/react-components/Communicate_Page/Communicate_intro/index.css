@@ -7,7 +7,7 @@
     margin: 260px auto;
     width: 1200px;
     margin-bottom: 0;
-    height: 350px;
+    height: 440px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
@@ -46,30 +46,3 @@
     width: 260px;
 }
 
-.communicate-container .communicate-subtitle{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 60px auto;
-    width: 85%;
-}
-
-.communicate-subtitle .subtitle-col{
-    margin: 20px 20px;
-    width: 220px;
-    color: white;
-}
-
-.communicate-subtitle .subtitle-col img{
-    width: 50px;
-}
-
-.communicate-subtitle .subtitle-col p{
-    width: 200px;
-    cursor: default;
-}
-
-#check{
-    width: 40px;
-    margin-bottom: 6px;
-    
-}

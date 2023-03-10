@@ -1,14 +1,40 @@
-@media (max-width: 1200px) {
-    .side-bar {
-        display: none;
-    }
-}
-
 .side-bar{
     margin-top: 20px;
     width: 260px;
     height: auto;
     z-index: 0;
+    
+}
+@media (max-width: 750px) {
+    .side-bar{
+        display: none;
+        transition: all 0.5s ease;
+    }
+}
+.side-bar-search{
+    width: 260px;
+    height: 180px;
+}
+
+.side-bar .side-bar-title{
+    width: max-content;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.side-bar-search .side-bar-search-border{
+    height: 5px;
+    margin: 10px 0;
+    background-image: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
+}
+.side-bar-bias-list .side-bar-bias-list-border{
+    height: 5px;
+    margin: 10px 0;
+    background-image: linear-gradient(to right, #D7343F, #EDC4D5);
+}
+
+.side-bar-bias-list ul{
+    margin-left: 20px;
 }
 
 Button{

@@ -14,3 +14,7 @@
     width: 1000px;
     margin: 0 auto;
 }
+
+.light-text{
+    font-weight: 300;
+}

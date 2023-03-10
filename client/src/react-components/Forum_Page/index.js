@@ -16,10 +16,6 @@ import {  addComment, updateComment } from '../../actions/comment';
 
 class Forum extends React.Component {
     
-    constructor(props){
-		super(props)
-        
-	}
     state = {
         comment: '',
         date: '',

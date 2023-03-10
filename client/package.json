@@ -20,10 +20,12 @@
     "@mui/material": "^5.11.6",
     "eslint-config-react-app": "6",
     "react-dom": "^18.2.0",
+    "react-dropdown": "^1.11.0",
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
-    "react-uid": "^2.3.2"
+    "react-uid": "^2.3.2",
+    "rsuite": "^5.28.1"
   }
 }

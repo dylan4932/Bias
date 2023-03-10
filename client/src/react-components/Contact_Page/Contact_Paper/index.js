@@ -4,23 +4,22 @@ import InputLabel from '@mui/material/InputLabel';
 import {withRouter} from 'react-router' 
 import './index.css';
 import Paper from '@mui/material/Paper'
-import { Button, Divider, TextField } from '@mui/material';
+import { Button, Divider, TextField, FormControl} from '@mui/material';
 import { updateContact, addContact } from '../../../actions/contact';
 
 
 class ContactPaper extends React.Component {
     
-    constructor(props){
-		super(props)
-	}
     state = {
-        first: '如果您想联系偏倚汇总网站 或 RDG 团队的成员，请发送电子邮件至 rdg@chinahpa.org',
-        second: '该偏倚汇总目录将随着时间的推移添加新的偏倚而丰富。 如果您有兴趣撰写新的偏倚，请填写下面的简短背景表格，我们会尽快回复您。 请注意，回复可能需要两周时间',
+        contact:'Connect（联络）',
+        first: '如果您想联系Bias Dictionari+® 或 BJHPA | Research Design Group 的团队，请发送电子邮件至……@chinahpa.org',
+        second: 'Bias Dictionari+® 将不断增添、修正所有关于 Bias（偏倚）的内容。如果您有兴趣和我们交流、探讨新的 Bias（偏倚），或者您对某个我们已经收纳的 Bias （偏倚）想和我们进行探讨，请填写下面的信息，并提供简短的背景说明，我们将力所能及尽快与您联系。请注意：我们的人力有限，如果未能在尽快的时间里和您联络，请您谅解。',
         title: "",
         explain: "",
         background: "",
         name: "",
         email: "",
+        address: "",
         message: { type: "", body: "" }
     }
 
@@ -29,10 +28,14 @@ class ContactPaper extends React.Component {
         return (
             <div className='contact-paper'>
                 <Paper elevation={0}>
-                    <br/>
+                    <p className='contact-paper-title'>{this.state.contact}</p>
+                </Paper>
+                <Paper elevation={0}>
+                    
                     <p>{this.state.first}</p>
                 </Paper>
                 <Paper elevation={0}>
+                    <br/>
                     <p>{this.state.second}</p>
                     
                 </Paper>
@@ -48,7 +51,9 @@ class ContactPaper extends React.Component {
                 <Paper elevation={0}>
                     <br/>
                     <div className='contact-info'>
-                        <InputLabel htmlFor="title-input">偏倚标题</InputLabel>
+                    
+                        <InputLabel required htmlFor="title-input">Bias（偏倚）的名称</InputLabel>
+                    <FormControl  sx={{ width: '80%', display:'block' }}>
                         <TextField
                             id='title-input'
                             fullWidth
@@ -57,7 +62,12 @@ class ContactPaper extends React.Component {
                             name="title"
                             type="title"
                             onChange={e => updateContact(this, e.target)}/>
-                        <InputLabel htmlFor="explain-input">简短介绍</InputLabel>
+                    </FormControl>
+                        
+                        <br/>
+                        <br/>
+                        <InputLabel required htmlFor="explain-input">Bias（偏倚）的简单描述</InputLabel>
+                    <FormControl  sx={{ width: '80%', display:'block' }}>      
                         <TextField
                             required
                             id='explain-input'
@@ -67,7 +77,11 @@ class ContactPaper extends React.Component {
                             name="explain" 
                             type="explain"
                             onChange={e => updateContact(this, e.target)}/>
-                        <InputLabel htmlFor="background-input">背景介绍</InputLabel>
+                        </FormControl>
+                        <br/>
+                        <br/>
+                        <InputLabel htmlFor="background-input">Bias（偏倚）产生的背景</InputLabel>
+                    <FormControl  sx={{ width: '80%' }}>
                         <TextField
                             required
                             id='background-input'
@@ -79,8 +93,11 @@ class ContactPaper extends React.Component {
                             name="background" 
                             type="background"
                             onChange={e => updateContact(this, e.target)}/>
-                        
+                    </FormControl>
+                        <br/>
+                        <br/>
                         <InputLabel htmlFor="name-input">您的姓名</InputLabel>
+                        <FormControl  sx={{ width: '80%' }}>
                         <TextField
                             id='name-input'
                             fullWidth
@@ -89,8 +106,12 @@ class ContactPaper extends React.Component {
                             name="name" 
                             type="name"
                             onChange={e => updateContact(this, e.target)}/>
-                        <InputLabel htmlFor="email-input">您的邮箱</InputLabel>
-                        <TextField
+                        </FormControl>
+                        <br/>
+                        <br/>
+                        <InputLabel required htmlFor="email-input">您的联系方式</InputLabel>
+                        <FormControl  sx={{ width: '80%' }}>
+                            <TextField
                             id='email-input'
                             fullWidth
                             autoFocus
@@ -98,15 +119,33 @@ class ContactPaper extends React.Component {
                             name="email" 
                             type="email"
                             onChange={e => updateContact(this, e.target)}/>
-                        <br />
+                        </FormControl>
+                        
+                        <br/>
+                        <br/>
+                        <InputLabel  htmlFor="address-input">您所在的工作单位</InputLabel>
+                        <FormControl  sx={{ width: '80%' }}>
+                            <TextField
+                            id='address-input'
+                            fullWidth
+                            autoFocus
+                            margin="dense"
+                            name="address" 
+                            type="address"
+                            onChange={e => updateContact(this, e.target)}/></FormControl>
+                        
+                        <br/>
+                        <br/>
                         <div className='submit-btn'>
+                        <FormControl  sx={{ width: '80%', minWidth: '120px' }}>
                             <Button
                                 fullWidth
+                                
                                 variant="contained"
                                 onClick={ () => addContact(this)}
                                 >
                                 提交
-                            </Button>
+                            </Button></FormControl>
                         </div> 
                     </div>          
                 </Paper>      

@@ -1,8 +1,28 @@
-.portal-page{
-    padding: 0;
+.introduction{
     width: 102%;
     margin-left: -8px;
-    margin-bottom: -20xpx;
+}
+
+.portal-page{
+    padding: 0;
+    width: 100%;
+}
+
+.big-pic{
+    width: 600px;
+}
+
+.portal-text{
+    width: 360px;
+}
+
+.portal-subtitle{
+    font-weight: bold;
+    font-size: large;
+}
+
+.double-space{
+    margin-left: 65px;
 }
 
 .main-container{
@@ -14,22 +34,27 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    width: 800px;
-    margin: 8% auto;
+    column-gap: 50px;
+    width: 900px;
+    margin: 6% auto;
 }
 
 
 .grid-container .grid-content{
-    width: 280px;
+    width: 350px;
     margin: auto 0;
     cursor: default;
 }
 
 .grid-container .grid-img{
-    width: 40%;
+    width: 450px;
+    height: 400px;
+    
 }
 
 .grid-container .grid-img img{
     width: 450px;
+    border-radius: 5px;
+    box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5);
+    margin: auto 0;
 }

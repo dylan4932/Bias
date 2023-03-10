@@ -7,9 +7,6 @@ import Paper from '@mui/material/Paper'
 
 class AboutPaper extends React.Component {
     
-    constructor(props){
-		super(props)
-	}
     state = {
         first: '偏倚往往会在所有阶段影响医疗研究的进行，并经常影响结果的大小和方向。为了获得“最少”偏倚的信息，研究人员必须承认偏倚的潜在存在，并采取措施避免和尽量减少其影响。同样，在评估研究结果时，我们必须了解不同类型的偏倚、它们的潜在影响以及这如何影响医疗决策中证据的解释和使用。',
         second: '为了更好地了解偏倚的持续存在、多样性和影响，我们正在编制一份来自 David Sackett 经典文章的偏倚目录。这些汇总是一项正在进行的工作，并描述了广泛的偏倚——概述了它们在研究中的潜在影响。',

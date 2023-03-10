@@ -23,8 +23,21 @@
     width: 800px;
     margin: 0 auto;
     padding-bottom: 120px;
+    
 }
 
 .education-block1 .education-li{
     width: 800px;
+}
+
+.education-subtitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px auto;
+    width: 85%;
+}
+
+.education-subtitle .subtitle-col{
+    margin: 50px 20px;
+    width: 220px;
 }

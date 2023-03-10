@@ -4,8 +4,8 @@
     left: 0;
     font-family:"Microsoft Yahei";
     width: 100%;
-    height: 120px;
-    opacity: 99;
+    height: 80px;
+    z-index: 10;
 }
 
 .bold-text{
@@ -19,26 +19,19 @@
     width: 100%;
     position: fixed;
     background-image: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
-    
 }
 
-.banner .onion_icon{
-    margin: 5px 50px;
-    height: 53px;
-    width: 150px;
-}
-.banner .onion_icon::after{
+
+
+/* li .onion_icon::after{
     content: "";
     clear: both;
     display: table;
-}
+} */
 
 
-.banner .onion_icon img{
-    float: left;
-}
 
-.banner .onion_icon .onion{
+li .onion_icon .onion{
     color: white;
     padding-top: 30px;
     margin-left: 55px;
@@ -46,35 +39,152 @@
 }
 
 .banner_list{
-    top: 60px;
-    padding-top: 5px;
+    /* top: 60px; */
+    /* padding-top: 5px; */
+    display: grid;
+    grid-template-columns: 45px 800px 8%;
+    top: 0;
     left: 0;
     position: relative;
     width: 100%;
-    height: 40px;
-    border-bottom: 1px solid rgb(200, 200, 200);
-    opacity: 99;
+    height: 100%;
+    box-shadow:  8px 8px 16px rgba(100, 100, 100, 0.1);
+    z-index: 10;
     background-color: white;
+}
+
+.banner_list .onion-icon{
+    width: 52px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 15px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.banner_list .onion-icon img{
+    height: 53px;
+    opacity: 5;
 }
 
 .banner_list .right-content{
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     right: 30px;
-    top: 15px;
+    top: 35px;
     overflow: hidden;
-    width: 48px;
+    width: 200px;
     height: 24px;
-    padding: 2px;
+    padding: 5px 20px;
     border-radius: 5px;
+    z-index: 5;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
     .banner_list .right-content {
         display: none;
     }
 }
 
-.banner_list .right-content:hover{
+ .right-content .login-btn{
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    background-color: white;
+    width: 53px;
+    padding: 3px 10px;
+    cursor: pointer;
+ }
+
+.right-content .login-btn:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.right-content .login-btn .links_name{
+    pointer-events: none;
+    cursor: none;
+}
+
+
+.right-content .login-btn i{
+    margin-left: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+ .right-content .login-btn .drop-down{
+    position: fixed;
+    box-shadow:  -8px -8px 16px rgba(100, 100, 100, 0.1),8px 8px 16px rgba(100, 100, 100, 0.1);
+    margin-top: 20px;
+    margin-left: -75px;
+    width: 200px;
+    height: 80px;
+    transition: 0s;
+    animation: .3s linear pop 1;
+    display: none;
+    border-radius: 2px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family:"Microsoft Yahei Light";
+}
+
+.right-content .login-btn .drop-down.active{
+    display: grid;
+    background-color: white;
+}
+
+.right-content .login-btn .drop-down a{
+    text-decoration: none;
+    color: black;
+}
+.right-content .login-btn .bias-link{
+    margin: 0 20px;
+    text-align: center;
+    height: 30px;
+    padding-top: 7px;
+    border-radius: 3px;
+}
+
+.right-content .login-btn .bias-link:hover{
+    color: white;
+    background-image: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
+}
+
+.right-content .login-btn .data-link{
+    margin: 0 20px;
+    text-align: center;
+    padding-top: 7px;
+    height: 30px;
+    border-radius: 3px;
+    
+}
+
+.right-content .login-btn .data-link:hover{
+    color: white;
+    background-image: linear-gradient(to right, rgb(24, 190, 159), rgb(73, 110, 223));
+}
+
+.banner_list .right-content .contact-btn{
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    background-color: white;
+    width: 53px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.banner_list .right-content .contact-btn:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+/* .banner_list .right-content:hover{
     background-color: rgb(240, 240, 240);
 }
 
@@ -82,21 +192,23 @@
     font-size: x-small;
     color: black;
     text-decoration: none;
-}
+} */
 
 
 ul#horizontal-list{
     min-width: 696px;
+    margin-top: 40px;
     list-style: none;
     }
     ul#horizontal-list li{
         display: inline;
         margin-left: 20px;
 
-    }
+}
 
 ul#horizontal-list li a{
-    color: rgb(127, 127, 127);
+    color: rgb(150, 150, 150);
+    font-family:"Microsoft Yahei";
     text-decoration: none;
     font-size: x-small;
 }

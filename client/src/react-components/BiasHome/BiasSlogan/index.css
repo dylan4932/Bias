@@ -1,0 +1,53 @@
+.bias-slogan{
+    width: 50%;
+    min-width: 850px;
+    height: 10%;
+    margin: 20% auto;
+}
+
+.bias-slogan .bias-slogan-title{
+    font-weight: bold;
+    font-size: xx-large;
+    min-width: 620px;
+    margin: 0 auto;
+}
+
+.bias-slogan .bias-slogan-subtitle{
+    font-size: large;
+    font-weight: bold;
+}
+
+.bias-slogan .a-lineheight{
+    margin-top: -15px;
+}
+
+.bias-slogan p{
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    line-height: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.bias-slogan .bias-slogan-btn{
+    width: 150px;
+    margin: 30px auto;
+    align-items: center;
+    opacity: 90;
+}
+
+.bias-slogan .bias-slogan-btn .button{
+    background-color: rgb(13, 128, 101);
+    height: 40px;
+    color: white;
+    border: 0px;
+    font-family: "Microsoft Yahei";
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bias-slogan .bias-slogan-btn .button:hover{
+    
+    background-color: rgb(47, 105, 85);
+}

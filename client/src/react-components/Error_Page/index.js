@@ -3,7 +3,7 @@ import React from 'react';
 import './index.css';
 
 import { withRouter } from 'react-router' 
-import Portal_list from '../Portal_list';
+import PortalList from '../Portal_list';
 import red_error from '../../onion_icons/red-error.png'
 
 class Error_Page extends React.Component {
@@ -12,7 +12,7 @@ class Error_Page extends React.Component {
     render(){
         return (
             <div className='error-page'>
-                <Portal_list/>
+                <PortalList/>
                     <div className='message-container'>
                         <div className='message-content'>
                             <div className='left-img'>

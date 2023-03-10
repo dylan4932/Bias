@@ -6,7 +6,7 @@ export const btn_activator = () => {
     sidebar.classList.toggle('active');
 }
 
-export const getBiasItems = (home) => {
+export const getBiasItems = (component) => {
     const url = "/api/bias";
 
     fetch(url)
@@ -18,13 +18,11 @@ export const getBiasItems = (home) => {
             }
         })
         .then(json => {
-            home.setState({ biases: json.items })
+            component.setState({ biases: json.items })
         })
         .catch(error => {
             console.log(error)
         });
-    // const jsonData = require('./bias.json');
-    // console.log('1')
 
 }
 
