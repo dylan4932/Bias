@@ -1,0 +1,87 @@
+.bias-home-content{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 50px;
+    width: 850px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.side-bar-search #combo-box-demo{
+    height: 20px;
+    font-size: 10px !important;
+}
+
+.bias-home-content p{
+    text-align: center;
+    line-height: normal;
+}
+
+.bias-home-content .bias-home-content-right{
+    width: 200px;
+    height: 200px;
+    margin: 150px 0;
+    cursor: default;
+}
+
+.bias-home-content .bias-home-content-right-title{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+    
+}
+
+.bias-home-content-right .bias-home-content-right-border{
+    height: 5px;
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
+}
+
+.bias-home-content-right ul{
+    list-style: none;
+}
+
+ul .red::before {
+    content: "\2022"; 
+    color: #D7343F; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+ul .blue::before {
+    content: "\2022"; 
+    color: #3E58AF; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+ul .green::before {
+    content: "\2022"; 
+    color: #397E67; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+ul .purple::before {
+    content: "\2022"; 
+    color: #49448E; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+ul .cyan::before {
+    content: "\2022"; 
+    color: #9EE6D2; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}

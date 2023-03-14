@@ -1,0 +1,84 @@
+.intro-paper .paper-title h1{
+    text-align: center;
+    font-family: Microsoft YaHei;
+}
+
+.paper-text{
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+}
+
+.intro-paper .paper-title p{
+    text-align: center;
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+}
+
+.intro-paper .paper-container{
+    margin: 100px 0;
+}
+
+.intro-paper .paper-container #author-text{
+    font-weight: bolder;
+}
+
+.intro-paper .paper-container .paper-content{
+    margin: 50px auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.intro-paper .paper-container .paper-content .paper-left{
+    width: 650px;
+    border-radius: 5px;
+}
+
+.intro-paper .paper-container .paper-content .paper-right{
+    margin: auto 0;
+    font-family: Microsoft YaHei;
+}
+
+#first-line{
+    font-family: Microsoft YaHei;
+    margin-top: 80px;
+    
+}
+
+.intro-paper .paper-container .paper-content .left-img{
+    width: 40%;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .left-img img{
+    width: 450px;
+}
+
+.intro-paper .paper-container .paper-content .right-content{
+    width: 480px;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .left-content{
+    width: 530px;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .right-img{
+    width: 40%;
+    margin: auto 0;
+}
+
+.intro-paper .paper-container .paper-content .right-img img{
+    height: 150px;
+    margin-left: -170px;
+}
+
+
+
+
+
+
+
+

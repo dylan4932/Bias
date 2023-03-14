@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb70c8bc.css",
-    "main.js": "/static/js/main.f68d0518.js",
+    "main.css": "/static/css/main.91f73feb.css",
+    "main.js": "/static/js/main.d4c4283e.js",
     "static/media/security-intro.png": "/static/media/security-intro.e44316c8246e268689ea.png",
     "static/media/research-intro.png": "/static/media/research-intro.934521e38806e7085c79.png",
     "static/media/demo-img6.png": "/static/media/demo-img6.6d0130ddd89701e4c690.png",
@@ -33,6 +33,8 @@
     "static/media/education-img2.png": "/static/media/education-img2.66819c9491737521b973.png",
     "static/media/module1-phase2.png": "/static/media/module1-phase2.9d68bb918d8997722fb3.png",
     "static/media/module2-interaction.png": "/static/media/module2-interaction.5b3b0c3c2d12ea9260b2.png",
+    "static/media/gridient-background.png": "/static/media/gridient-background.3e926d366e837f3806a4.png",
+    "static/media/reverse-gridient-bckground.png": "/static/media/reverse-gridient-bckground.e3d48070406474310cf4.png",
     "static/media/research-img1.png": "/static/media/research-img1.e2ba09d6c89e9e2ab9f4.png",
     "static/media/paper-img1.png": "/static/media/paper-img1.f7e1631597fa11a03f49.png",
     "static/media/paper-img2.png": "/static/media/paper-img2.5733015f7077b0f55887.png",
@@ -40,11 +42,11 @@
     "static/media/communicate-col1.png": "/static/media/communicate-col1.d97dcd38e8725993d138.png",
     "static/media/communicate-col4.png": "/static/media/communicate-col4.5cb8b2c57c9c50bbfd7b.png",
     "index.html": "/index.html",
-    "main.bb70c8bc.css.map": "/static/css/main.bb70c8bc.css.map",
-    "main.f68d0518.js.map": "/static/js/main.f68d0518.js.map"
+    "main.91f73feb.css.map": "/static/css/main.91f73feb.css.map",
+    "main.d4c4283e.js.map": "/static/js/main.d4c4283e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb70c8bc.css",
-    "static/js/main.f68d0518.js"
+    "static/css/main.91f73feb.css",
+    "static/js/main.d4c4283e.js"
   ]
 }

@@ -1,0 +1,30 @@
+.bias-main-content .bias-paper-name-title{
+    font-size: 24px;
+    height: 30px;
+    width: max-content;
+    border-bottom: 2px solid black;
+}
+
+.bias-main-content .bias-paper-name-subtitle{
+    color: rgb(100, 100, 100);
+}
+
+.bias-main-content .bias-paper-block-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bias-main-content .bias-paper-block-subtitle{
+    color: rgb(50, 50, 50);
+}
+
+.bias-main-content-border{
+
+    border-top: 1px solid rgb(217, 217, 217);
+    width: 94%;
+    margin: 60px auto;
+}
+
+.bias-main-content-border p{
+    margin-left: -2%;
+}
