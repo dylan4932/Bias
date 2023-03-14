@@ -1,0 +1,9 @@
+.footer-container{
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-image: url("../../content-img/gridient-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}

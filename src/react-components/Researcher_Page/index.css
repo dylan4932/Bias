@@ -1,0 +1,60 @@
+.research-text{
+    font-size: x-large;
+    font-family: Microsoft YaHei;
+    font-weight: bolder;
+}
+
+.tab-space{
+    margin-left: 30px;
+    width: 450px;
+}
+
+
+.back-space{
+    margin-left: -30px;
+    width: 300px;
+}
+
+ul li{
+    width: 320px;
+    margin-top: 10px;
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+}
+
+
+.grid-container .research-img{
+    width: 40%;
+}
+
+.grid-container .research-img img{
+    width: 450px;
+}
+
+.grid-container .research-img-down img{
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 450px;
+}
+
+.research-subtitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px auto;
+    width: 85%;
+}
+
+.research-subtitle .subtitle-col{
+    margin: 20px 20px;
+    width: 220px;
+}
+
+.research-subtitle .subtitle-col img{
+    width: 50px;
+}
+
+.research-subtitle .subtitle-col p{
+    width: 200px;
+    cursor: default;
+}
+

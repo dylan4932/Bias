@@ -1,0 +1,109 @@
+.portal-slogan{
+    width: 50%;
+    min-width: 810px;
+    height: 10%;
+    margin: 10% auto;
+}
+
+.portal-slogan h1{
+    padding-left: 60px;
+    width: 620px;
+    margin: 0 auto;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+}
+
+.portal-slogan p{
+    text-align: center;
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+}
+
+.portal-slogan .bias-data-btn{
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    align-items: center;
+
+}
+
+.bias-data-btn .bias-button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+    background-image: url("../../../content-img/gridient-background.png");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.bias-data-btn .bias-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bias-data-btn .bias-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bias-data-btn .bias-button:hover span {
+    padding-right: 25px;
+}
+
+.bias-data-btn .bias-button:hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+.bias-data-btn .data-button{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-image: url("../../../content-img/reverse-gridient-bckground.png");
+    background-size: 100%;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+
+
+.bias-data-btn .data-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bias-data-btn .data-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bias-data-btn .data-button:hover span {
+    padding-right: 25px;
+}
+
+.bias-data-btn .data-button:hover span::after{
+    opacity: 1;
+    right: 0;
+}

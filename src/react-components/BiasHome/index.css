@@ -1,0 +1,87 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bias-main-homepage{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bias-text{
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+    cursor: default;
+}
+
+
+.bias-subtitle{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: Microsoft YaHei;
+}
+
+
+.bias-header{
+    position: fixed;
+    background-color: white;
+    /* top: -2px;
+    left: -20px; */
+    z-index: 99;
+    width: 100%;
+    height: 140px;
+    padding-bottom: 10px;   
+}
+
+.bias-home-content-container{
+    height: calc(100% - 160px);
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+
+
+/* .sidebar.active ~ .main-content{
+    width: 900px;
+    left: calc(35% - 100px);
+} */
+
+/* @media (max-width: 768px) {
+
+    .main-content {
+        top: 30px;
+    }
+}
+
+@media (max-height: 768px) {
+
+    .main-content {
+        top: 30px;
+    }
+} */
+
+/* .adv{
+    background-image: linear-gradient(90deg, #7CBEA2, #6DA5C8);
+    padding-top: 7px;
+    position: absolute;
+    top: 20px;
+    width: calc(100% - 300px);
+    height: 20%;
+    left: 185px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    z-index: 90;
+    border-radius: 10px;
+    
+} */
+
+/* .sidebar.active ~ .adv{
+    width: calc(100% - 340px);
+    left: 310px;  
+} */
+
+
+
+

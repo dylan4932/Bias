@@ -1,0 +1,80 @@
+.introduction{
+    width: 102%;
+    margin-left: -8px;
+}
+
+.portal-page{
+    padding: 0;
+    width: 100%;
+}
+
+.big-pic{
+    width: 600px;
+}
+
+.green-text{
+    color: rgb(65, 217, 181);
+}
+
+.p-en{
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+}
+
+.intro-title{
+    font-family: Microsoft YaHei;
+    font-weight: bolder;
+    font-size: xx-large;
+    width: 500px;
+}
+
+.portal-text{
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+    cursor: default;
+}
+
+.portal-subtitle{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: Microsoft YaHei;
+}
+
+.double-space{
+    margin-left: 65px;
+}
+
+.main-container{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    width: 900px;
+    margin: 6% auto;
+}
+
+
+.grid-container .grid-content{
+    width: 350px;
+    margin: auto 0;
+    cursor: default;
+}
+
+.grid-container .grid-img{
+    width: 450px;
+    height: 400px;
+    
+}
+
+.grid-container .grid-img img{
+    width: 450px;
+    border-radius: 5px;
+    /* box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5); */
+    box-shadow: -4px -4px 15px rgba(127, 127, 127, 0.1), 4px 4px 15px rgba(127, 127, 127, 0.1);
+    margin: auto 0;
+}
