@@ -1,0 +1,30 @@
+.contact-paper{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+
+.contact-paper .contact-paper-title{
+    font-size: 20px;
+}
+
+.contact-info{
+    width: 90%;
+    margin-left: 50px;
+}
+
+.submit-btn{
+
+    width: 30%;
+    margin: 50px auto;
+}
+
+@media (max-width: 750px) {
+    .contact-paper{
+        margin-left: 16%;
+        width: 90%;
+    }
+}
+

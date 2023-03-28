@@ -1,0 +1,59 @@
+
+.bias-content{
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 30%;
+    gap: 50px;
+    z-index: 10;
+    
+}
+
+
+
+.bias-item{
+    transition: all .5s ease;
+    margin-left: 5%;
+    min-width: 300px;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.bias-list-item{
+    position: relative;
+    width: 100%;
+    cursor: default;
+}
+
+.bias-list-item .bias-list-item-title{
+    width: max-content;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.bias-list-item .bias-list-item-subtitle{
+    font-size: 12px;
+}
+
+.bias-btn{
+    margin-top: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: rgb(13, 128, 101);
+    border:none;
+    color: white;
+    float: right;
+}
+
+.bias-btn:hover{
+    border-color: rgb(47, 105, 85);
+    cursor: pointer;
+    font-weight: bold;
+}

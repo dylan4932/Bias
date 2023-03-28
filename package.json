@@ -29,12 +29,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "setup": "npm install && cd client && npm install && cd ..",
+    "setup": "npm install",
     "build-run": "npm run build && node server.js",
     "build": "react-scripts build",
     "start": "node server.js",
     "front-start": "react-scripts start",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {

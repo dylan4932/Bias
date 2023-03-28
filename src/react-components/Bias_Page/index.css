@@ -1,0 +1,26 @@
+.bias-main-homepage{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bias-main-content-container{
+    display: grid;
+    grid-template-columns: 75% 10%;
+    grid-gap: 60px;
+    width: 90%;
+    margin: 160px auto;
+}
+
+.bias-list{
+    min-width: 300px;
+    padding: 2px 10px;
+    transition: all .5s ease;
+}
+
+@media (max-width: 750px) {
+    .bias-list{
+        margin-left: 16%;
+    }
+}
