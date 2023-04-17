@@ -15,11 +15,11 @@ import Communicate from './react-components/Communicate_Page';
 import Education from './react-components/Education_Page';
 import Demo from './react-components/Demo_Page';
 import Plan from './react-components/Plan_Page';
-import Security from './react-components/Security';
+import Story from './react-components/Story';
 import Error from './react-components/Error_Page';
 import Portal from './react-components/Portal_page';
 import { checkSession } from "./actions/user";
-import BiasSlogan from './react-components/BiasHome/BiasSlogan';
+import ProfilePage from './react-components/Profile_Page';
 
 class App extends React.Component {
     constructor(props) {
@@ -27,18 +27,7 @@ class App extends React.Component {
         checkSession(this); // sees if a user is logged in.
     }
     state = {
-        currentUser: null,
-        name: null,
-        email: null,
-        phone: null,
-        hospital: null,
-        department: null,
-        company: null,
-        favorite: [],
-        createdTime: null,
-        updatedTime: null,
-        expireTime: null,
-        
+        currentUser: null,       
         message: { type: "", body: "" }
     }
 
@@ -47,8 +36,14 @@ class App extends React.Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/bias-login' render={props =>
-                        (<BiasLogin {...props} app={this} usr={currentUser}/>)} />  
+
+                    <Route exact path='/profile' render={props =>
+                        (!currentUser ? <BiasLogin {...props} app={this} usr={currentUser}/> : 
+                        <ProfilePage {...props} app={this} usr={currentUser}/>)} />  
+
+                    <Route exact path='/bias-login' render={props => 
+                        (!currentUser ? <BiasLogin {...props} app={this} usr={currentUser}/> : 
+                        <ProfilePage {...props} app={this} usr={currentUser}/>)} />   
 
                     <Route exact path={'/'} render={props => 
                         (<Portal {...props} app={this}/>)}/>
@@ -65,7 +60,7 @@ class App extends React.Component {
                     <Route exact path='/Plan' render={props => 
                         (<Plan {...props} app={this}/>)}/>
                     <Route exact path='/Data-Security' render={props => 
-                        (<Security {...props} app={this}/>)}/>
+                        (<Story {...props} app={this}/>)}/>
                     <Route exact path='/Bias-home' render={props => 
                         (<Home {...props} app={this} usr={currentUser}/>)}/>
 

@@ -1,0 +1,77 @@
+.story-container{
+    
+    width: 900px;
+    margin: 80px auto;
+    padding-bottom: 50px;
+}
+
+.success-story{
+    width: 800px;
+    margin: 100px auto;
+    cursor: default;
+}
+
+.story-text{
+    font-size: x-large;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    cursor: default;
+}
+
+
+.conclude-text{
+    font-size: x-large;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0;
+    cursor: default;
+}
+
+.story-container .story-content{
+    width: 500px;
+    margin:  20px auto;
+    cursor: default;
+    text-align: center;
+}
+
+.story-container .story-img img{
+    width: 450px;
+}
+
+.story-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 60px auto;
+    width: 1200px;
+    padding-left: 60px;
+}
+
+.story-list .subtitle-col{
+    margin: 20px;
+    width: 300px;
+}
+
+.story-list .subtitle-col .story-doc-icon{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.story-list .subtitle-col .story-doc-icon img{
+    width: 50px;   
+}
+
+.story-container .story-ul{
+    width: 100%;
+    list-style: none;
+    margin: 100px 0;
+    cursor: default;
+}
+
+.story-container .story-ul .story-li{
+    width: 100%;
+}
+.story-container .story-ul .story-li:before{
+    
+    content: '✓';
+}

@@ -5,30 +5,33 @@
 }
 
 .intro-content{
-    margin: 12% auto;
+    margin: 14% auto;
     width: 1200px;
-    height: 500px;
+    height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    cursor: default;
 }
 
 .intro-content .intro-left{
     width: 400px;
     
-    margin: auto 120px;
+    margin: 0 100px;
 }
 
 .intro-content .intro-left p{
     cursor: default; 
     color: white;
     font-family: Microsoft YaHei;
+    cursor: default;
 }
 
 
 .intro-content .intro-right{
     margin: auto 0;
     width: 60%;
+    cursor: default;
 }
 
 @media (max-width: 815px) {
@@ -38,7 +41,8 @@
 
 }
 .intro-content .intro-right img{
-    width: 400px;
-    margin: 0 auto;
+    
+    width: 500px;
+    margin: -40px auto;
 }
 

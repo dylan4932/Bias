@@ -15,18 +15,7 @@ class Content extends React.Component {
     state ={
         biases: []
     }
-    // state = {
-    //     bias: [
-    //         {name:'一切都好文学偏见（引用偏倚）', definition:'当出版物（报告、文献）忽略或淡化争议或不同的结果时发生。'},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"},
-    //         {name:'入院率偏倚', definition: "Onion：X、Y都影响”医院就医或入院“，而不是”入院“影响X、Y。应为Berkson's bias 是一种”选择偏倚“，在DAG图上应该呈现Colliper（对撞机）。"}]
-    // }
+   
     render(){
         getBiasItems(this);
         

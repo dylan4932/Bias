@@ -1,0 +1,47 @@
+.story-intro-container{
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    padding-top: 50px;
+    background-color: #F9FAFF;
+}
+
+.img-intro{
+    text-align: center;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+    font-weight: 300;
+    cursor: default;
+    font-size: 14px;
+}
+
+.story-subtitle{
+    font-size: 20px;
+}
+
+.story-intro-content{
+    margin: 0 auto;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.story-intro-content .story-left{
+    margin: 0 20px;
+    width: 320px;
+}
+
+.story-intro-content .story-left img{
+    width: 320px;
+}
+
+.story-intro-content .story-right{
+    width: 450px;
+    margin: auto 0;
+    cursor: default;
+}
+
+
+
+

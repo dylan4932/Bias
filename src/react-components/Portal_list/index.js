@@ -61,7 +61,7 @@ class Portal_list extends React.Component {
                         </li>
                         <li>
                             <a href='./../Data-Security'>
-                                <span>数据安全</span>
+                                <span className='bold-text p-en'>Successful story</span>
                             </a>
                         </li>
                     </ul>
@@ -70,7 +70,7 @@ class Portal_list extends React.Component {
                         
                         <div className='login-btn'>
                             <a href='./Bias-home' className='bias-link'>Log in Bias Dictionari+®</a>
-                            <a href='./' className='data-link'>Log in artdataing®</a>
+                            <a href='http://www.artdatabanks.com/v3/#/login' className='data-link'>Log in artdataing®</a>
                         </div>
                         <a href='./../About_Page' className='contact-btn'>联系我们</a>
                    </div>

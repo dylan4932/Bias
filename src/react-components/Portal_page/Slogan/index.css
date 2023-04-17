@@ -7,10 +7,11 @@
 
 .slogan .slogan-title{
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 500;
     font-family: Optima, sans-serif;
     letter-spacing: -.5px;
+    cursor: default;
 }
 
 
@@ -18,6 +19,8 @@
     text-align: center;
     font-family: Microsoft YaHei;
     font-weight: 300;
+    line-height: 0.8rem;
+    cursor: default;
 }
 
 .slogan .onion-btn{
@@ -27,7 +30,8 @@
     opacity: 90;
 }
 
-.slogan .onion-btn .button{
+.slogan .onion-btn a{
+    box-shadow: 0 0 2px rgb(13, 128, 101);
     background-color: rgb(13, 128, 101);
     height: 40px;
     color: white;
@@ -37,9 +41,10 @@
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .slogan .onion-btn .button:hover{
-    
+    box-shadow: none;
     background-color: rgb(47, 105, 85);
 }

@@ -4,20 +4,9 @@
     background-color: white;
 }
 
-.log-out-btn{
-    border: none;
-    color: white;
-    line-height: 30px;
-    border-radius: 5px;
-    width: 100px;
-    background-color: rgb(73, 67, 147);
-    cursor: pointer;
-}
 
-.log-out-btn:hover{
-    
-    background-color: rgb(73, 67, 108);
-}
+
+
 
 .bias-list-component .bias-banner-container{
     height: 100px;
@@ -38,20 +27,12 @@
     vertical-align: middle; 
 }
 
-.bias-banner-border{
-    margin-left: 90px;
-    margin-top: -30px;
-    height: 5px;
-    width: 205px;
-    background-image: url("../../content-img/gridient-background.png");
-    background-size: 100%;
-}
 
 .bias-list-component .banner-content-container{
     min-width: 500px;
     height: 40px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 85% 15%;
     border-bottom: 1px solid rgb(217, 217, 217);
 }
 
@@ -81,4 +62,34 @@ ul#bias-ul li:hover a{
 .bias-content .bias-banner-right-btn-set{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.bias-banner-right-btn-set .portal-link{
+    width: 100px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Optima, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: -.5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-image: url("../../content-img/gridient-background.png");
+    background-size: 100%;
+}
+
+.log-out-btn{
+    border: none;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: rgb(73, 67, 147);
+    cursor: pointer;
+}
+
+.log-out-btn:hover{
+    background-color: rgb(73, 67, 108);
 }

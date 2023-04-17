@@ -1,0 +1,29 @@
+.story-conclude-container{
+    width: 100%;
+    height: 360px;
+    padding-top: 50px;
+    background-color: #F9FAFF;
+}
+
+.story-conclude-content{
+    margin: 0 auto;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.story-conclude-content .story-left-content{
+    width: 420px;
+    margin: auto 0;
+    cursor: default;
+}
+
+.story-conclude-content .story-right-img{
+    margin: auto 20px;
+}
+
+.story-conclude-content .story-right-img img{
+    width: 480px;
+}
+

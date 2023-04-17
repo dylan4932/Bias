@@ -45,6 +45,8 @@ class BiasList extends React.Component {
                         
                     </ul>
                    <div className='bias-banner-right-btn-set'>
+
+                        <a href='./' className='portal-link'>Portal</a>
                         {usr ? (
                                 <button 
                                     className='log-out-btn' 
@@ -54,6 +56,7 @@ class BiasList extends React.Component {
                             ) : (
                                 <div></div>
                         )}
+                        
                     </div>
                 </div>
             </div>    

@@ -7,16 +7,19 @@
 
 .portal-slogan .portal-slogan-title{
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 500;
     font-family: Optima, sans-serif;
     letter-spacing: -.5px;
+    cursor: default;
 }
 
 .portal-slogan p{
     text-align: center;
     font-family: Microsoft YaHei;
     font-weight: 300;
+    line-height: 0.8rem;
+    cursor: default;
 }
 
 .portal-slogan .bias-data-btn{
@@ -31,7 +34,7 @@
 .bias-data-btn .bias-button{
     border: none;
     width: 200px;
-    height: 30px;
+    height: 36px;
     border-radius: 5px;
     color: white;
     font-family: Optima, sans-serif;
@@ -56,6 +59,7 @@
 .bias-data-btn .bias-button span:after {
     content: '\00bb';
     position: absolute;
+    font-size: 18px;
     opacity: 0;
     top: 0;
     right: -20px;
@@ -74,7 +78,8 @@
 .bias-data-btn .data-button{
     border: none;
     width: 200px;
-    height: 30px;
+    height: 36px;
+    align-items: center;
     border-radius: 5px;
     color: white;
     background-image: url("../../../content-img/reverse-gridient-bckground.png");
@@ -100,6 +105,7 @@
 .bias-data-btn .data-button span:after {
     content: '\00bb';
     position: absolute;
+    font-size: 18px;
     opacity: 0;
     top: 0;
     right: -20px;

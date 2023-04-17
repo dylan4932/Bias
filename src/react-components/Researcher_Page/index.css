@@ -16,10 +16,11 @@
 }
 
 ul li{
-    width: 320px;
+    width: 370px;
     margin-top: 10px;
     font-family: Microsoft YaHei;
     font-weight: 300;
+    font-size: 14px;
 }
 
 
@@ -54,7 +55,7 @@ ul li{
 }
 
 .research-subtitle .subtitle-col p{
-    width: 200px;
+    width: 220px;
     cursor: default;
 }
 

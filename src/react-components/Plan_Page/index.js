@@ -22,6 +22,9 @@ class Plan_Page extends React.Component {
                 <div className='plan-container'>
                     <img src={plan_img} alt='main-plan-img'></img>
                 </div>
+                <br/>
+                <br/>
+                <br/>
                 <Footer/>
             </div>    
         )

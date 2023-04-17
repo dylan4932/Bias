@@ -4,15 +4,16 @@
 
 .demo-subtitle{
     width: 350px;
-    font-weight: bold;
     font-size: x-large;
     font-family: Microsoft YaHei;
+    font-weight: 400;
 }
 
 .demo-text{
     width: 360px;
     font-family: Microsoft YaHei;
     font-weight: 300;
+    font-size: 14px;
 }
 
 .demo-container{
@@ -79,4 +80,55 @@
     padding: 10px 10px;
     border-radius: 2px;
     box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5);
+}
+
+.demo-container .demo-sticker img{
+    width: 500px;
+    padding: 10px 10px;
+}
+
+.demo-content .data-button{
+    border: none;
+    width: 200px;
+    height: 36px;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-image: url("../../content-img/reverse-gridient-bckground.png");
+    background-size: 100%;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.demo-content .data-button a{
+    color: white;
+}
+
+.demo-content .data-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.demo-content .data-button span:after {
+    content: '\00bb';
+    position: absolute;
+    font-size: 18px;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.demo-content .data-button:hover span{
+    padding-right: 25px;
+}
+
+.demo-content .data-button:hover span::after{
+    opacity: 1;
+    right: 0;
 }

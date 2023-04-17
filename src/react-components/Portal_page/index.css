@@ -8,6 +8,15 @@
     width: 100%;
 }
 
+#copy-right{
+    font-size: 2px;;
+    vertical-align: super;
+}
+
+#wider{
+    width: 350px;
+}
+
 .big-pic{
     width: 600px;
 }
@@ -24,20 +33,23 @@
 .intro-title{
     font-family: Microsoft YaHei;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: 30px;
     width: 500px;
+    cursor: default;
 }
 
 .portal-text{
     font-family: Microsoft YaHei;
     font-weight: 300;
     cursor: default;
+    font-size: 14px;
 }
 
 .portal-subtitle{
     font-weight: 400;
-    font-size: x-large;
+    font-size: 24px;
     font-family: Microsoft YaHei;
+    cursor: default;
 }
 
 .double-space{
@@ -78,3 +90,5 @@
     box-shadow: -4px -4px 15px rgba(127, 127, 127, 0.1), 4px 4px 15px rgba(127, 127, 127, 0.1);
     margin: auto 0;
 }
+
+

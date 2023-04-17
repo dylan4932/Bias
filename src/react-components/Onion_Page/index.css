@@ -1,17 +1,21 @@
 .intro-paper .paper-title h1{
     text-align: center;
     font-family: Microsoft YaHei;
+    cursor: default;
 }
 
 .paper-text{
     font-family: Microsoft YaHei;
     font-weight: 300;
+    font-size: 14px;
+    cursor: default;
 }
 
 .intro-paper .paper-title p{
     text-align: center;
     font-family: Microsoft YaHei;
     font-size: 500;
+    cursor: default;
 }
 
 .intro-paper .paper-container{
@@ -43,6 +47,7 @@
 #first-line{
     font-family: Microsoft YaHei;
     margin-top: 80px;
+    cursor: default;
     
 }
 
@@ -56,13 +61,15 @@
 }
 
 .intro-paper .paper-container .paper-content .right-content{
-    width: 480px;
+    width: 500px;
     margin: auto 0;
+    
 }
 
 .intro-paper .paper-container .paper-content .left-content{
     width: 530px;
     margin: auto 0;
+    
 }
 
 .intro-paper .paper-container .paper-content .right-img{

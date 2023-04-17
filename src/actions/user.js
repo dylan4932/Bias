@@ -9,17 +9,7 @@ export const checkSession = (app) => {
         .then(json => {
             if (json && json.user) {
                 app.setState({ 
-                    currentUser: json.user,
-                    name: json.name,
-                    email: json.email,
-                    phone: json.phone,
-                    hospital: json.hospital,
-                    department: json.department,
-                    company: json.department,
-                    favorite: json.favorite,
-                    createdTime: json.createdTime,
-                    updatedTime: json.updatedTime,
-                    expireTime: json.expireTime })
+                    currentUser: json })
             }
         })
         .catch(error => {
@@ -60,17 +50,7 @@ export const login = (loginComp, app, usr) => {
             if (json.user !== undefined) {
                 
                 app.setState({ 
-                    currentUser: json.user,
-                    name: json.name,
-                    email: json.email,
-                    phone: json.phone,
-                    hospital: json.hospital,
-                    department: json.department,
-                    company: json.company,
-                    favorite: json.favorite,
-                    createdTime: json.createdTime,
-                    updatedTime: json.updatedTime,
-                    expireTime: json.expireTime });
+                    currentUser: json });
                 
             }
             

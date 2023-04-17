@@ -1,9 +1,12 @@
 "use strict";
 const log = console.log;
 
+const http = require("http");
+const https = require("https");
 const express = require("express");
 const app = express();
 const path = require('path')
+const fs = require("fs")
 
 const { mongoose } = require("./db/mongoose");
 
@@ -65,7 +68,7 @@ app.use(
         resave: false,
         saveUninitialized: false,
         cookie: {
-            expires: 1800000, //set session to 30mins
+            expires: 600000, //set session to 10mins
             httpOnly: true
         }
     })
@@ -82,7 +85,9 @@ app.post("/users/login", (req, res) => {
         .then(user => {
             // Add the user's id to the session.
             // We can check later if this exists to ensure we are logged in.
+
             req.session.user = user._id;
+            req.session.username = user.username;
             req.session.name = user.name;
             req.session.email = user.email;
             req.session.phone = user.phone;
@@ -91,21 +96,30 @@ app.post("/users/login", (req, res) => {
             req.session.company = user.company;
             req.session.favorite = user.favorite;
             req.session.createdTime = user.createdTime;
-            req.session.updatedTime = user.updatedTime;
+            req.session.updatedTime = Date.now();
             req.session.expireTime = user.expireTime;
-            res.send({ 
-                user: user._id,
-                name: user.name,
-                email: user.email,
-                phone: user.phone,
-                hospital: user.hospital,
-                department: user.department,
-                company: user.company,
-                favorite: user.favorite,
-                createdTime: user.createdTime,
-                updatedTime: Date.now(),
-                expireTime: user.expireTime
-                });
+
+            User.findOneAndUpdate({_id: user._id}, {$set: {"updatedTime": Date.now()}}, 
+            {new: true, useFindAndModify: false}).then((result)=>{
+                res.send({ 
+                    user: user._id,
+                    username: username,
+                    name: user.name,
+                    email: user.email,
+                    phone: user.phone,
+                    hospital: user.hospital,
+                    department: user.department,
+                    company: user.company,
+                    favorite: user.favorite,
+                    createdTime: user.createdTime,
+                    updatedTime:  Date.now(),
+                    expireTime: user.expireTime
+                    });
+            })
+            .catch((error) => {
+                log(error)
+                res.status(500).send("服务器问题")
+            })
                 
         })
         .catch(error => {
@@ -138,7 +152,7 @@ app.get("/users/check-session", (req, res) => {
                 company: req.session.company,
                 favorite: req.session.favorite,
                 createdTime: req.session.createdTime,
-                updatedTime: Date.now(),
+                updatedTime: req.session.updatedTime,
                 expireTime: req.session.expireTime
                 });
     } else {
@@ -282,7 +296,7 @@ app.use(express.static(path.join(__dirname, "/build")));
 // All routes other than above will go to index.html
 app.get("*", (req, res) => {
     // check for page routes that we expect in the frontend to provide correct status code.
-    const goodPageRoutes = ["/"];
+    const goodPageRoutes = ["/react-gh-pages", "/"];
     if (!goodPageRoutes.includes(req.url)) {
         // if url not in expected page routes, set status to 404.
         res.status(404);
@@ -294,8 +308,19 @@ app.get("*", (req, res) => {
 
 /*************************************************/
 // Express server listening...
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-    log(`Listening on port ${port}...`);
-});
+// const port = process.env.PORT || 80;
+// app.listen(port, () => {
+//     log(`Listening on port ${port}...`);
+// });
 
+const httpsOption = {
+    key: fs.readFileSync("./https/menschen.com.cn.key"),
+    cert: fs.readFileSync("./https/menschen.com.cn_bundle.crt")
+}
+
+// /*************************************************/
+// // https server listening...
+http.createServer(app).listen(80);
+https.createServer(httpsOption, app).listen(443, () => {
+    log(`HTTPS Listening on port ${443}...`);
+});
