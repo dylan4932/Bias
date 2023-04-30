@@ -58,7 +58,7 @@
 
 .demo-container .grid-img img{
     width: 450px;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 10px 10px;
     box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5);
 }
@@ -78,13 +78,28 @@
 .demo-container .demo-img img{
     width: 450px;
     padding: 10px 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5);
 }
 
-.demo-container .demo-sticker img{
-    width: 500px;
-    padding: 10px 10px;
+.demo-sticker-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+    margin: 150px auto;
+}
+
+.demo-sticker-container .demo-content{
+    margin-top: 120px;
+    cursor: default;
+}
+
+.demo-sticker-container .demo-content p{
+    margin-left: 10px;
+}
+
+.demo-sticker-container .demo-sticker img{
+    width: 600px;
 }
 
 .demo-content .data-button{

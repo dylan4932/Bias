@@ -21,7 +21,7 @@ class Onion_Page extends React.Component {
                 <div className='intro-paper'>
                     <div className='paper-title'>
                         <p className='portal-subtitle'><span className='p-en'>Onion</span> 为什么懂得什么是“好的”临床研究?</p>
-                        <p className='paper-text'><span className='p-en'>Onion</span>  辅助决策体验的基础是“临床研究学” & “临床统计学”专业知识和创新技术的结合。</p>
+                        <p className='paper-text'> 专业知识和创新技术的结合，是 <span className='p-en'>Onion</span> 辅助决策的基础。</p>
                     </div>
                     <div className='paper-container'>
                         <div className='paper-content'>
@@ -51,7 +51,7 @@ class Onion_Page extends React.Component {
                                 <p className='paper-text'>每年，大量的 <span className='bold-text p-en'>RCT</span> 在中国开展，证据等级高、试验内部一致性强是 <span className='bold-text p-en'>RCT</span> 的优势；但耗时长、费用大、试验设计距离临床实践环境相去较远，成为<span className='bold-text p-en'>RCT</span>试验结果外推性的局限、这些又都是 <span className='bold-text p-en'>RCT</span>的弱势，仅仅只有 <span className='bold-text p-en'>RCT</span> 是“不足够的”。近年来“真实世界证据”因为距离临床实践更加贴近而被重视。</p>
                                 <p className='paper-text'>临床医生日常工作繁忙，很难做到研究方法学的系统掌握，仅仅依靠自身的能力进行研究是“不足够的”。</p>
                                 <p className='paper-text'>好的研究设计专家 & 统计学专家是极其“稀缺的”，仅仅依靠“稀缺”的专家是“不足够的”！</p>
-                                <p className='paper-text'>这些使能够胜任研究任务的先进 <span className='bold-text p-en'>AI</span> 辅助决策系统来解决问题成为未来的选择。</p>
+                                <p className='paper-text'>用这些能够胜任研究任务的 <span className='bold-text p-en'>AI</span> 辅助决策系统来解决问题，成为未来的选择。</p>
                             </div>
                         </div>
                         <div className='paper-content'>

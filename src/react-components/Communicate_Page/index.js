@@ -64,9 +64,9 @@ class Communicate_Page extends React.Component {
                     <div className='grid-content'>
                         <p className='communicate-text'><span className='p-en'>With Onion</span> 的科研类项目，极大提升 <span className='p-en'>KOL</span> 覆盖，同时降低覆盖成本。</p>
                         <ul className='communicate-list'>
-                            <li><span className='bold-text p-en'>With Onion</span>， ，可以同时服务大量研究者；大幅提高与 <span className='bold-text p-en'>KOL</span> 互动的时间、频率，并提供高质量话题;</li>
-                            <li><span className='bold-text p-en'>With Onion ，Healthcare companies &</span> 其员工拥有了一位 研究设计的专家级伙伴，在与<span className='bold-text p-en'>KOL</span>互动时，节省大量时间和精力，配合企业正在推广的研究信息能获得针对产品的专业共识；</li>
-                            <li><span className='bold-text p-en'>With Onion, KOL</span> 将更加愿意与您的学术讨论，在学术上更加依赖您，他将重新看待的<span className='bold-text p-en'>Healthcare companies。</span></li>
+                            <li><span className='bold-text p-en'>With Onion，</span>可以同时服务大量研究者；大幅提高与 <span className='bold-text p-en'>KOL</span> 互动的时间、频率，并提供高质量话题;</li>
+                            <li><span className='bold-text p-en'>With Onion，Healthcare companies &</span> 员工拥有了一位研究设计的专家级伙伴，在与<span className='bold-text p-en'>KOL</span>互动时，节省大量时间和精力，配合企业正在推广的研究信息，能获得针对产品的专业共识；</li>
+                            <li><span className='bold-text p-en'>With Onion，KOL</span> 将更加愿意与您进行学术讨论，在学术上更加依赖您，他将重新看待<span className='bold-text p-en'>Healthcare companies。</span></li>
                     
                         </ul>
                     </div>

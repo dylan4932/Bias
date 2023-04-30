@@ -38,6 +38,12 @@ ul li{
     width: 450px;
 }
 
+.grid-container .research-img-bottom img{
+    margin-top: 60px;
+    margin-left: 80px;
+    width: 450px;
+}
+
 .research-subtitle{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

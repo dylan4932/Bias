@@ -44,7 +44,7 @@ class Researcher_page extends React.Component {
                     </div>
                     <div className='subtitle-col'>
                         <img src={research_col4} alt='research-colomn-icon4'></img>
-                        <p className='portal-text'>如何表达有价值的、规范的研究题目，让人一目了解研究的价值和本质呢？</p>
+                        <p className='portal-text'>如何表达有价值的、规范的研究题目，让研究的价值和本质一目了然呢？</p>
                     </div>
                 </div>
                 <div className='grid-container'>
@@ -79,7 +79,7 @@ class Researcher_page extends React.Component {
                 <div className='research-subtitle'>
                     <div className='subtitle-col'>
                         <img src={research_col1} alt='research-colomn-icon1'></img>
-                        <p className='portal-text'>我的研究课题不同研究目的下应该采用什么适合的研究类型？何为研究目的？</p>
+                        <p className='portal-text'>何为研究目的？不同研究目的下的研究课题，应该采用什么研究类型？</p>
                     </div>
                     <div className='subtitle-col'>
                         <img src={research_ctn_col2} alt='research-colomn-icon2'></img>
@@ -106,7 +106,7 @@ class Researcher_page extends React.Component {
                             <li>多功能的 <span className='bold-text p-en'>EDC</span> 辅助完成“预研究、预分析”</li>
                         </ul>
                     </div>
-                    <div  className='research-img-down'>
+                    <div  className='research-img-bottom'>
                         <img src={research_img3} alt='research_img3'/>
                     </div>
                 </div>

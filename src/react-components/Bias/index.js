@@ -34,6 +34,7 @@ class Bias extends React.Component {
                 <div className='bias-main-content-container'> 
                     <div className='bias-main-content'>
                         <Box
+                            
                             sx={{
                                 display: 'flex',
                                 flexWrap: 'wrap',
@@ -42,7 +43,7 @@ class Bias extends React.Component {
                                 width: '100%'
                                 },
                             }}>
-                            <Paper elevation={0}>
+                            <Paper elevation={0} >
                                 <p className='bias-paper-name-title'>
                                     {this.state.bias.name}
                                 </p>
