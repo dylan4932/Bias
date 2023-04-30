@@ -1,6 +1,6 @@
 {
-  "name": "bias-tree",
-  "version": "0.1.0",
+  "name": "Onion-portal",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
