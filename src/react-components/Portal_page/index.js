@@ -9,7 +9,7 @@ import PortalSlogen from './PortalSlogan';
 import Footer from '../footer';
 import module1_phase1 from '../../content-img/module1-phase1.png'
 import module1_phase2 from '../../content-img/module1-phase2.png'
-import module2_interaction from '../../content-img/module2-interaction.png'
+import module1_phase3 from '../../content-img/module1-phase3.png'
 import module2_remind from '../../content-img/module2-remind.png'
 import module2_framework from '../../content-img/module2-framework.png'
 import module3_note from '../../content-img/module3-note.png'
@@ -54,7 +54,7 @@ class Portal_page extends React.Component {
                         <p className='portal-text'>规范的研究题目应该符合“<span className='bold-text p-en' >PICOST</span>”，<span className='bold-text p-en' >Onion</span> 解释给研究者，向导研究者确定规范的“题目”</p>
                     </div>
                     <div className='grid-img'>
-                        <img src={module2_interaction} alt='module2_interaction'/>
+                        <img src={module1_phase3} alt='module1_phase3'/>
                     </div>
                 </div>
                 

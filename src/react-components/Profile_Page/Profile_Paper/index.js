@@ -28,9 +28,9 @@ class ProfilePaper extends React.Component {
             greet = '早上好';
         else if (hrs >= 12 && hrs <= 17)
             greet = '下午好';
-        else if (hrs >= 17 && hrs <= 24 || hrs <=5)
+        else if ((hrs >= 17 && hrs <= 24) || hrs <=5)
             greet = '晚上好'
-        const {app, usr} = this.props;
+        const { usr } = this.props;
         return (
             <div className='profile-paper'>
                 <Box
