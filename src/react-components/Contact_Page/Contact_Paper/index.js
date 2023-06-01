@@ -81,7 +81,7 @@ class ContactPaper extends React.Component {
                         </FormControl>
                         <br/>
                         <br/>
-                        <InputLabel htmlFor="background-input"><span className='bold-text bias-text'><span className='p-en'>Bias</span>（偏倚）产生的背景</span></InputLabel>
+                        <InputLabel required htmlFor="background-input"><span className='bold-text bias-text'><span className='p-en'>Bias</span>（偏倚）产生的背景</span></InputLabel>
                     <FormControl  sx={{ width: '80%' }}>
                         <TextField
                             required
@@ -96,7 +96,7 @@ class ContactPaper extends React.Component {
                     </FormControl>
                         <br/>
                         <br/>
-                        <InputLabel htmlFor="name-input"><span className='bold-text bias-text'>您的姓名</span></InputLabel>
+                        <InputLabel required htmlFor="name-input"><span className='bold-text bias-text'>您的姓名</span></InputLabel>
                         <FormControl  sx={{ width: '80%' }}>
                         <TextField
                             id='name-input'

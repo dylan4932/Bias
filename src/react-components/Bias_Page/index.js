@@ -8,10 +8,16 @@ import {withRouter} from 'react-router'
 import BiasList from '../BiasList';
 import Sidebar from '../Sidebar';
 import Footer from '../footer';
-
+import { getBiasItems } from '../../actions/bias';
 
 class BiasPage extends React.Component {
-    
+    constructor(props) {
+        super(props) 
+        getBiasItems(this)
+    }
+    state={
+        biases: []
+    }
     render(){
         const { app, usr } = this.props;
         return (
@@ -21,8 +27,8 @@ class BiasPage extends React.Component {
                 </div>
                 <div className='bias-main-content-container'> 
 
-                    <Content />
-                    <Sidebar />
+                    <Content biases={this.state.biases}/>
+                    <Sidebar biases={this.state.biases}/>
                     
                 </div> 
                 <Footer/>

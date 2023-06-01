@@ -106,10 +106,15 @@
     height: 24px;
     padding-top: 7px;
     border-radius: 5px;
+    box-shadow: 0 0 5px #3975EA;
     background-image: url("../../content-img/gridient-background.png");
     background-size: 100%;
+    transition: all .5s ease;
 }
 
+.right-content .login-btn .bias-link:hover{
+    box-shadow: none;
+}
 
 .right-content .login-btn .data-link{
     margin: 0 20px;
@@ -122,9 +127,14 @@
     padding-top: 7px;
     height: 24px;
     border-radius: 5px;
+    box-shadow: 0 0 5px #3975EA;
     background-image: url("../../content-img/reverse-gridient-bckground.png");
     background-size: 100%;
-    
+    transition: all .5s ease;
+}
+
+.right-content .login-btn .data-link:hover{
+    box-shadow: none;
 }
 
 

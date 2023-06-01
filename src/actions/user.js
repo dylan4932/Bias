@@ -58,9 +58,8 @@ export const login = (loginComp, app, usr) => {
         .catch(error => {
             if(usr){
                 app.props.push('./Bias_Page');
-                alert('login successful');
             }else{
-                alert('Invalid Email or password.')
+                alert('账户密码错误.')
             }
             
         });

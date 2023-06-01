@@ -74,20 +74,38 @@ ul#bias-ul li:hover a{
     font-weight: 300;
     font-size: 13px;
     letter-spacing: -.5px;
+    box-shadow: 0 0 5px #3975EA;
     padding: 5px 15px;
     border-radius: 3px;
     background-image: url("../../content-img/gridient-background.png");
     background-size: 100%;
+    transition: all .5s ease;
+}
+
+.bias-banner-right-btn-set .portal-link:hover{
+    box-shadow: none;
 }
 
 .log-out-btn{
-    border: none;
-    color: white;
-    line-height: 30px;
-    border-radius: 5px;
     width: 100px;
-    background-color: rgb(73, 67, 147);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+    font-size: 12px;
+    box-shadow: 0 0 5px #3975EA;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
     cursor: pointer;
+    background-image: url("../../content-img/reverse-gridient-bckground.png");
+    background-size: 100%;
+    transition: all .5s ease;
+    
+}
+.log-out-btn:hover{
+    box-shadow: none;
 }
 
 .log-out-btn:hover{

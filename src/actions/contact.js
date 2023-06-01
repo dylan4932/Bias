@@ -14,6 +14,26 @@ const checkEmpty = (form) =>{
     return;
 }
 
+const emptyInput = () =>{
+    const title = document.getElementById('title-inpt');
+    title.value = '';
+
+    const explain = document.getElementById('explain-inpt');
+    explain.value = '';
+
+    const background = document.getElementById('background-input');
+    background.value = '';
+
+    const name = document.getElementById('name-inpt');
+    name.value = '';
+
+    const email = document.getElementById('email-input');
+    email.value = '';
+
+    const address = document.getElementById('address-input');
+    address.value = '';
+}
+
 export const addContact = (formComp) => {
     checkEmpty(formComp);
     const url = "/api/contact";
@@ -30,6 +50,7 @@ export const addContact = (formComp) => {
     });
     fetch(request)
         .then(function (res) {
+            console.log(res.status)
             if (res.status === 200) {
                 formComp.setState({
                     message: {
@@ -45,10 +66,16 @@ export const addContact = (formComp) => {
                     }
                 });
             }
-            alert(formComp.state.message.body)
+            formComp.setState({
+                name: '',
+                email: '',
+                address: ''
+            })
+            alert('感谢您的提交！') 
             // formComp.props.history.push("/Inventory_Page")
         })
         .catch(error => {
             console.log(error);
         });
 };
+

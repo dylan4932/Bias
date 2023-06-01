@@ -28,10 +28,11 @@
     margin: 30px auto;
     align-items: center;
     opacity: 90;
+    
 }
 
 .slogan .onion-btn a{
-    box-shadow: 0 0 2px rgb(13, 128, 101);
+    box-shadow: 0 0 3px rgb(13, 128, 101);
     background-color: rgb(13, 128, 101);
     height: 40px;
     color: white;
@@ -42,6 +43,7 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    transition: all .5s ease;
 }
 
 .slogan .onion-btn .button:hover{

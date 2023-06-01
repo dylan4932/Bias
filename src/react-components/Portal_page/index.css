@@ -13,9 +13,16 @@
     vertical-align: super;
 }
 
+.bolder{
+    font-weight: 600;
+}
 
 #wider{
     width: 350px;
+}
+
+#move-up {
+    margin-top: -80px;
 }
 
 .big-pic{
@@ -55,6 +62,10 @@
 
 .double-space{
     margin-left: 65px;
+}
+
+.tab-space{
+    margin-left: 130px;
 }
 
 .main-container{

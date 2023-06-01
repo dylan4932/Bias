@@ -39,6 +39,7 @@
     color: white;
     font-family: Optima, sans-serif;
     letter-spacing: -.5px;
+    box-shadow: 0 0 5px #3975EA;
     background-image: url("../../../content-img/gridient-background.png");
     background-size: 100%;
     cursor: pointer;
@@ -59,15 +60,16 @@
 .bias-data-btn .bias-button span:after {
     content: '\00bb';
     position: absolute;
-    font-size: 18px;
+    font-size: 30px;
     opacity: 0;
-    top: 0;
-    right: -20px;
+    top: -12px;
+    right: -22px;
     transition: 0.5s;
 }
 
 .bias-data-btn .bias-button:hover span {
     padding-right: 25px;
+    
 }
 
 .bias-data-btn .bias-button:hover span::after{
@@ -82,6 +84,7 @@
     align-items: center;
     border-radius: 5px;
     color: white;
+    box-shadow: 0 0 5px #3975EA;
     background-image: url("../../../content-img/reverse-gridient-bckground.png");
     background-size: 100%;
     font-family: Optima, sans-serif;
@@ -90,6 +93,7 @@
     transition: all 0.5s;
     text-align: center;
 }
+
 
 .bias-data-btn .data-button a{
     color: white;
@@ -105,10 +109,10 @@
 .bias-data-btn .data-button span:after {
     content: '\00bb';
     position: absolute;
-    font-size: 18px;
+    font-size: 30px;
     opacity: 0;
-    top: 0;
-    right: -20px;
+    top: -12px;
+    right: -24px;
     transition: 0.5s;
 }
 
@@ -118,5 +122,5 @@
 
 .bias-data-btn .data-button:hover span::after{
     opacity: 1;
-    right: 0;
+    right: -10px;
 }

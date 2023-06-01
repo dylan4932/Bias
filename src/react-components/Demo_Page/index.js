@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './index.css';
-
 import { withRouter } from 'react-router' 
 import PortalList from '../Portal_list';
 import Footer from '../footer';
@@ -14,6 +13,11 @@ import demo_img6 from '../../content-img/demo-img6.png'
 import demo_img7 from '../../content-img/demo-img7.png'
 import demo_img8 from '../../content-img/demo-img8.png'
 import demo_img9 from '../../content-img/demo-img9.png'
+import demo_video1 from '../../content-video/module1-phase1.mp4'
+import demo_video2 from '../../content-video/module2-interaction.mp4'
+import demo_video3 from '../../content-video/module3.mp4'
+import {  PlayPause1, PlayPause2, PlayPause3 } from '../../actions/action';
+import { AiOutlinePlayCircle, AiOutlinePauseCircle } from "react-icons/ai";
 
 class Demo_Page extends React.Component {
    
@@ -24,8 +28,17 @@ class Demo_Page extends React.Component {
                 <PortalList/>
                 <div className='demo-space'></div>
                 <div className='demo-container'>
-                    <div className='grid-img'>
-                        <img src={demo_img1} alt='demo-img1'/>
+                    <div className='grid-video'>
+                        <video muted autoPlay loop
+                            src={demo_video1}
+                            id='demo-video1'/>
+                        <div className='video-control'>
+                            <i className='demo-play' id='video1-con'> 
+                                <AiOutlinePauseCircle display="block" onClick={PlayPause1} id='pauseCircle1' cursor="pointer"/>
+                                <AiOutlinePlayCircle display="none" onClick={PlayPause1} id='playCircle1' cursor="pointer"/>
+                            </i>
+                        </div>
+                        
                     </div>
                     <div className='demo-content'>
                         <p className='demo-subtitle'>界面交互，告诉 <span className='p-en'>Onion</span> 研究梗概</p>
@@ -57,8 +70,17 @@ class Demo_Page extends React.Component {
                     </div>
                 </div>
                 <div className='demo-container'>
-                    <div className='grid-img4'>
-                        <img src={demo_img4} alt='demo-img4'/>
+                    <div className='grid-video'>
+                        <video muted autoPlay loop
+                            src={demo_video2}
+                            poster={demo_img4}
+                            id='demo-video2'/>
+                        <i className='demo-play'>  
+                            
+                            <AiOutlinePauseCircle display="block" onClick={PlayPause2} id='pauseCircle2' cursor="pointer"/>
+                            <AiOutlinePlayCircle display="none" onClick={PlayPause2} id='playCircle2' cursor="pointer"/>
+                        </i>
+                        
                     </div>
                     <div className='demo-content'>
                         <p className='demo-subtitle'>交互提示</p>
@@ -114,8 +136,16 @@ class Demo_Page extends React.Component {
                         <p className='demo-text'>质量有保证的方案、考虑全面的方案……</p>
                         <p className='demo-text'>以研究方案规范形式呈现给研究者，事半功倍！</p>
                     </div>
-                    <div className='demo-img demo-large-img'>
-                        <img src={demo_img8} alt='demo-img8'/>
+                    <div className='grid-video'>
+                        <video muted autoPlay loop
+                            src={demo_video3}
+                            poster={demo_img8}
+                            id='demo-video3'/>
+                        <i className='demo-play'>  
+                            <AiOutlinePauseCircle display="block" onClick={PlayPause3} id='pauseCircle3' cursor="pointer"/>
+                            <AiOutlinePlayCircle display="none" onClick={PlayPause3} id='playCircle3' cursor="pointer"/>
+                        </i>
+                        
                     </div>
                 </div>
                 

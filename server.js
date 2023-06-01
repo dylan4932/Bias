@@ -78,7 +78,9 @@ app.use(
 app.post("/users/login", (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
-
+    const timeUpdated = new Date(new Date().getTime()+(parseInt(new Date().getTimezoneOffset()/60) + 8)*3600*1000);
+    const options = {  year: 'numeric', month: 'long', day: 'numeric' };
+    
     // Use the static method on the User model to find a user
     // by their email and password
     User.findByUsernamePassword(username, password)
@@ -96,11 +98,14 @@ app.post("/users/login", (req, res) => {
             req.session.company = user.company;
             req.session.favorite = user.favorite;
             req.session.createdTime = user.createdTime;
-            req.session.updatedTime = Date.now();
+            req.session.updatedTime = timeUpdated;
             req.session.expireTime = user.expireTime;
 
-            User.findOneAndUpdate({_id: user._id}, {$set: {"updatedTime": Date.now()}}, 
+            User.findOneAndUpdate({_id: user._id}, {$set: {"updatedTime": timeUpdated}}, 
             {new: true, useFindAndModify: false}).then((result)=>{
+                const timeCreated = user.createdTime.toLocaleString('zh-CN', options);
+                const timeExpired = user.expireTime.toLocaleString('zh-CN', options);
+                const updatedTime = timeUpdated.toLocaleTimeString('zh-CN', options);
                 res.send({ 
                     user: user._id,
                     username: username,
@@ -111,9 +116,9 @@ app.post("/users/login", (req, res) => {
                     department: user.department,
                     company: user.company,
                     favorite: user.favorite,
-                    createdTime: user.createdTime,
-                    updatedTime:  Date.now(),
-                    expireTime: user.expireTime
+                    createdTime: timeCreated,
+                    updatedTime:  updatedTime,
+                    expireTime: timeExpired
                     });
             })
             .catch((error) => {
@@ -196,7 +201,7 @@ app.post('/api/users', mongoChecker, async (req, res) => {
         }
     }
 })
-// a Get route to get homepage items
+// a Get route to get homepage biases
 app.get('/api/bias', mongoChecker, async (req, res) => {
 
     try {
@@ -263,7 +268,6 @@ app.post('/api/comment', mongoChecker, async (req, res) => {
 })
 
 app.post('/api/contact', mongoChecker, async (req, res) => {
-    log(req.body)
 
     // Create a new user
     const contact = new Contact ({
@@ -278,6 +282,7 @@ app.post('/api/contact', mongoChecker, async (req, res) => {
     try {
         // Save the Contact
         const newContact = await contact.save()
+        console.log(newContact)
         res.send(newContact)
     } catch (error) {
         if (isMongoError(error)) { // check for if mongo server suddenly disconnected before this request.
@@ -306,12 +311,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "/build/index.html"));
 });
 
-/*************************************************/
-// Express server listening...
-// const port = process.env.PORT || 80;
-// app.listen(port, () => {
-//     log(`Listening on port ${port}...`);
-// });
 
 const httpsOption = {
     key: fs.readFileSync("./https/menschen.com.cn.key"),
@@ -320,7 +319,9 @@ const httpsOption = {
 
 // /*************************************************/
 // // https server listening...
-http.createServer(app).listen(80);
+http.createServer(app).listen(80, () => {
+    log(`HTTPS Listening on port ${80}...`);
+});
 https.createServer(httpsOption, app).listen(443, () => {
     log(`HTTPS Listening on port ${443}...`);
 });

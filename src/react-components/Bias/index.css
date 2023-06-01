@@ -1,12 +1,16 @@
 .bias-main-content .bias-paper-name-title{
+    font-family: Microsoft YaHei;
+    font-weight: 400;
     font-size: 24px;
     height: 30px;
     width: max-content;
     border-bottom: 2px solid black;
+    cursor: default;
 }
 
 .bias-main-content .bias-paper-name-subtitle{
     color: rgb(100, 100, 100);
+    cursor: default;
 }
 
 .bias-main-content .bias-paper-block-title{
@@ -27,4 +31,8 @@
 
 .bias-main-content-border p{
     margin-left: -2%;
+    font-family: Microsoft YaHei;
+    font-weight: 300;
+    cursor: default;
+    font-size: 14px;
 }

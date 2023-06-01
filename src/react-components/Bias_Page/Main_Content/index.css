@@ -47,13 +47,16 @@
     border-radius: 5px;
     font-size: 12px;
     background-color: rgb(13, 128, 101);
+    box-shadow: 0 0 3px rgb(13, 128, 101);
     border:none;
     color: white;
     float: right;
+    transition: all .5s ease;
 }
 
 .bias-btn:hover{
     border-color: rgb(47, 105, 85);
     cursor: pointer;
     font-weight: bold;
+    box-shadow: none;
 }

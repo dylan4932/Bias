@@ -33,7 +33,7 @@ class Bias extends React.Component {
                 </div>
                 <div className='bias-main-content-container'> 
                     <div className='bias-main-content'>
-                        <Box
+                        <Box 
                             
                             sx={{
                                 display: 'flex',
@@ -48,47 +48,47 @@ class Bias extends React.Component {
                                     {this.state.bias.name}
                                 </p>
                                 <p className='bias-paper-name-subtitle'>
-                                    {this.state.bias.name_en}
+                                    别名：{this.state.bias.name_en}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Definition (定义)</p>
+                                <p className='bias-paper-block-title'>定义 (Definition)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.definition}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Background (背景)</p>
+                                <p className='bias-paper-block-title'>背景 (Background)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.background}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Example (示例)</p>
+                                <p className='bias-paper-block-title'>示例 (Example)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.example}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Impact (影响)</p>
+                                <p className='bias-paper-block-title'>影响 (Impact)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.impact}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Prevent steps (控制策略)</p>
+                                <p className='bias-paper-block-title'>控制策略 (Prevent steps)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.prevent}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>Sources (相关引用)</p>
+                                <p className='bias-paper-block-title'>相关引用 (Sources)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.sources}
                                 </p>
                             </Paper>
                             <Paper elevation={0}>
-                                <p className='bias-paper-block-title'>More（更多参考）</p>
+                                <p className='bias-paper-block-title'>更多参考 (More)</p>
                                 <p className='bias-paper-block-subtitle'>
                                     {this.state.bias.pubmed}
                                 </p>

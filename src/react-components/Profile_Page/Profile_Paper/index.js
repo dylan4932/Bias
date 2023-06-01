@@ -9,10 +9,10 @@ import Box from '@mui/material/Box';
 class ProfilePaper extends React.Component {
     
     usr = {
-        username:'admin',
-        name: '管理员',
-        phone: '1234567',
-        email: 'admin@biasdictionari.otg',
+        username:'',
+        name: '',
+        phone: '',
+        email: '',
         hospital: '',
         department: '',
         company: '',
@@ -58,7 +58,7 @@ class ProfilePaper extends React.Component {
                         <p >公司： {usr.company} </p>
                         <p >部门： {usr.department} </p>
                         <p>创建时间：{usr.createdTime} </p>
-                        <p>上次登陆时间：{usr.updatedTime.toString()} </p>
+                        <p>上次登陆时间：{usr.updatedTime} </p>
                         <p>到期时间：{usr.expireTime}</p>
                     </Paper>
                     <Paper elevation={0}>
