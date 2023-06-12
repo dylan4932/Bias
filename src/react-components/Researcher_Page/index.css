@@ -25,7 +25,7 @@ ul li{
 
 
 .grid-container .research-img{
-    width: 40%;
+    width: max-content;
 }
 
 .grid-container .research-img img{

@@ -14,25 +14,25 @@ const checkEmpty = (form) =>{
     return;
 }
 
-const emptyInput = () =>{
-    const title = document.getElementById('title-inpt');
-    title.value = '';
+// const emptyInput = () =>{
+//     const title = document.getElementById('title-inpt');
+//     title.value = '';
 
-    const explain = document.getElementById('explain-inpt');
-    explain.value = '';
+//     const explain = document.getElementById('explain-inpt');
+//     explain.value = '';
 
-    const background = document.getElementById('background-input');
-    background.value = '';
+//     const background = document.getElementById('background-input');
+//     background.value = '';
 
-    const name = document.getElementById('name-inpt');
-    name.value = '';
+//     const name = document.getElementById('name-inpt');
+//     name.value = '';
 
-    const email = document.getElementById('email-input');
-    email.value = '';
+//     const email = document.getElementById('email-input');
+//     email.value = '';
 
-    const address = document.getElementById('address-input');
-    address.value = '';
-}
+//     const address = document.getElementById('address-input');
+//     address.value = '';
+// }
 
 export const addContact = (formComp) => {
     checkEmpty(formComp);

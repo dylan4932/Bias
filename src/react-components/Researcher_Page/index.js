@@ -53,7 +53,7 @@ class Researcher_page extends React.Component {
                     </div>
                     <div className='grid-content'>
                         <p className='research-text'><span className='bold-text p-en'>Onion — AI</span> 辅助系统 </p>
-                        <p className='research-text tab-space'><span className='bold-text p-en'>With Onion </span> 激发研究者的研究灵感</p>
+                        <p className='research-text double-space'><span className='bold-text p-en'>With Onion </span> 激发研究者的研究灵感</p>
                         <ul className='back-space wide-ul'>
                             <li><span className='bold-text p-en'>Onion AI</span> 分析研究者拟定研究领域的指南、共识、文献……，提出有价值的“研究课题”建议，并帮助研究者聚焦于具有临床实践意义的课题方向</li>
                             <li>研究的创新性除了干预（暴露）& 结局的创新之外，还有很多方面；<span className='bold-text p-en'>Onion</span> 通过提示来启发、延展研究者的研究创新；</li>
@@ -63,7 +63,7 @@ class Researcher_page extends React.Component {
                 <div className='grid-container'>
                     <div className='grid-content'>
                         <p className='research-text'><span className='bold-text p-en'>Onion — AI</span> 辅助系统</p>
-                        <p className='research-text tab-space'>临床研究者的“<span className='bold-text p-en'>Guide</span>”（向导）</p>
+                        <p className='research-text double-space'>临床研究者的“<span className='bold-text p-en'>Guide</span>”（向导）</p>
                         <ul className='back-space'>
                             <li>向导研究者确定有临床价值的研究方向；</li>
                             <li>向导研究者进行文献积累；</li>
@@ -98,7 +98,7 @@ class Researcher_page extends React.Component {
                 <div className='grid-container '>
                     <div className='grid-content'>
                         <p className='research-text'><span className='bold-text p-en'>Onion — AI</span> 辅助系统</p>
-                        <p className='research-text tab-space'>临床研究者的“<span className='bold-text p-en'>Decision Aid</span>” (辅助决策)</p>
+                        <p className='research-text double-space'>临床研究者的“<span className='bold-text p-en'>Decision Aid</span>” (辅助决策)</p>
                   
                         <ul className='back-space'>
                             <li><span className='bold-text p-en'>AI</span> 辅助决策适合的研究类型、研究设计；</li>

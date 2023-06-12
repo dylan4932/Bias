@@ -3,7 +3,6 @@ import List from '@mui/material/List';
 
 import {withRouter} from 'react-router' 
 import './index.css';
-import { getBiasItems } from '../../../actions/bias';
 
 class Content extends React.Component {
 

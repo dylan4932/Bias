@@ -4,14 +4,11 @@ import './index.css';
 import { withRouter } from 'react-router' 
 import PortalList from '../Portal_list';
 import Footer from '../footer';
-import demo_img1 from '../../content-img/demo-img1.png'
 import demo_img2 from '../../content-img/demo-img2.png'
 import demo_img3 from '../../content-img/demo-img3.png'
-import demo_img4 from '../../content-img/demo-img4.png'
 import demo_img5 from '../../content-img/demo-img5.png'
 import demo_img6 from '../../content-img/demo-img6.png'
 import demo_img7 from '../../content-img/demo-img7.png'
-import demo_img8 from '../../content-img/demo-img8.png'
 import demo_img9 from '../../content-img/demo-img9.png'
 import demo_video1 from '../../content-video/module1-phase1.mp4'
 import demo_video2 from '../../content-video/module2-interaction.mp4'
@@ -45,7 +42,7 @@ class Demo_Page extends React.Component {
                         <p className='demo-text'><span className='bold-text p-en'>Onion AI</span> 分析研究者拟定研究领域的指南、共识、文献……提出有价值的“研究课题”建议，延展研究者的研究创新；并帮助研究者聚焦于具有临床实践意义的课题方向</p>
                         <br/>
                         <p className='demo-subtitle double-space'><span className='p-en'>Onion</span> 激发灵感</p>
-                        <p className='demo-text double-space'><span className='bold-text p-en'>Onion</span> 从多个维度提出突破“先验研究”的建议，使研究者在科研上“迈出前沿一小步、推进前沿一大步”</p>
+                        <p className='demo-text double-demo-text'><span className='bold-text p-en'>Onion</span> 从多个维度提出突破“先验研究”的建议，使研究者在科研上“迈出前沿一小步、推进前沿一大步”</p>
                     </div>
                     
                 </div>
@@ -73,7 +70,6 @@ class Demo_Page extends React.Component {
                     <div className='grid-video'>
                         <video muted autoPlay loop
                             src={demo_video2}
-                            poster={demo_img4}
                             id='demo-video2'/>
                         <i className='demo-play'>  
                             
@@ -139,7 +135,6 @@ class Demo_Page extends React.Component {
                     <div className='grid-video'>
                         <video muted autoPlay loop
                             src={demo_video3}
-                            poster={demo_img8}
                             id='demo-video3'/>
                         <i className='demo-play'>  
                             <AiOutlinePauseCircle display="block" onClick={PlayPause3} id='pauseCircle3' cursor="pointer"/>

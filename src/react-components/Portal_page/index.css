@@ -15,6 +15,13 @@
 
 .bolder{
     font-weight: 600;
+    
+}
+
+.dot{
+    font-weight: 800;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 #wider{
@@ -51,6 +58,7 @@
     font-weight: 300;
     cursor: default;
     font-size: 14px;
+    width: 400px;
 }
 
 .portal-subtitle{
@@ -61,11 +69,12 @@
 }
 
 .double-space{
-    margin-left: 65px;
+    margin-left: 50px;
+    width: max-content;
 }
 
 .tab-space{
-    margin-left: 130px;
+    margin-left: 100px;
 }
 
 .main-container{
@@ -77,30 +86,24 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 80px;
     width: 900px;
     margin: 6% auto;
 }
 
 
 .grid-container .grid-content{
-    width: 350px;
+    width: max-content;
     margin: auto 0;
     cursor: default;
 }
 
 .grid-container .grid-img{
-    width: 450px;
-    height: 400px;
-    
+    width: 450px; 
 }
 
 .grid-container .grid-img img{
-    width: 600px;
-    border-radius: 5px;
-    /* box-shadow:  -10px -10px 16px rgba(100, 100, 100, 0.1), 20px 20px 32px rgba(50, 50, 50, 0.5); */
-    /* box-shadow: -4px -4px 15px rgba(127, 127, 127, 0.1), 4px 4px 15px rgba(127, 127, 127, 0.1); */
-    margin: auto -80px;
+    width: 450px;
 }
 
 
