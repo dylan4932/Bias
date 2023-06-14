@@ -58,6 +58,9 @@
     font-weight: 300;
     cursor: default;
     font-size: 14px;
+}
+
+.portal-content{
     width: 400px;
 }
 
