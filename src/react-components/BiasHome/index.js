@@ -17,13 +17,7 @@ import BiasHomeContent from './BiasHomeContent';
 
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props)
-        getBiasItems(this)
-    }
-    state = {
-        biases: []
-    }
+    
     render(){
         const { app, usr } = this.props;
         return (
@@ -33,8 +27,7 @@ class Home extends React.Component {
                 </div>
                      
                 <div className='bias-home-content-container'> 
-                    {/* <Gallery />
-                    <Sidebar biases={this.state.biases}/> */}
+                    
                     <BiasIntro />
                     <BiasHomeContent/>
                 </div>   

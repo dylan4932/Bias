@@ -204,8 +204,9 @@ app.post('/api/users', mongoChecker, async (req, res) => {
 // a Get route to get homepage biases
 app.get('/api/bias', mongoChecker, async (req, res) => {
 
+    const projection = { _id: 1, name: 1, definition: 1 };
     try {
-        const items = await Bias.find()
+        const items = await Bias.find({}, projection)
         res.send({ items })
     } catch(error) {
         log(error)

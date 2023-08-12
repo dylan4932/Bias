@@ -5,3 +5,42 @@
     background-color: #F0F2FB;
     padding: 0;
 }
+.footer-other-content{
+    width: 80%;
+    height: 350px;
+    margin: 20px auto;
+    /* border-bottom: #596379 1px solid; */
+    border-bottom: 1px solid transparent; /* Set a transparent initial border */
+    border-image: linear-gradient(to right, white, rgb(73, 110, 223), white) 1;
+    border-image-slice: 1; /* Set to control how much of the border is filled with the gradient */
+    /* animation: gradientAnimation 4s linear infinite; */
+}
+.footer-info{
+    position: absolute;
+    cursor: default;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 20px;
+    color: #596379;
+    font-size: 13px;
+}
+.footer-info .footer-link{
+    text-decoration: none;
+    color: #596379;
+    padding-left: 4px;
+    border-left: #596379 1px solid;
+}
+.footer-info .footer-link:hover{
+    /* text-decoration: underline; */
+    color: rgb(73, 110, 223);
+}
+
+@keyframes gradientAnimation {
+    0%, 100% {
+        border-image-source: linear-gradient(to right, #ff9900, #0099cc, #ff9900);
+    }
+    50% {
+        border-image-source: linear-gradient(to right, #0099cc, #ff9900, #0099cc);
+    }
+}

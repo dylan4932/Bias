@@ -22,17 +22,6 @@ class Content extends React.Component {
                         
                         <div className='bias-item'>
                             <div className='bias-list-item'>
-                                {/* <ListItem disablePadding>
-                                <ListItemAvatar>
-                                    <ImageIcon />
-                                </ListItemAvatar>
-                                <ListItemText 
-                                    primaryTypographyProps={{fontSize: '14px'}} 
-                                    primary={item.name} 
-                                    secondaryTypographyProps={{fontSize: ' 12px'}}
-                                    secondary={item.definition} />
-                            
-                                </ListItem> */}
                                 <p className='bias-list-item-title'>{item.name}</p>
                                 <p className='bias-list-item-subtitle'>{item.definition}</p>
                             </div>
