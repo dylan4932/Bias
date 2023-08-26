@@ -170,10 +170,11 @@ ul#horizontal-list{
     margin-top: 75px;
     list-style: none;
 
-    }
-    ul#horizontal-list li{
-        display: inline;
-        margin-left: 20px;
+}
+ul#horizontal-list li{
+    display: inline;
+    margin-left: 20px;
+    position: relative;  /* Add this line */
 }
 
 ul#horizontal-list li a{
@@ -182,7 +183,93 @@ ul#horizontal-list li a{
     text-decoration: none;
     font-size: x-small;
 }
+ul#horizontal-list #planButton{
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 8px;
+}
 
 ul#horizontal-list li:hover a{
     text-decoration: underline;
+}
+
+ul#horizontal-list li:hover .dropdownOption a {
+    text-decoration: none;
+}
+
+ul#horizontal-list li .dropdownOption a:hover {
+    text-decoration: underline;
+}
+
+
+
+ul#horizontal-list #planButton:hover{
+    background-color: #f1f1f1;
+}
+
+ul#horizontal-list #planButton:hover a{
+    text-decoration: none;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.arrow-down {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent rgb(150, 150, 150) transparent;
+    transition: transform 1s ease;
+}
+
+.arrow-up {
+    border-width: 5px 5px 0 5px;
+    border-color: rgb(150, 150, 150) transparent transparent transparent;
+    transition: transform 1s ease;
+}
+
+.dropdown-div {
+    position: absolute;
+    top: 105%;
+    left: -95px; 
+    max-height: 0;
+    height: 90px;
+    overflow: hidden;
+    width: 230px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    box-shadow:  -5px 0 5px rgba(120, 120, 120, 0.1), 5px 3px 5px rgba(120, 120, 120, 0.1);
+    border-radius: 2px;
+    padding: 0 20px;
+    
+}
+
+.dropdown-div.open {
+  max-height: 120px; 
+  padding: 20px;
+}
+
+.dropdown-div .dropdownOption{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-align: center;
+}
+.dropdown-div .dropdownOption:hover{
+    background-color: #E6EBFD;
+}
+
+.dropdownOption a{
+    color: rgb(150, 150, 150);
+    font-family: Microsoft Yahei;
+    text-decoration: none;
+    font-size: x-small;
 }

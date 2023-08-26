@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 import {withRouter} from 'react-router' 
-import { getBiasItems } from '../../actions/bias';
+// import { getBiasItems } from '../../actions/bias';
 
 // import Navigator from '../Navigator';
 // import Gallery from './Gallery';

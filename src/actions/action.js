@@ -52,3 +52,18 @@ export const PlayPause3 = () => {
         playBtn.style.display = "block";
     } 
 } 
+
+export const toggleDropdown = () => {
+    const dropdownDiv = document.getElementById("dropdownDiv");
+    const arrowDiv = document.getElementById("arrowDiv");
+    if (dropdownDiv.classList.contains("open")) {
+        dropdownDiv.classList.remove("open");
+        arrowDiv.classList.remove("arrow-down");
+        arrowDiv.classList.add("arrow-up");
+    } else {
+        dropdownDiv.classList.add("open");
+        
+        arrowDiv.classList.remove("arrow-up");
+        arrowDiv.classList.add("arrow-down");
+    }
+}

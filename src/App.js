@@ -14,6 +14,7 @@ import Researcher from './react-components/Researcher_Page';
 import Communicate from './react-components/Communicate_Page';
 import Education from './react-components/Education_Page';
 import Demo from './react-components/Demo_Page';
+import CatalyPlan from './react-components/Cataly_Plan_Page';
 import Plan from './react-components/Plan_Page';
 import Story from './react-components/Story';
 import Error from './react-components/Error_Page';
@@ -59,6 +60,8 @@ class App extends React.Component {
                         (<Demo {...props} app={this}/>)}/>
                     <Route exact path='/Plan' render={props => 
                         (<Plan {...props} app={this}/>)}/>
+                    <Route exact path='/Cataly-Plan' render={props => 
+                        (<CatalyPlan {...props} app={this}/>)}/>
                     <Route exact path='/Data-Security' render={props => 
                         (<Story {...props} app={this}/>)}/>
                     <Route exact path='/Bias-home' render={props => 

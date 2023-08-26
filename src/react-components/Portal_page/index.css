@@ -80,6 +80,14 @@
     margin-left: 100px;
 }
 
+.double-tab-space{
+    margin-left: 200px;
+}
+
+.pink-text{
+    color: #DD3576;
+}
+
 .main-container{
     position: fixed;
     bottom: 0;
@@ -107,6 +115,15 @@
 
 .grid-container .grid-img img{
     width: 450px;
+}
+
+.grid-container .grid-wide-img{
+    width: 550px; 
+    margin-left: -50px;
+}
+
+.grid-container .grid-wide-img img{
+    width: 550px;
 }
 
 

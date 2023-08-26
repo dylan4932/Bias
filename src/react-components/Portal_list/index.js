@@ -3,12 +3,13 @@ import React from 'react';
 import './index.css';
 
 import { withRouter } from 'react-router' 
+import { toggleDropdown } from '../../actions/action';
 import onion_icon from '../../onion_icons/onion_lv2.png'
 
 class Portal_list extends React.Component {
    
     
-    render(){
+    render(){   
         return (
             <div className='portal-list'>
                 {/* <div className='banner'>
@@ -53,19 +54,33 @@ class Portal_list extends React.Component {
                             </a>
 
                         </li>
-                        <li>
-                            <a href='./../Plan'>
-                                <span className="bold-text">Onion </span><span>服务计划</span>
-                            </a>
-
-                        </li>
+                        
                         <li>
                             <a href='./../Data-Security'>
                                 <span className='bold-text p-en'>Successful story</span>
                             </a>
                         </li>
+
+                        <li id='planButton'>
+                            <a onClick={toggleDropdown}>
+                                <span>服务计划</span>
+                                <div id="arrowDiv" className="arrow arrow-up"></div>
+                            </a>
+                            <div id="dropdownDiv" className="dropdown-div">
+                                <div className='dropdownOption'>
+                                    <a href='./../Plan'>
+                                        <span className="bold-text">Onion </span><span>服务计划</span>
+                                    </a> 
+                                </div>
+                                <div className='dropdownOption'>
+                                    <a href='./../Cataly-Plan'>
+                                        <span className="bold-text">Cataly </span><span>服务计划</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-                   <div className='right-content'>
+                    <div className='right-content'>
 
                         
                         <div className='login-btn'>
