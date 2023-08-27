@@ -5,12 +5,12 @@ import './index.css';
 import { withRouter } from 'react-router' 
 import PortalList from '../Portal_list';
 import Footer from '../footer';
-import plan_img from '../../content-img/plan-img.png'
 import cataly_plan_img1 from '../../content-img/cataly-img1.png'
 import cataly_plan_img2 from '../../content-img/cataly-img2.png'
 import cataly_plan_img3 from '../../content-img/cataly-img3.png'
 import cataly_plan_img4 from '../../content-img/cataly-img4.png'
 import cataly_plan_table1 from '../../content-img/cataly-plan-table1.png'
+import cataly_onion_icon from '../../content-img/cataly-onion-icon.png'
 
 
 class Cataly_Plan_Page extends React.Component {
@@ -63,8 +63,8 @@ class Cataly_Plan_Page extends React.Component {
                     </div>
 
                 </div>
-                <div className='plan-block1'>
-                    <p className='plan-text'>Onion Cataly 专题研讨</p>
+                <div className='cataly-plan-block1'>
+                    <p className='plan-text'> <span className='p-en'>Onion Cataly</span> 专题研讨</p>
                 </div>
                 <div className='cataly-plan-container'>
                     <img src={cataly_plan_table1} alt='cataly_plan_table1'></img>
@@ -90,11 +90,117 @@ class Cataly_Plan_Page extends React.Component {
                 </div>
 
                 <div className='cataly-plan-schedule'>
-                    {/* <img src={cataly_plan_schedule} alt='cataly_plan_schdule'></img> */}
+                    <div className='cataly-plan-schedule-img-title'>
+                        <img src={cataly_onion_icon} alt='cataly_onion_icon'></img>
+                        <p className='portal-medium-text'> <span className='p-en bold-text'>Onion Cataly</span> 专题研讨” & “ <span className='p-en bold-text'>Onion Cataly</span> 研究体验” </p>
+                    </div>
+                    <div className='cataly-plan-schedule-table'>
+                        <div className='cataly-plan-schedule-col'>
+                            <div className='cataly-plan-schedule-col-title'>
+                                <p className='portal-medium-text'>会前准备</p>
+                            </div>
+                            <div className='cataly-plan-schedule-col-content'>
+                                <p className='portal-text purple-text bolder cataly-center-text'>共识</p>
+                                <ul>
+                                    <li>
+                                        <p className='portal-text'>共识研讨专题</p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'>对齐客户 <span className='p-en bold-text'>&</span> 公司的学术诉求</p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'>拟定 <span className='p-en bold-text'>Agenda &</span> 邀请参与的 <span className='p-en bold-text'>KOL</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='cataly-plan-schedule-col'>
+                            <div className='cataly-plan-schedule-col-title'>
+                                <p className='portal-medium-text'>会中 研讨 & 体验</p>
+                            </div>
+                            <div className='cataly-plan-schedule-col-content'>
+                                <div className='cataly-plan-schedule-col-content-left'>
+                                    <p className='portal-text green-text bolder cataly-center-text'> <span className='p-en bold-text'>Onion Cataly</span> 专题研讨</p>
+                                    <ul>
+                                        <li>
+                                            <p className='portal-text'>研究中“ <span className='p-en bold-text'>Key point</span>” 研讨， 医疗管理者在研究设计上获得收获。 </p>
+                                        </li>
+                                    </ul>
+                                    <br/>
+                                    <p className='portal-text green-text bolder cataly-center-text'> <span className='p-en bold-text'>Onion Cataly</span> 体验 —激发研究灵感</p>
+                                    <ul>
+                                        <li>
+                                            <p className='portal-text'> 医疗管理者将自己的研究 <span className='p-en bold-text'>Idea</span> 与 <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 信息交互；</p>
+                                        </li>
+                                        <li>
+                                            <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 引导可行的研究方向；</p>
+                                        </li>
+                                        <li>
+                                            <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 激发研究灵感</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='cataly-plan-schedule-col-content-right'>
+                                    <div>
+                                        <p className='portal-text green-text bolder cataly-center-text'>Onion Cataly 体验—明确研究情境</p>
+                                        <ul>
+                                            <li>
+                                                <p className='portal-text'> 医疗管理者将自己的研究 Idea 与 <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 进行信息交互；</p>
+                                            </li>
+                                            <li>
+                                                <p className='portal-text'> <span className='p-en bold-text'>KOL</span> & 员工共同探索 </p>
+                                            </li>
+                                            <li>
+                                                <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 进行研究情境分析。 </p>
+                                            </li>
+                                        </ul>
+                                        <br/>
+                                        <p className='portal-text green-text bolder cataly-center-text'>Onion Cataly 体验—明确研究情境</p>
+                                        <ul>
+                                            <li>
+                                                <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 的 <span className='p-en bold-text'>AI</span> 算法，提供关键问题的决策</p>
+                                            </li>
+                                            <li>
+                                                <p className='portal-text'> 一键式生成研究设计的“ <span className='p-en bold-text'>Framework</span> ”（关键框架） </p>
+                                            </li>
+                                            <li>
+                                                <p className='portal-text'>获得研究方案最核心内容！ </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='cataly-plan-schedule-col'>
+                            <div className='cataly-plan-schedule-col-title'>
+                                <p className='portal-medium-text'>会中 研讨 & 体验</p>
+                            </div>
+                            <div className='cataly-plan-schedule-col-content'>
+                                <p className='portal-text grey-text bolder cataly-center-text'>跟进</p>
+                                <ul>
+                                    <li>
+                                        <p className='portal-text'> 研究的设计、数据库服务、统计分析、</p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'> 跟进医疗管理者活动反馈 </p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'> 跟进公司学术形象 </p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'> 跟进产品“使用情境” </p>
+                                    </li>
+                                    <li>
+                                        <p className='portal-text'> 跟进后续活动 </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='cataly-plan-section-title'>
                     <div className='gradient-border'></div>
-                    <p className='cataly-plan-section-text bold-text'><span className='p-en'> Continue ...</span> </p>
+                    <p className='cataly-plan-section-text bold-text'><span className='p-en bold-text'> Continue ...</span> </p>
                 </div>
                 <div className='cataly-plan-grid'>
                     <div className='grid-container'>
@@ -102,7 +208,20 @@ class Cataly_Plan_Page extends React.Component {
                             <img src={cataly_plan_img4} alt='cataly_plan_img1'/>
                         </div>
                         <div className='portal-content'> 
-                            
+                            <p className='portal-large-text'> 我似乎能够感觉到行业营销模式的“创新火种”就在我身边，我想我可以找到它…… </p>
+                            <ul>
+                                <li>
+                                    <p className='portal-text'><span className='p-en bold-text'>Healthcare company</span> 与 医院管理者 新的学术互动形式、新的合作模式！</p>
+                                </li>
+                                <li>
+                                    <p className='portal-text'>使 <span className='p-en bold-text'>Healthcare company</span> 的人员成为医院管理者的咨询专家，成为学术合作伙伴！</p>
+                                </li>
+                                <li>
+                                    <p className='portal-text'>使 <span className='p-en bold-text'>Healthcare company</span> 的人员成为医院管理者的咨询专家，成为学术合作伙伴！</p>
+                                </li>
+                            </ul>
+                            <br/>
+                            <p className='portal-medium-text'> <span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> <span className='pink-text'>助力合作，深耕医疗管理循证领域！</span></p>
                         </div>
                     </div>
                 </div>

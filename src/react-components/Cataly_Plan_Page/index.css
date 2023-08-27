@@ -37,6 +37,7 @@
     padding-left: 100px;
     display: grid;
     grid-template-columns: 3% 97%;
+    cursor: default;
 }
 
 .gradient-border{
@@ -53,7 +54,7 @@
 }
 
 .cataly-plan-grid{
-    padding-top: 120px;
+    padding-bottom: 100px;
 }
 
 .cataly-plan-container{
@@ -65,6 +66,81 @@
 .cataly-plan-container img{
     width: 1000px;
     margin: 0 auto;
+}
+
+.cataly-plan-block1{
+    width: 1000px;
+    margin:  0 auto;
+    padding-bottom: 20px;
+}
+.cataly-plan-schedule-img-title{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cataly-plan-schedule-img-title img{
+    width: 120px;
+    margin-bottom: -20px;
+}
+
+.cataly-plan-schedule-table{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-gap: 60px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.cataly-plan-schedule-table .cataly-plan-schedule-col{
+    margin-left: -60px;
+    padding: 20px;
+}
+
+.cataly-plan-schedule-col-title{
+    text-align: center;
+    height: 30px;
+}
+
+.cataly-plan-schedule-table .cataly-plan-schedule-col:nth-child(1) .cataly-plan-schedule-col-title {
+    /* Your CSS rules here */
+    border-bottom: 5px solid #5C6DD2;
+}
+
+.cataly-plan-schedule-table .cataly-plan-schedule-col:nth-child(2) .cataly-plan-schedule-col-title {
+    /* Your CSS rules here */
+    border-bottom: 5px solid #71D6B7;
+}
+
+.cataly-plan-schedule-table .cataly-plan-schedule-col:nth-child(3) .cataly-plan-schedule-col-title {
+    /* Your CSS rules here */
+    border-bottom: 5px solid #9FA5BC;
+}
+
+.cataly-plan-schedule-table .cataly-plan-schedule-col:nth-child(2) .cataly-plan-schedule-col-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+    margin-left: -50px;
+}
+
+.cataly-plan-schedule-col-content-left ul li{
+    margin-left: -20px;
+    width: 250px;
+}
+
+.cataly-plan-schedule-col-content-right ul li{
+    margin-left: -20px;
+    width: 250px;
+    margin-top: -8px;
+}
+.cataly-plan-schedule-col-content-right{
+    margin-top: 30px;
+}
+
+.cataly-center-text{
+    text-align: center;
 }
 
 .main-cataly-plan-container{

@@ -60,6 +60,20 @@
     font-size: 14px;
 }
 
+.portal-large-text{
+    font-family: Microsoft YaHei;
+    font-weight: 500;
+    cursor: default;
+    font-size: 20px;
+}
+
+.portal-medium-text{
+    font-family: Microsoft YaHei;
+    font-weight: 500;
+    cursor: default;
+    font-size: 18px;
+}
+
 .portal-content{
     width: 400px;
 }
@@ -69,6 +83,10 @@
     font-size: 24px;
     font-family: Microsoft YaHei;
     cursor: default;
+}
+
+.back-space{
+    margin-left: -50px;
 }
 
 .double-space{
@@ -86,6 +104,14 @@
 
 .pink-text{
     color: #DD3576;
+}
+
+.purple-text{
+    color: #5C6DD2;
+}
+
+.grey-text{
+    color: #9FA5BC;
 }
 
 .main-container{
