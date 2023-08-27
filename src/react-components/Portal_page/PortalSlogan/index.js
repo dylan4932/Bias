@@ -16,7 +16,7 @@ class BiasSlogan extends React.Component {
                 <p><span className='bold-text p-en'>Onion</span>， 研究者的“<span className='bold-text p-en'>Guide</span>”（向导）、 “<span className='bold-text p-en'>Decision aid</span>”（决策辅助）</p>
                 <p><span className='bold-text p-en'>With Onion</span>，医学生的“<span className='bold-text p-en'>personal trainer</span>”（一对一<span className='bold-text p-en'> AI</span> 教练），提高医疗机构整体临床研究能力</p>
                 <div className='bias-data-btn'>
-                    <button className="bias-button" onclick="window.location.href='./Bias-home';">
+                    <button className="bias-button">
                         <a href='./Bias-home'>
                             <span>Log in Bias Dictionari+ <sup id='copy-right'>TM</sup></span>
                         </a>

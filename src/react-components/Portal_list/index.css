@@ -183,11 +183,19 @@ ul#horizontal-list li a{
     text-decoration: none;
     font-size: x-small;
 }
+
 ul#horizontal-list #planButton{
     padding: 7px 10px;
     cursor: pointer;
     border-radius: 3px;
     margin-left: 8px;
+}
+
+ul#horizontal-list #planButton .plan-btn-text{
+    color: rgb(150, 150, 150);
+    font-family: Microsoft Yahei;
+    text-decoration: none;
+    font-size: x-small;
 }
 
 ul#horizontal-list li:hover a{
@@ -263,13 +271,15 @@ ul#horizontal-list #planButton:hover a{
     border-radius: 2px;
     text-align: center;
 }
+
 .dropdown-div .dropdownOption:hover{
     background-color: #E6EBFD;
 }
 
-.dropdownOption a{
+.dropdownOption span{
     color: rgb(150, 150, 150);
     font-family: Microsoft Yahei;
     text-decoration: none;
     font-size: x-small;
+    width: 180px;
 }
