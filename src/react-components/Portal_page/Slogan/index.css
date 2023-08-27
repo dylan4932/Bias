@@ -24,29 +24,43 @@
 }
 
 .slogan .onion-btn{
-    width: 150px;
-    margin: 30px auto;
+    width: 200px;
+    margin: 60px auto;
     align-items: center;
     opacity: 90;
-    
 }
 
-.slogan .onion-btn a{
+.slogan .onion-btn .button{
     box-shadow: 0 0 3px rgb(13, 128, 101);
-    background-color: rgb(13, 128, 101);
-    height: 40px;
+    height: 20px;
     color: white;
     border: 0px;
     font-family: Optima, sans-serif;
     letter-spacing: -.5px;
-    padding: 5px 20px;
+    padding: 7px 10px;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     transition: all .5s ease;
+    background: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
+    background-size: 200% 100%;
+    animation: gradient-animation 5s infinite linear;
 }
 
 .slogan .onion-btn .button:hover{
     box-shadow: none;
     background-color: rgb(47, 105, 85);
 }
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
