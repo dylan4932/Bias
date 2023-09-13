@@ -17,9 +17,15 @@ class Slogan extends React.Component {
                 <p><span className='bold-text p-en'>With Onion</span>，研究者的研究灵感被激发</p>
                 <p><span className='bold-text p-en'>Onion</span>， 研究者的“<span className='bold-text p-en'>Guide</span>”（向导）、 “<span className='bold-text p-en'>Decision aid</span>”（决策辅助）</p>
                 <p><span className='bold-text p-en'>With Onion</span>，医学生的“<span className='bold-text p-en'>personal trainer</span>”（一对一<span className='bold-text p-en'> AI</span> 教练），提高医疗机构整体临床研究能力</p>
-                <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion/api/index/toLogin'}>
-                    <div className='button'>Log in Onion</div>
+                <div className='onion-slogan-btn-group'>
+                    <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion/api/index/toLogin'}>
+                        <div className='button'>Log in Onion</div>
+                    </div>
+                    <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion2/api//index/toLogin'}>
+                        <div className='reverse-button'>Log in Onion Cataly</div>
+                    </div>
                 </div>
+                
             </div>   
         )
     }

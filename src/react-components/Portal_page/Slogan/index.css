@@ -23,6 +23,13 @@
     cursor: default;
 }
 
+.onion-slogan-btn-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: 0 auto;
+}
+
 .slogan .onion-btn{
     width: 200px;
     margin: 60px auto;
@@ -43,14 +50,37 @@
     cursor: pointer;
     text-decoration: none;
     transition: all .5s ease;
-    background: linear-gradient(to right, rgb(73, 110, 223), rgb(24, 190, 159));
+    background: linear-gradient(to right, rgb(57, 86, 173), rgb(74, 247, 215));
     background-size: 200% 100%;
-    animation: gradient-animation 5s infinite linear;
+    animation: gradient-animation 6s infinite linear;
 }
 
 .slogan .onion-btn .button:hover{
     box-shadow: none;
     background-color: rgb(47, 105, 85);
+}
+
+.slogan .onion-btn .reverse-button{
+  box-shadow: 0 0 3px rgb(13, 128, 101);
+  height: 20px;
+  color: white;
+  border: 0px;
+  font-family: Optima, sans-serif;
+  letter-spacing: -.5px;
+  padding: 7px 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .5s ease;
+  background: linear-gradient(to right, rgb(74, 247, 215), rgb(57, 86, 173));
+  background-size: 200% 100%;
+  animation: gradient-animation 6s infinite linear;
+}
+
+.slogan .onion-btn .reverse-button:hover{
+  box-shadow: none;
+  background-color: rgb(47, 105, 85);
 }
 
 @keyframes gradient-animation {
