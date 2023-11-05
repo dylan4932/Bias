@@ -17,7 +17,7 @@
     "express-session": "^1.17.3",
     "forever": "^4.0.3",
     "fs": "^0.0.1-security",
-    "mongoose": "^6.4.4",
+    "mongoose": "^6.11.3",
     "mui": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
