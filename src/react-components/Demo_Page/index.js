@@ -10,9 +10,9 @@ import demo_img5 from '../../content-img/demo-img5.png'
 import demo_img6 from '../../content-img/demo-img6.png'
 import demo_img7 from '../../content-img/demo-img7.png'
 import demo_img9 from '../../content-img/demo-img9.png'
-import demo_video1 from '../../content-video/module1-phase1.mp4'
-import demo_video2 from '../../content-video/module2-interaction.mp4'
-import demo_video3 from '../../content-video/module3.mp4'
+// import demo_video1 from '../../content-video/module1-phase1.mp4'
+// import demo_video2 from '../../content-video/module2-interaction.mp4'
+// import demo_video3 from '../../content-video/module3.mp4'
 import {  PlayPause1, PlayPause2, PlayPause3 } from '../../actions/action';
 import { AiOutlinePlayCircle, AiOutlinePauseCircle } from "react-icons/ai";
 
@@ -27,7 +27,7 @@ class Demo_Page extends React.Component {
                 <div className='demo-container'>
                     <div className='grid-video'>
                         <video muted autoPlay loop
-                            src={demo_video1}
+                            src='https://onion-1256470382.cos.ap-shanghai.myqcloud.com/module1-phase1.mp4'
                             id='demo-video1'/>
                         <div className='video-control'>
                             <i className='demo-play' id='video1-con'> 
@@ -69,7 +69,7 @@ class Demo_Page extends React.Component {
                 <div className='demo-container'>
                     <div className='grid-video'>
                         <video muted autoPlay loop
-                            src={demo_video2}
+                            src='https://onion-1256470382.cos.ap-shanghai.myqcloud.com/module2-interaction.mp4'
                             id='demo-video2'/>
                         <i className='demo-play'>  
                             
@@ -134,7 +134,7 @@ class Demo_Page extends React.Component {
                     </div>
                     <div className='grid-video'>
                         <video muted autoPlay loop
-                            src={demo_video3}
+                            src='https://onion-1256470382.cos.ap-shanghai.myqcloud.com/module3.mp4'
                             id='demo-video3'/>
                         <i className='demo-play'>  
                             <AiOutlinePauseCircle display="block" onClick={PlayPause3} id='pauseCircle3' cursor="pointer"/>

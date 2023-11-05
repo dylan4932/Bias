@@ -1,0 +1,49 @@
+.intro-container{
+    margin-top: 120px;
+    width: 102%;
+    margin-left: -8px;
+    background-color: rgb(54, 89, 181);
+}
+
+.intro-content{
+    margin: 15% auto;
+    width: 1200px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    cursor: default;
+}
+
+.intro-content .intro-left{
+    width: 400px;
+    
+    margin: 0 100px;
+}
+
+.intro-content .intro-left p{
+    cursor: default; 
+    color: white;
+    font-family: Microsoft YaHei;
+    cursor: default;
+}
+
+
+.intro-content .intro-right{
+    margin: auto 0;
+    width: 60%;
+    cursor: default;
+}
+
+@media (max-width: 815px) {
+    .intro-content .intro-right {
+        display: none;
+    }
+
+}
+.intro-content .intro-right img{
+    
+    width: 500px;
+    margin: -40px auto;
+}
+

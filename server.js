@@ -32,6 +32,24 @@ function isMongoError(error) {
     return typeof error === 'object' && error !== null && error.name === "MongoNetworkError"
 }
 
+const rateLimit = require('express-rate-limit');
+
+// Define the API calls rate limit rule
+const apiLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+    standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+    legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+});
+
+// Define the file rate limit rule
+const fileLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 1000, // Limit each IP to 1000 requests per window (you might adjust this depending on your traffic needs)
+    standardHeaders: true, 
+    legacyHeaders: false,
+});
+
 const mongoChecker = (req, res, next) => {
     // check mongoose connection established.
     if (mongoose.connection.readyState != 1) {
@@ -201,6 +219,9 @@ app.post('/api/users', mongoChecker, async (req, res) => {
         }
     }
 })
+
+// Apply the rate limit to the API route
+app.use('/api/bias', apiLimiter);
 // a Get route to get homepage biases
 app.get('/api/bias', mongoChecker, async (req, res) => {
 
@@ -215,23 +236,27 @@ app.get('/api/bias', mongoChecker, async (req, res) => {
 
 })
 
-app.get("/bias/:id", mongoChecker, async (req, res) => {
-
-    const id = req.params.id
+app.get("/bias/:id", apiLimiter, mongoChecker, async (req, res) => {
+    const id = req.params.id;
     if (!ObjectID.isValid(id)) {
-		res.status(404).send('Invalid id')
-		return;
+        res.status(404).send('Invalid id');
+        return;
     }
     try {
-        const bias = await Bias.findById({_id: id})
-        res.send({ bias })
+        const bias = await Bias.findById({_id: id});
+        if (!bias) {
+            res.status(404).send('Bias not found');
+            return;
+        }
+        res.send({ bias });
     } catch(error) {
-        log(error)
-        res.status(500).send("Internal Server Error")
+        log(error);
+        res.status(500).send("Internal Server Error");
     }
+});
 
-})
-
+// Apply the rate limit to the API route
+app.use('/api/comments', apiLimiter);
 app.get('/api/comments', mongoChecker, async (req, res) => {
     
     try {
@@ -299,6 +324,8 @@ app.post('/api/contact', mongoChecker, async (req, res) => {
 // Serve the build
 app.use(express.static(path.join(__dirname, "/build")));
 
+// Apply the rate limit middleware to the wildcard route
+app.use("*", fileLimiter);
 // All routes other than above will go to index.html
 app.get("*", (req, res) => {
     // check for page routes that we expect in the frontend to provide correct status code.

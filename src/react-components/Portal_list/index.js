@@ -25,11 +25,11 @@ class Portal_list extends React.Component {
                         <li>
                             
                         </li>
-                        <li>
+                        {/* <li>
                         <a href='./../Onion-intro'>
                             <span className='bold-text'>Onion</span><span> 是谁?</span> 
                         </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a href='./../Researcher'>
                                 <span>我是研究者</span>
@@ -44,7 +44,7 @@ class Portal_list extends React.Component {
                         </li>
                         <li>
                             <a href='./../Education'>
-                                <span>医学生整体研究水平提升</span>
+                                <span>教育</span>
                             </a>
 
                         </li>
@@ -78,8 +78,8 @@ class Portal_list extends React.Component {
 
                         
                         <div className='login-btn'>
-                            <a href='./Bias-home' className='bias-link'>Log in Bias Dictionari+®</a>
-                            <a href='http://www.artdatabanks.com/v3/#/login' className='data-link'>Log in artdataing®</a>
+                            <a href='./Bias-home' className='bias-link'>Log in Bias Dictionari+<span id='copy-right'> ®</span></a>
+                            <a href='http://www.artdatabanks.com/v3/#/login' className='data-link'>Log in artdataing<span id='copy-right'> ®</span></a>
                         </div>
                         <a href='./../About_Page' className='contact-btn'>联系我们</a>
                    </div>
