@@ -13,6 +13,12 @@ import demo_img9 from '../../content-img/demo-img9.png'
 // import demo_video1 from '../../content-video/module1-phase1.mp4'
 // import demo_video2 from '../../content-video/module2-interaction.mp4'
 // import demo_video3 from '../../content-video/module3.mp4'
+import module1_phase2 from '../../content-img/module1-phase2.png'
+import module1_phase3 from '../../content-img/module1-phase3.png'
+import module2_phase1 from '../../content-img/module2-phase1.png'
+import module2_path from '../../content-img/module2-path.png'
+import module2_framework from '../../content-img/module2-framework.png'
+import module3_research from '../../content-img/module3-research.png'
 import {  PlayPause1, PlayPause2, PlayPause3 } from '../../actions/action';
 import { AiOutlinePlayCircle, AiOutlinePauseCircle } from "react-icons/ai";
 
@@ -46,26 +52,29 @@ class Demo_Page extends React.Component {
                     </div>
                     
                 </div>
-                <div className='vertical-container'>
+                <div className='grid-container'>
+                    <div className='grid-content'>
+                        <p className='portal-subtitle'><span className='p-en'>Onion</span> 导引文献积累，找到研究创新</p>
+                        <p className='portal-text portal-content'>如果文献检索不能进行有效的分析，则不能为研究提供帮助。文献积累应该怎样做？<span className='bold-text p-en' >Onion</span> 导引研究者积累文献，并作出分析图表</p>
+                        <p className='portal-text portal-content'>先验研究的重要信息呈现在“检索文献归纳”中。一目了然！</p>
+                        <p className='portal-text portal-content'><span className='bold-text p-en' >Onion</span> 从多个维度提出突破“先验研究”的建议，延展研究者的研究创想；使研究成为“迈出前沿的一小步、推进前沿的一大步”</p>
+                    </div>
                     <div className='grid-img'>
-                        <img src={demo_img2} alt='demo-img2'/>
-                    </div>
-                    <div className='demo-content'>
-                        <p className='demo-subtitle'>文献积累，<span className='p-en'>Onion</span> 辅助研究者</p>
-                        <p className='demo-text'>检索的文献如果不能进行有效的分析则很难为研究提供帮助。文献积累应该怎样做？<span className='bold-text p-en'>Onion</span> 向导研究者有导向性的积累文献，并作出分析图表；</p>
-                        <p className='demo-text'>先验研究的重要信息，一目了然！</p>
-                    </div>                   
-                </div>
-                <div className='demo-container'>
-                    <div className='demo-content'>
-                        <p className='demo-subtitle'>书写研究题目，<span className='p-en'>Onion</span> 向导</p>
-                        <p className='demo-text'>建立研究的“假说”，结构良好的假说是研究题目的基础，<span className='bold-text p-en'>Onion</span> 辅助研究者进行。</p>
-                        <p className='demo-text'>规范的研究题目应该符合“<span className='bold-text p-en'>PICOST</span>”，<span className='bold-text p-en'>Onion</span> 解释给研究者，向导研究者确定规范的“题目”。</p>
-                    </div>
-                    <div className='demo-img'>
-                        <img src={demo_img3} alt='demo-img3'/>
+                        <img src={module1_phase2} alt='module1_phase2'/>
                     </div>
                 </div>
+                <div className='grid-container'>    
+                    <div className='grid-content'>
+                        <p className='portal-subtitle'>书写研究题目，<span className='p-en'>Onion</span> 向导</p>
+                        <p className='portal-text portal-content'>建立研究的“假说”，结构良好的假说是研究题目的基础，<span className='bold-text p-en' >Onion</span> 辅助研究者进行。</p>
+                        <p className='portal-text portal-content'>规范的研究题目应该符合“<span className='bold-text p-en' >PICOST</span>”，<span className='bold-text p-en' >Onion</span> 解释给研究者，向导研究者确定规范的“题目”</p>
+                    </div>
+                    <div className='grid-img'>
+                        <img src={module1_phase3} alt='module1_phase3'/>
+                    </div>
+                </div>
+
+                {/* Module - 2 */}
                 <div className='demo-container'>
                     <div className='grid-video'>
                         <video muted autoPlay loop
@@ -84,82 +93,50 @@ class Demo_Page extends React.Component {
                         
                     </div>                   
                 </div>
-                <div className='demo-container'>
-                    <div className='demo-content'>
-                        <p className='demo-subtitle'>采用什么研究类型？<span className='p-en'>Onion</span> 辅助研究者轻松决策</p>
-                        <p className='demo-text'>界面交互，<span className='bold-text p-en'>Onion</span> 理解研究的具体情境，根据情况辅助决策适合的”研究类型“。</p>
-                        <p className='demo-text'><span className='bold-text p-en'>RCT</span>？<span className='bold-text p-en'>Cohort study</span>？还是 <span className='bold-text p-en'>Case-controled study</span>？……</p>
-                        <br/>
-                        <br/>
-                        <br/>
-                    </div> 
-                    <div className='demo-large-img'>
-                        <img src={demo_img5} alt='demo-img5'/>
+                <div className='grid-container'>
+                    <div className='demo-content' id='move-down'>
+                        <p className='portal-subtitle'>采用什么研究类型？<span className='p-en'>Onion</span> 辅助研究者轻松决策</p>
+                        <p className='portal-text portal-content'>界面交互，<span className='bold-text p-en' >Onion</span> 理解研究者的研究的具体情境，根据情况辅助决策研究适合的“研究类型”。</p>
+                        <p className='portal-text portal-content'><span className='bold-text p-en' >RCT？Cohort study？</span>还是 <span className='bold-text p-en'>Case-control study？</span>……</p>
                     </div>
-                                      
-                </div>
-                <div className='vertical-container'>
                     <div className='grid-img'>
-                        <img src={demo_img6} alt='demo-img5'/>
+                        <img src={module2_phase1} alt='module2_phase1'/>
                     </div>
-                    <div className='vertical-content'>
-                        <p className='demo-subtitle'>确定研究“技术路径”（<span className='p-en'>Path</span>）</p>
-
-
-                        <p className='demo-text'><span className='bold-text p-en'>Onion</span> 发出提示，让研究者自由选择研究技术路径（<span className='bold-text p-en'>path</span>）</p>
-                    </div>
-                        
                 </div>
-
-
-                <div className='demo-container'>
+                <div className='grid-container'>
                     <div className='grid-img'>
-                        <img src={demo_img7} alt='demo-img7'/>
+                        <img src={module2_path} alt='module2_path'/>
                     </div>
+                    <div className='demo-content' id='move-down'>
+                        <p className='portal-subtitle'>确定研究“技术路径”<span className='p-en'>(Path)</span></p>
+                        <p className='portal-text'> 研究者 根据自己的实际情境，信息交互 <span className='p-en'>Onion</span> 界面上的问题，<span className='p-en'>Onion</span> 推荐适合的研究类型共研究者参考。是 <span className='p-en'>RCT</span> 、队列、病例对照研究？巢氏？……</p>
+                        <p className='portal-text portal-content'> 研究者参考并自由选择研究技术路径（<span className='bolder'>研究目的 & 研究类型</span>）</p>
+                    </div>
+                </div>
+                <div className='demo-container'>
                     <div className='demo-content'>
                         <p className='demo-subtitle'><span className='p-en'>AI</span> 辅助，形成研究的关键框架（<span className='p-en'>Framework</span>）：</p>
-
-
                         <p className='demo-text'><span className='bold-text p-en'>Onion</span>的<span className='bold-text p-en'>AI</span>算法，根据用户交互的信息，一键式生成了研究“<span className='bold-text p-en'>Framework</span>”（关键框架），在“<span className='bold-text p-en'>Framework</span>”里，包括了解决方案，这个方案解决了研究中非常关键、也经常困扰临床研究者的问题，如：</p>
                         <p className='demo-text'>如何假设、研究设计、是否“巢氏”、“如何随机”、“样本量估计方法”、“统计学分析方法”、“变量处理”、“偏倚控制策略”、“敏感性分析”、“亚组分析”……</p>
                     </div>
-                    
-                </div>
-                <div className='demo-container'>
-                    <div className='demo-content'>
-                        <p className='demo-subtitle'>研究方案 & 报告，<span className='p-en'>Onion</span> 向导下轻松撰写</p>
-                        <p className='demo-text'>规范的研究方案“向导”，针对每个模块 <span className='bold-text p-en'>Onion</span> 都发出提示，研究者只需跟随 <span className='bold-text p-en'>Onion</span> 的向导即可高效的完成一份研究方案 & 报告；</p>
-                        <p className='demo-text'>质量有保证的方案、考虑全面的方案……</p>
-                        <p className='demo-text'>以研究方案规范形式呈现给研究者，事半功倍！</p>
+                    <div className='grid-img'>
+                        <img src={module2_framework} alt='module2_framework'/>
                     </div>
-                    <div className='grid-video'>
-                        <video muted autoPlay loop
-                            src='https://onion-1256470382.cos.ap-shanghai.myqcloud.com/module3.mp4'
-                            id='demo-video3'/>
-                        <i className='demo-play'>  
-                            <AiOutlinePauseCircle display="block" onClick={PlayPause3} id='pauseCircle3' cursor="pointer"/>
-                            <AiOutlinePlayCircle display="none" onClick={PlayPause3} id='playCircle3' cursor="pointer"/>
-                        </i>
-                        
+                </div>
+
+                <div className='grid-container'>
+                    <div className='grid-img'>
+                        <img src={module3_research} alt='module3_research'/>
+                    </div>
+                    <div className='demo-content' id='move-down'>
+                        <p className='portal-subtitle'>研究方案 & 报告，<span className='p-en'>Onion</span> 向导下轻松撰写</p>
+                        <p className='portal-text'> 规范的研究方案“导引”，针对每个撰写模块 <span className='bold-text p-en'>Onion</span> 都发出提示，研究者只需跟随 <span className='bold-text p-en'>Onion</span> 的向导即可高效的完成一份研究方案 & 报告；</p>
+                        <p className='portal-text'> 质量有保证的方案、考虑全面的方案……</p>
+                        <p className='portal-text'> 以研究方案规范形式呈现给研究者，事半功倍！</p>
                     </div>
                 </div>
                 
                 
-                <div className='demo-sticker-container'>
-                    <div className='demo-content'>
-                        <button className="data-button">
-                            <a href='http://www.artdatabanks.com/v3/#/login'>
-                                <span >Log in artdataing <sup id='copy-right'>TM</sup></span>
-                            </a>
-                        </button>
-                        <p className='demo-subtitle'>数据处理，预分析</p>
-                        <p className='demo-text'>研究者研究数据一键式输入，即可在 <span className='bold-text p-en'>artdataing ™ </span></p>
-                        <p className='demo-text'>（多功能的<span className='bold-text p-en'>EDC</span>）中进行研究的分组、生成派生指标、统计学预分析、偏倚控制……</p>
-                    </div>
-                    <div className='demo-sticker'>
-                        <img src={demo_img9} alt='demo-img9'/>
-                    </div>
-                </div>
                 <div className='demo-space'></div>
                 <Footer/>
             </div>    

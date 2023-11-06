@@ -25,7 +25,7 @@ class Communicate_Page extends React.Component {
                 <CommunicateIntro/>
                 <div className='communicate-subtitle'>
                     <div className='subtitle-col'>
-                        <img src={communicate_col1} alt='research-colomn-icon1'></img>
+                        <img id='check' src={communicate_col1} alt='research-colomn-icon1'></img>
                         <p className='portal-text'>如何找到对 <span className='bold-text p-en'>KOL</span>有价值的话题？如何获得与 <span className='bold-text p-en'>KOL</span> 沟通中的学术优势，并与KOL 进行同一高度的互动？</p>
                     </div>
                     <div className='subtitle-col'>
@@ -33,21 +33,21 @@ class Communicate_Page extends React.Component {
                         <p className='portal-text'>如何成为临床研究的咨询专家？如何建立<span className='bold-text p-en'>KOL</span>对您个人、品牌 & 组织的认可度？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={communicate_col3} alt='research-colomn-icon3'></img>
+                        <img id='check' src={communicate_col3} alt='research-colomn-icon3'></img>
                         <p className='portal-text'>怎样进行研究类的项目？如何提高 <span className='bold-text p-en'>KOL</span>的覆盖？如何优化 KOL的诊疗观念，使您的产品以正确的时机、正确的用法使用于正确的患者？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={communicate_col4} alt='research-colomn-icon4'></img>
+                        <img id='check' src={communicate_col4} alt='research-colomn-icon4'></img>
                         <p className='portal-text'>真实世界证据，有机会引导新产品快速准入，支撑未来政策谈判。如何获得真实世界证据？</p>
                     </div>
                 </div>
                 <div className='grid-container '>
                     <div className='grid-content'>
-                        <p className='communicate-text'><span className='p-en'>With Onion！Healthcare companies</span>可以成为 <span className='p-en'>KOL </span>的科研 “<span className='p-en'>Solution</span> 专家”，提高客户满意度</p>
+                        <p className='communicate-text'><span className='p-en'>With Onion，Healthcare company employee </span>可以成为 <span className='p-en'>KOL</span> 研究的“咨询顾问”</p>
                   
                         <ul className='communicate-list'>
                             <li>整理 <span className='bold-text p-en'>KOL</span> 的研究思路；</li>
-                            <li>激发 <span className='bold-text p-en'>KOL</span>研究的灵感、确定研究题目；</li>
+                            <li>激发 <span className='bold-text p-en'>KOL</span> 研究的灵感、确定研究题目；</li>
                             <li>确定研究技术路线（<span className='bold-text p-en'>Path</span>）、形成研究关键框架（<span className='bold-text p-en'>Framework</span>）；</li>
                             <li>数据服务、统计分析服务；</li>
                             <li>导引研究方案（<span className='bold-text p-en'>Protocol</span>）& 报告（<span className='bold-text p-en'>report</span>）的撰写</li>

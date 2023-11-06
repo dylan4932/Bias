@@ -23,11 +23,15 @@ class Story_Page extends React.Component {
                 <PortalList/>
                 <StoryIntro/>
                 <div className='success-story'>
-                    <p className='paper-text'>所有 <span className='bold-text p-en'>Healthcare companies</span> 都需要针对 <span className='bold-text p-en'>KOL</span> 进行系统的管理，与 <span className='bold-text p-en'>KOL</span>  建立战略性的合作。医疗领域近30年来的发展，伴随着跨国 <span className='bold-text p-en'>Healthcare companies</span> 在医疗领域的引领， <span className='bold-text p-en'>Healthcare companies</span> 与 <span className='bold-text p-en'>KOL</span>  的互动集中体现在为中国的 <span className='bold-text p-en'>KOL</span>  提供“前沿的信息，新的 药物& 器械引入、新的治疗方法、新的研究的传播，新的学术交流平台的建立”。在较早的历史中，<span className='bold-text p-en'>KOL</span> 获得信息、进行发展，与 <span className='bold-text p-en'>Healthcare companies</span> 结成了成功的合作模式。</p>
-                    <p className='paper-text'>随着信息全球化的发展，中国医疗 <span className='bold-text p-en'>KOL</span>  自身获取前沿信息的能力快速提高，已经不再需要 <span className='bold-text p-en'>Healthcare companies</span> 提供医疗信息，甚至 <span className='bold-text p-en'>KOL</span>  的专业信息已经远远领先于 <span className='bold-text p-en'>Healthcare companies</span> 人员的速度和深度。传统合作方式已经无法为 <span className='bold-text p-en'>KOL</span>  提供高附加值的价值， <span className='bold-text p-en'>Healthcare companies</span> 针对 <span className='bold-text p-en'>KOL</span>  的管理已陷入困局，只能停留在“投入资源”的层面，成为了“单纯的 <span className='bold-text p-en'>Payer</span> ”，也无法获得 <span className='bold-text p-en'>KOL</span> 的感佩，处于被动的地位。</p>
+                    <p className='paper-text'>所有 <span className='bold-text p-en'>Healthcare companies</span> 都需要针对 <span className='bold-text p-en'>KOL</span> 进行系统的管理，与 <span className='bold-text p-en'>KOL</span>  建立战略性的合作。</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    {/* <p className='paper-text'>随着信息全球化的发展，中国医疗 <span className='bold-text p-en'>KOL</span>  自身获取前沿信息的能力快速提高，已经不再需要 <span className='bold-text p-en'>Healthcare companies</span> 提供医疗信息，甚至 <span className='bold-text p-en'>KOL</span>  的专业信息已经远远领先于 <span className='bold-text p-en'>Healthcare companies</span> 人员的速度和深度。传统合作方式已经无法为 <span className='bold-text p-en'>KOL</span>  提供高附加值的价值， <span className='bold-text p-en'>Healthcare companies</span> 针对 <span className='bold-text p-en'>KOL</span>  的管理已陷入困局，只能停留在“投入资源”的层面，成为了“单纯的 <span className='bold-text p-en'>Payer</span> ”，也无法获得 <span className='bold-text p-en'>KOL</span> 的感佩，处于被动的地位。</p>
                     <p className='paper-text'>而另一方面， <span className='bold-text p-en'>Healthcare companies</span> 每年在组织大量的会议，投入巨大。但 <span className='bold-text p-en'>KOL</span>  甚至普通的医生对此些会议没有兴趣。</p>
                     <p className='paper-text'>一个小范围的调研：<span className='bold-text p-en'>Healthcare companies</span> 的学术会议到会率平均不足<span className='bolx-text p-en'>50%</span>，前往参会的医生与计划邀约的医生相去甚远，匹配率也不足<span className='bold-text p-en'>25%</span>；试想一下，全国总体来看，投入是巨大的，但这些活动的效率不高，加之人力的成本，消耗是惊人的。</p>
-                    <p className='paper-text'><span className='bold-text p-en'>Healthcare companies</span> 与 <span className='bold-text p-en'>KOL</span>  的互动陷入了困局……</p>
+                    <p className='paper-text'><span className='bold-text p-en'>Healthcare companies</span> 与 <span className='bold-text p-en'>KOL</span>  的互动陷入了困局……</p> */}
                 </div>
                 <StoryContent/>
                 <div className='success-story'>

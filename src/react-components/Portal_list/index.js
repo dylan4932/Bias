@@ -62,14 +62,14 @@ class Portal_list extends React.Component {
                         </li>
 
                         <li id='planButton' onClick={toggleDropdown}>
-                            <span className='plan-btn-text'>服务计划</span>
+                            <span className='plan-btn-text'>合作</span>
                             <div id="arrowDiv" className="arrow arrow-up"></div>
                             <div id="dropdownDiv" className="dropdown-div">
                                 <div className='dropdownOption' onClick={() => window.location.href='./../Plan'}>
-                                    <span className="bold-text">Onion </span><span>服务计划</span>
+                                    <span className="bold-text">Onion RsearchAI<span id='copy-right'> ®</span></span>
                                 </div>
                                 <div className='dropdownOption' onClick={() => window.location.href='./../Cataly-Plan'}>
-                                    <span className="bold-text">Cataly </span><span>服务计划</span>
+                                    <span className="bold-text">Onion | Cataly<span id='copy-right'> ®</span></span>
                                 </div>
                             </div>
                         </li>

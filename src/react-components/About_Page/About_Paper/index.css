@@ -1,6 +1,11 @@
 .about-paper{
+    height: 560px;
     padding: 10px 20px;
     border-radius: 15px;
     border: 1px solid #F2F2F2;
-    margin-bottom: 20px;
+    margin: 30px 20px;
+    background: #fff; /* White color for paper */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow to give a lifted paper effect */
+    padding: 20px;
+    border-radius: 8px;
 }

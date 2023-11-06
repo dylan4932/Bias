@@ -16,7 +16,7 @@ class Story_content extends React.Component {
                 <div className='story-intro-content'>
                     <div className='story-left'>
                         <img src={story_content} alt="story_content" ></img>
-                        <p className='img-intro'>Anagha: a Marketing Director</p>
+                        <p className='img-intro'>Marketing Director</p>
                     </div>
                     <div className='story-right'>
                         

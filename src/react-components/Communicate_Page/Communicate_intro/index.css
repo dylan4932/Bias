@@ -1,6 +1,6 @@
 .communicate-container{
     width: 100%;
-    background-color: rgb(10, 61, 77);
+    background-color: #2A5E4D;
 }
 
 .communicate-content{
@@ -37,16 +37,16 @@
     font-family: Microsoft YaHei;
     font-weight: 300;
     cursor: default;
-    background-color: rgb(10, 61, 77);
+    background-color: #2A5E4D;
     border: 1px solid white;
     color: white;
 }
 
 .communicate-content .communicate-right{
-    margin: -70px 70px;
+    margin: -50px 70px;
 }
 
 .communicate-content .communicate-right img{
-    width: 400px;
+    width: 420px;
 }
 

@@ -34,19 +34,19 @@ class Researcher_page extends React.Component {
                 <ResearchIntro/>
                 <div className='research-subtitle'>
                     <div className='subtitle-col'>
-                        <img src={research_col1} alt='research-colomn-icon1'></img>
+                        <img id='check-small' src={research_col1} alt='research-colomn-icon1'></img>
                         <p className='portal-text'>临床专家应该将研究主题聚焦于“临床实践”，怎样才能在临床实践中挖掘好的“研究方向”呢？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_col2} alt='research-colomn-icon2'></img>
+                        <img id='check-small' src={research_col2} alt='research-colomn-icon2'></img>
                         <p className='portal-text'>“文献检索、文献积累”对研究课题的确立大有脾益，但如何积累文献才能有助于研究课题的成立呢？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_col3} alt='research-colomn-icon3'></img>
+                        <img id='check-small' src={research_col3} alt='research-colomn-icon3'></img>
                         <p className='portal-text'>总听到其他专家用一组病例队列可以做多个研究，发表多篇文献，怎样才能具有这样的研究灵感呢？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_col4} alt='research-colomn-icon4'></img>
+                        <img id='check-small' src={research_col4} alt='research-colomn-icon4'></img>
                         <p className='portal-text'>如何表达有价值的、规范的研究题目，让研究的价值和本质一目了然呢？</p>
                     </div>
                 </div>
@@ -65,20 +65,20 @@ class Researcher_page extends React.Component {
                 <ResearchContent/>
                 <div className='research-subtitle'>
                     <div className='subtitle-col'>
-                        <img src={research_col1} alt='research-colomn-icon1'></img>
+                        <img id='check-small' src={research_col1} alt='research-colomn-icon1'></img>
                         <p className='portal-text'>何为研究目的？不同研究目的下的研究课题，应该采用什么研究类型？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_ctn_col2} alt='research-colomn-icon2'></img>
+                        <img id='check' src={research_ctn_col2} alt='research-colomn-icon2'></img>
                         <p className='portal-text'>研究类型、研究设计、是否“巢氏”、样本量估计方法、统计学分析方法……</p>
                         <p className='portal-text'>如何决策？</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_ctn_col3} alt='research-ctn-icon3'></img>
+                        <img id='check' src={research_ctn_col3} alt='research-ctn-icon3'></img>
                         <p className='portal-text'>如何建立一个好的“研究方案”？包括“研究方案” & “统计分析计划”</p>
                     </div>
                     <div className='subtitle-col'>
-                        <img src={research_ctn_col4} alt='research-ctn-icon4'></img>
+                        <img id='check' src={research_ctn_col4} alt='research-ctn-icon4'></img>
                         <p className='portal-text'>撰写一份高质量的研究方案 或 报告，应该符合哪些规范、写到什么程度？</p>
                     </div>
                 </div>

@@ -13,13 +13,13 @@ import BiasList from '../BiasList';
 import Footer from '../footer';
 
 class About extends React.Component {
-    constructor(props) {
-        super(props) 
-        getBiasItems(this)
-    }
-    state={
-        biases: []
-    }
+    // constructor(props) {
+    //     super(props) 
+    //     getBiasItems(this)
+    // }
+    // state={
+    //     biases: []
+    // }
     
     render(){
         const { app, usr } = this.props;
@@ -30,7 +30,7 @@ class About extends React.Component {
                 </div>
                 <div class='bias-main-content-container'> 
                     <AboutPaper />
-                    <Sidebar biases={this.state.biases}/>
+                    {/* <Sidebar biases={this.state.biases}/> */}
                 </div> 
                 {/* <Pagination></Pagination> */}
                 <Footer/>

@@ -48,8 +48,8 @@ class App extends React.Component {
 
                     <Route exact path={'/'} render={props => 
                         (<Portal {...props} app={this}/>)}/>
-                    <Route exact path='/Onion-intro' render={props => 
-                        (<Onion {...props} app={this}/>)}/>
+                    {/* <Route exact path='/Onion-intro' render={props => 
+                        (<Onion {...props} app={this}/>)}/> */}
                     <Route exact path='/Researcher' render={props => 
                         (<Researcher {...props} app={this}/>)}/>
                     <Route exact path='/Communicate' render={props => 

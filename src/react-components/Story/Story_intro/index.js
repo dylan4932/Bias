@@ -15,7 +15,7 @@ class Story_intro extends React.Component {
             <div className='security-intro-container'>
                 <div className='security-intro-content'>
                     <div className='security-left'>
-                        <p className='intro-title'><spna className='p-en'>Onion </spna><span id='copy-right'>TM</span>，核心是为医生研究者 & healthcare companies 在研究领域提供核心价值</p>
+                        <p className='intro-title'><span className='p-en'>Onion </span>，核心是为医生研究者 & <span className='p-en'>healthcare companies</span> 在研究领域提供核心价值</p>
                         <p className='portal-text'><span className='bold-text p-en'>With Onion</span> 使医生研究者更轻松、更高质量的完成研究过程，取得循证证据；</p>
                         <p className='portal-text'><span className='bold-text p-en'>With Onion</span> 使 <span className='bold-text p-en'>healthcare companies</span> 与 <span className='bold-text p-en'>KOL</span> （研究者）的互动更具学术价值，助力新的战略合作 </p>
                         <div className='button-set'>
