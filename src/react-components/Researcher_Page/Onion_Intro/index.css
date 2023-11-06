@@ -1,0 +1,30 @@
+.onion-intro-container{
+    width: 100%;
+    background-color: #807DD8;
+}
+
+
+.onion-intro-content{
+    margin: 260px auto;
+    width: 1200px;
+    margin-bottom: 0;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.onion-intro-content .onion-intro-left{
+    margin: auto;
+}
+
+.onion-intro-content .onion-intro-left img{
+    width: 450px;
+}
+
+.onion-intro-content .onion-intro-right{
+    width: 420px;
+    height: 250px;
+    color: white;
+}
+

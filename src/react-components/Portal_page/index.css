@@ -32,12 +32,20 @@
     margin-top: -80px;
 }
 
+#move-down {
+    margin-top: 120px;
+}
+
 .big-pic{
     width: 600px;
 }
 
 .green-text{
     color: rgb(65, 217, 181);
+}
+
+.white-text{
+    color: white;
 }
 
 .p-en{
@@ -86,7 +94,7 @@
 }
 
 .back-space{
-    margin-left: -50px;
+    margin-left: -20px;
 }
 
 .double-space{

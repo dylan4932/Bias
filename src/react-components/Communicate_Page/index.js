@@ -75,7 +75,7 @@ class Communicate_Page extends React.Component {
                     <div className='communicate-img'>
                         <p className='communicate-text'><span className='p-en'>With Onion</span>！使<span className='p-en'>Healthcare companies & </span> 部门 成为业界的创新引领者</p>
                   
-                        <ul className='back-space'>
+                        <ul>
                             <li>您的团队将拥有一致的咨询水准，在与 <span className='bold-text p-en'>KOL</span> 讨论应用方案时实现科研级的引导；</li>
                             <li>您的团队可以“重塑”与 <span className='bold-text p-en'>KOL</span>  的互动模式，将会赢得 <span className='bold-text p-en'>KOL</span>  更多的尊重与钦佩；</li>
                             <li>您的团队将成为 <span className='bold-text p-en'>KOL</span> 管理的品牌团队、创新团队，受业界景仰；</li>
