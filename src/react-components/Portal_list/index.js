@@ -65,6 +65,9 @@ class Portal_list extends React.Component {
                             <span className='plan-btn-text'>合作</span>
                             <div id="arrowDiv" className="arrow arrow-up"></div>
                             <div id="dropdownDiv" className="dropdown-div">
+                            <div className='dropdownOption' onClick={() => window.location.href='./../Experience-Plan'}>
+                                    <span className="bold-text">Onion Experience Meeting</span>
+                                </div>
                                 <div className='dropdownOption' onClick={() => window.location.href='./../Plan'}>
                                     <span className="bold-text">Onion RsearchAI<span id='copy-right'> ®</span></span>
                                 </div>

@@ -5,6 +5,39 @@
     margin: 12% auto;
 }
 
+.cataly-plan-intro{
+    width: 100%;
+    min-width: 810px;
+    height: 10%;
+    margin: 25% auto;
+    padding-bottom: 100px;
+}
+
+.cataly-plan-intro  p{
+    text-align: center;
+    font-family: Microsoft YaHei;
+    line-height: 0.8rem;
+    cursor: default;
+}
+
+.cataly-plan-intro-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Microsoft YaHei;
+    letter-spacing: -.5px;
+    cursor: default;
+}
+
+.cataly-plan-intro-subtitle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Optima, sans-serif;
+    letter-spacing: -.5px;
+    cursor: default;
+}
+
 .cataly-plan-section-title{
     width: 1000px;
     margin: 0 auto;
@@ -128,8 +161,7 @@
     margin: 0 auto;
 }
 
-
-.cataly-plan-intro{
+.cataly-plan-end{
     width: 100%;
     min-width: 810px;
     height: 10%;
@@ -137,28 +169,9 @@
     padding-bottom: 100px;
 }
 
-.cataly-plan-intro .cataly-plan-intro-title{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: Microsoft YaHei;
-    letter-spacing: -.5px;
-    cursor: default;
-}
-
-.cataly-plan-intro .cataly-plan-intro-subtitle{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: Optima, sans-serif;
-    letter-spacing: -.5px;
-    cursor: default;
-}
-
-.cataly-plan-intro  p{
+.cataly-plan-end  p{
     text-align: center;
     font-family: Microsoft YaHei;
-    font-weight: 300;
     line-height: 0.8rem;
     cursor: default;
 }

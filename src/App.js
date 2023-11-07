@@ -9,13 +9,14 @@ import Discussion from './react-components/Discussion_Page';
 import Contact from './react-components/Contact_Page';
 import About from './react-components/About_Page';
 
-import Onion from './react-components/Onion_Page';
+// import Onion from './react-components/Onion_Page';
 import Researcher from './react-components/Researcher_Page';
 import Communicate from './react-components/Communicate_Page';
 import Education from './react-components/Education_Page';
 import Demo from './react-components/Demo_Page';
 import CatalyPlan from './react-components/Cataly_Plan_Page';
 import Plan from './react-components/Plan_Page';
+import ExperiencePlan from './react-components/Experience_Page';
 import Story from './react-components/Story';
 import Error from './react-components/Error_Page';
 import Portal from './react-components/Portal_page';
@@ -62,6 +63,8 @@ class App extends React.Component {
                         (<Plan {...props} app={this}/>)}/>
                     <Route exact path='/Cataly-Plan' render={props => 
                         (<CatalyPlan {...props} app={this}/>)}/>
+                    <Route exact path='/Experience-Plan' render={props => 
+                        (<ExperiencePlan {...props} app={this}/>)}/>
                     <Route exact path='/Data-Security' render={props => 
                         (<Story {...props} app={this}/>)}/>
                     <Route exact path='/Bias-home' render={props => 

@@ -246,7 +246,7 @@ ul#horizontal-list #planButton:hover a{
     top: 105%;
     left: -95px; 
     max-height: 0;
-    height: 90px;
+    height: 150px;
     overflow: hidden;
     width: 230px;
     transition: all 0.3s ease-in-out;
@@ -254,11 +254,10 @@ ul#horizontal-list #planButton:hover a{
     box-shadow:  -5px 0 5px rgba(120, 120, 120, 0.1), 5px 3px 5px rgba(120, 120, 120, 0.1);
     border-radius: 2px;
     padding: 0 20px;
-    
 }
 
 .dropdown-div.open {
-  max-height: 120px; 
+  max-height: 150px; 
   padding: 20px;
 }
 
