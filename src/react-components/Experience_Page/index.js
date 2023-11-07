@@ -14,12 +14,12 @@ class ExperiencePlan extends React.Component {
                 <PortalList/>
                 <div className='experience-plan-intro'>
                     <p className='experience-plan-intro-title'><span className='p-en bold-text'>Onion Experience Meeting — </span>临床研究浸入式体验</p>
-                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Onion Experience Meeting = Clinician‘s idea + Onion ResearchAI</span><sup className='copy-right'> ®</sup></p>
+                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Onion Experience Meeting = Clinician‘s idea + Onion RsearchAI</span><sup className='copy-right'> ®</sup></p>
                 </div>
                 <ExperienceContent />
                 <div className='experience-plan-end'>
                     <p className='experience-plan-intro-title'><span className='p-en bold-text'>Onion Experience Meeting — </span>临床研究浸入式体验</p>
-                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Onion Experience Meeting = Clinician‘s idea + Onion ResearchAI</span><sup className='copy-right'> ®</sup></p>
+                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Onion Experience Meeting = Clinician‘s idea + Onion RsearchAI</span><sup className='copy-right'> ®</sup></p>
                 </div>
                 <Footer/>
             </div>    

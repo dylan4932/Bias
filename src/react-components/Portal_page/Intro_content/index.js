@@ -22,8 +22,8 @@ class IntroContent extends React.Component {
                 <div className='paper-container'>
                     <div className='paper-content'>
                         <div className='paper-left'>
-                            <p className='paper-text'><span className='bold-text p-en'>Onion ResearchAI<span id='copy-right'> ®</span></span> 的 <span className='bold-text p-en'>AI</span> 技术将”临床研究”视为一系列“决策”过程。<span className='bold-text p-en'>Onion</span> 通过界面上的问答 与用户交互，从而理解研究的具体情境；再运用巨大的知识图谱 & 多重的 <span className='bold-text p-en'>AI</span> 决策算法，为用户提供高质量的研究方案。</p>
-                            <p className='paper-text'><span className='bold-text p-en'>Onion ResearchAI<span id='copy-right'> ®</span></span> 将巨大的研究指南、优秀文献、知识图谱……加载到系统中，用以训练复杂的神经网络决策算法(一些复杂的人工智能技术)和以逻辑规则为基础的决策程序。令人鼓舞的是，在国内外多位流行病学、临床统计学、研究设计专家、<span className='bold-text p-en'>IT</span> 专家的帮助下实现了这一点。</p>
+                            <p className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 的 <span className='bold-text p-en'>AI</span> 技术将”临床研究”视为一系列“决策”过程。<span className='bold-text p-en'>Onion</span> 通过界面上的问答 与用户交互，从而理解研究的具体情境；再运用巨大的知识图谱 & 多重的 <span className='bold-text p-en'>AI</span> 决策算法，为用户提供高质量的研究方案。</p>
+                            <p className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 将巨大的研究指南、优秀文献、知识图谱……加载到系统中，用以训练复杂的神经网络决策算法(一些复杂的人工智能技术)和以逻辑规则为基础的决策程序。令人鼓舞的是，在国内外多位流行病学、临床统计学、研究设计专家、<span className='bold-text p-en'>IT</span> 专家的帮助下实现了这一点。</p>
                         </div>
                         <div className='paper-right'>
                             <img src={founder_avator} alt='founder_avator' className='founder_avator'></img>
@@ -36,8 +36,8 @@ class IntroContent extends React.Component {
                         </div>
                         <div className='right-content'>
                             <p className='portal-subtitle'>从先验知识中学习研究设计</p>
-                            <p className='paper-text'><span className='bold-text p-en'>Onion ResearchAI<span id='copy-right'> ®</span></span> 的 <span className='bold-text p-en'>IT</span> 工程师们从大量的相关知识中建立了巨大的“知识图谱”，通过大量的文献进行有监督学习，并不断验证，学习优秀研究的显性规则 & 潜在模式，形成了临床研究的预测算法。</p>
-                            <p className='paper-text'> 这些深度学习使 <span className='bold-text p-en'>Onion ResearchAI<span id='copy-right'> ®</span></span> 成为了临床研究的 <span className='bold-text p-en'>AI</span> 专家。</p>
+                            <p className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 的 <span className='bold-text p-en'>IT</span> 工程师们从大量的相关知识中建立了巨大的“知识图谱”，通过大量的文献进行有监督学习，并不断验证，学习优秀研究的显性规则 & 潜在模式，形成了临床研究的预测算法。</p>
+                            <p className='paper-text'> 这些深度学习使 <span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 成为了临床研究的 <span className='bold-text p-en'>AI</span> 专家。</p>
                         </div>
                     </div>
                     <div className='paper-content'>
@@ -46,7 +46,7 @@ class IntroContent extends React.Component {
                         </div>
                         <div className='right-content'>
                             <p className='portal-subtitle'><span className='p-en'>AI</span> 决策，提供研究方案 & 报告</p>
-                            <p className='paper-text'><span className='bold-text p-en'>Onion ResearchAI<span id='copy-right'> ®</span></span>  根据交互的信息了解研究者的“研究情境”，<span className='p-en'>AI</span> 算法提供研究关键问题的决策，形成高质量的研究方案。</p>
+                            <p className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span>  根据交互的信息了解研究者的“研究情境”，<span className='p-en'>AI</span> 算法提供研究关键问题的决策，形成高质量的研究方案。</p>
                             
                         </div>
                     </div>

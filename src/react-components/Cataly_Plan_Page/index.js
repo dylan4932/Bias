@@ -17,13 +17,13 @@ class Cataly_Plan_Page extends React.Component {
                 <PortalList/>
                 {/* <div className='plan-header-space'></div> */}
                 <div className='cataly-plan-intro'>
-                    <p className='cataly-plan-intro-title'><span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly — </span>医院管理循证研究浸入式体验</p>
-                    <p className='cataly-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly = a research protocol</span></p>
+                    <p className='cataly-plan-intro-title'><span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly — </span>医院管理循证研究浸入式体验</p>
+                    <p className='cataly-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly = a research protocol</span></p>
                 </div>
                 <CatalyContent />
                 <div className='cataly-plan-end'>
-                    <p className='cataly-plan-intro-title'><span className='p-en bold-text'>Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly — </span>医院管理循证研究浸入式体验</p>
-                    <p className='cataly-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion ResearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly = a research protocol</span></p>
+                    <p className='cataly-plan-intro-title'><span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly — </span>医院管理循证研究浸入式体验</p>
+                    <p className='cataly-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly = a research protocol</span></p>
                 </div>
                 <br/>
                 <br/>

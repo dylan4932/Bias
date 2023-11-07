@@ -188,13 +188,13 @@ class ExperienceContent extends React.Component {
                                     <p className='portal-text green-text bolder cataly-center-text'> <span className='p-en bold-text'>Onion </span> 研究体验 —激发研究灵感</p>
                                     <ul>
                                         <li>
-                                            <p className='portal-text'> <span className='p-en bold-text'>KOL</span> 将自己的研究 <span className='p-en bold-text'>Idea</span> 与 <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 信息交互；</p>
+                                            <p className='portal-text'> <span className='p-en bold-text'>KOL</span> 将自己的研究 <span className='p-en bold-text'>Idea</span> 与 <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 信息交互；</p>
                                         </li>
                                         <li>
-                                            <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 引导可行的研究方向；</p>
+                                            <p className='portal-text'> <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 引导可行的研究方向；</p>
                                         </li>
                                         <li>
-                                            <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 激发研究灵感</p>
+                                            <p className='portal-text'> <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 激发研究灵感</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -203,20 +203,20 @@ class ExperienceContent extends React.Component {
                                         <p className='portal-text green-text bolder cataly-center-text'>Onion Cataly 体验—明确研究情境</p>
                                         <ul>
                                             <li>
-                                                <p className='portal-text'> <span className='p-en bold-text'>KOL</span> 将自己的研究 Idea 与 <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 进行信息交互；</p>
+                                                <p className='portal-text'> <span className='p-en bold-text'>KOL</span> 将自己的研究 Idea 与 <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 进行信息交互；</p>
                                             </li>
                                             <li>
                                                 <p className='portal-text'> <span className='p-en bold-text'>KOL</span> & 员工共同探索 </p>
                                             </li>
                                             <li>
-                                                <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 进行研究情境分析。 </p>
+                                                <p className='portal-text'> <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 进行研究情境分析。 </p>
                                             </li>
                                         </ul>
                                         <br/>
                                         <p className='portal-text green-text bolder cataly-center-text'>Onion Cataly 体验—明确研究情境</p>
                                         <ul>
                                             <li>
-                                                <p className='portal-text'> <span className='p-en bold-text'>Onion ResearchAI<sup className='copy-right'> ®</sup></span> 的 <span className='p-en bold-text'>AI</span> 算法，提供关键问题的决策</p>
+                                                <p className='portal-text'> <span className='p-en bold-text'>Onion RsearchAI<sup className='copy-right'> ®</sup></span> 的 <span className='p-en bold-text'>AI</span> 算法，提供关键问题的决策</p>
                                             </li>
                                             <li>
                                                 <p className='portal-text'> 一键式生成研究设计的“ <span className='p-en bold-text'>Framework</span> ”（关键框架） </p>
