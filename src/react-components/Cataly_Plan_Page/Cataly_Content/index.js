@@ -210,7 +210,7 @@ class CatalyContent extends React.Component {
                                 </li>
                             </ul>
                             <br/>
-                            <p className='portal-medium-text'> <span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> <span className='pink-text'>助力合作，深耕医疗管理循证领域！</span></p>
+                            <p className='portal-medium-text'> <span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly</span> 助力合作，深耕医疗管理循证领域！</p>
                         </div>
                     </div>
                 </div>

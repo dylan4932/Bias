@@ -4,12 +4,12 @@ import './index.css';
 import { withRouter } from 'react-router' 
 import PortalList from '../Portal_list';
 import Footer from '../footer';
-import demo_img2 from '../../content-img/demo-img2.png'
-import demo_img3 from '../../content-img/demo-img3.png'
-import demo_img5 from '../../content-img/demo-img5.png'
-import demo_img6 from '../../content-img/demo-img6.png'
-import demo_img7 from '../../content-img/demo-img7.png'
-import demo_img9 from '../../content-img/demo-img9.png'
+// import demo_img2 from '../../content-img/demo-img2.png'
+// import demo_img3 from '../../content-img/demo-img3.png'
+// import demo_img5 from '../../content-img/demo-img5.png'
+// import demo_img6 from '../../content-img/demo-img6.png'
+// import demo_img7 from '../../content-img/demo-img7.png'
+// import demo_img9 from '../../content-img/demo-img9.png'
 // import demo_video1 from '../../content-video/module1-phase1.mp4'
 // import demo_video2 from '../../content-video/module2-interaction.mp4'
 // import demo_video3 from '../../content-video/module3.mp4'
@@ -123,7 +123,7 @@ class Demo_Page extends React.Component {
                         <img src={module2_framework} alt='module2_framework'/>
                     </div>
                 </div>
-
+                
                 <div className='grid-container'>
                     <div className='grid-img'>
                         <img src={module3_research} alt='module3_research'/>
@@ -135,7 +135,24 @@ class Demo_Page extends React.Component {
                         <p className='portal-text'> 以研究方案规范形式呈现给研究者，事半功倍！</p>
                     </div>
                 </div>
-                
+                <div className='demo-container'>
+                    <div className='demo-content'>
+                        <p className='demo-subtitle'>研究方案 & 报告，<span className='p-en'>Onion</span> 向导下轻松撰写</p>
+                        <p className='demo-text'>规范的研究方案“向导”，针对每个模块 <span className='bold-text p-en'>Onion</span> 都发出提示，研究者只需跟随 <span className='bold-text p-en'>Onion</span> 的向导即可高效的完成一份研究方案 & 报告；</p>
+                        <p className='demo-text'>质量有保证的方案、考虑全面的方案……</p>
+                        <p className='demo-text'>以研究方案规范形式呈现给研究者，事半功倍！</p>
+                    </div>
+                    <div className='grid-video'>
+                        <video muted autoPlay loop
+                            src='https://onion-1256470382.cos.ap-shanghai.myqcloud.com/module3.mp4'
+                            id='demo-video3'/>
+                        <i className='demo-play'>  
+                            <AiOutlinePauseCircle display="block" onClick={PlayPause3} id='pauseCircle3' cursor="pointer"/>
+                            <AiOutlinePlayCircle display="none" onClick={PlayPause3} id='playCircle3' cursor="pointer"/>
+                        </i>
+                        
+                    </div>
+                </div>
                 
                 <div className='demo-space'></div>
                 <Footer/>
