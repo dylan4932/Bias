@@ -53,7 +53,7 @@ class Communicate_Page extends React.Component {
                             <li>导引研究方案（<span className='bold-text p-en'>Protocol</span>）& 报告（<span className='bold-text p-en'>report</span>）的撰写</li>
                         </ul>
                     </div>
-                    <div id='communicate-img1' className='communicate-img'>
+                    <div className='communicate-img'>
                         <img src={communicate_img1} alt='communciate_img1'/>
                     </div>
                 </div>
