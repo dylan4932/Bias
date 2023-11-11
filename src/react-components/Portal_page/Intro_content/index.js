@@ -26,8 +26,10 @@ class IntroContent extends React.Component {
                             <p className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 将巨大的研究指南、优秀文献、知识图谱……加载到系统中，用以训练复杂的神经网络决策算法(一些复杂的人工智能技术)和以逻辑规则为基础的决策程序。令人鼓舞的是，在国内外多位流行病学、临床统计学、研究设计专家、<span className='bold-text p-en'>IT</span> 专家的帮助下实现了这一点。</p>
                         </div>
                         <div className='paper-right'>
+                            
+                            <span className='p-en bold-text'>Dr. Li Dan</span>
                             <img src={founder_avator} alt='founder_avator' className='founder_avator'></img>
-                            <p id='author-text' className='paper-text'><span className='p-en'>Dr. Li Dan，Onion</span> 联合创立人</p>
+                            <p id='author-text' className='paper-text'><span className='bold-text p-en'>Onion RsearchAI<span id='copy-right'> ®</span></span> 联合创立人</p>
                         </div>
                     </div>
                     <div className='paper-content' id="first-line">

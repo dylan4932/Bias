@@ -131,14 +131,11 @@ class Demo_Page extends React.Component {
                     <div className='demo-content' id='move-down'>
                         <p className='portal-subtitle'>研究方案 & 报告，<span className='p-en'>Onion</span> 向导下轻松撰写</p>
                         <p className='portal-text'> 规范的研究方案“导引”，针对每个撰写模块 <span className='bold-text p-en'>Onion</span> 都发出提示，研究者只需跟随 <span className='bold-text p-en'>Onion</span> 的向导即可高效的完成一份研究方案 & 报告；</p>
-                        <p className='portal-text'> 质量有保证的方案、考虑全面的方案……</p>
-                        <p className='portal-text'> 以研究方案规范形式呈现给研究者，事半功倍！</p>
                     </div>
                 </div>
                 <div className='demo-container'>
                     <div className='demo-content'>
                         <p className='demo-subtitle'>研究方案 & 报告，<span className='p-en'>Onion</span> 向导下轻松撰写</p>
-                        <p className='demo-text'>规范的研究方案“向导”，针对每个模块 <span className='bold-text p-en'>Onion</span> 都发出提示，研究者只需跟随 <span className='bold-text p-en'>Onion</span> 的向导即可高效的完成一份研究方案 & 报告；</p>
                         <p className='demo-text'>质量有保证的方案、考虑全面的方案……</p>
                         <p className='demo-text'>以研究方案规范形式呈现给研究者，事半功倍！</p>
                     </div>

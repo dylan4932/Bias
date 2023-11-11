@@ -15,7 +15,7 @@ class Slogan extends React.Component {
                 
                 <p><span className='bold-text p-en'>Onion，</span> 临床研究者的 <span className='bold-text p-en'>AI</span> 助手，轻轻松松做研究</p>
                 <br/>
-                <p><span className='bold-text p-en'>With Onion</span>，研究者的研究灵感被激发</p>
+                <p><span className='bold-text p-en'>With Onion</span>，研究者灵感被激发、创新被延展</p>
                 <p><span className='bold-text p-en'>With Onion</span>，研究变得轻松，不再如以往耗时费力</p>
                 <p><span className='bold-text p-en'>With Onion，Healthcare company employee </span> 可以成为 <span className='bold-text p-en'>KOL</span> 的研究“咨询顾问”</p>
                 <p><span className='bold-text p-en'>With Onion</span>，医学生们有了临床研究的 “<span className='bold-text p-en'>personal AI trainer</span>”</p>
