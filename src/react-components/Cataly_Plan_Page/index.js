@@ -22,8 +22,9 @@ class Cataly_Plan_Page extends React.Component {
                 </div>
                 <CatalyContent />
                 <div className='cataly-plan-end'>
-                    <p className='cataly-plan-intro-title'><span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly — </span>医院管理循证研究浸入式体验</p>
-                    <p className='cataly-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion RsearchAI</span><sup className='copy-right'>®</sup> <span className='p-en bold-text'>| Cataly = a research protocol</span></p>
+                    <p className='cataly-plan-intro-title'>“ <span className='p-en bold-text'>Onion RsearchAI</span><sup className='copy-right'> ®</sup> <span className='p-en bold-text'>| Cataly</span> ”</p>
+                    <p className='cataly-plan-intro-subtitle'> 改变 医管循证研究 的方式 </p>
+                    <p className='cataly-plan-intro-subtitle'> 改变与 医疗管理者 的学术沟通方式 </p>
                 </div>
                 <br/>
                 <br/>

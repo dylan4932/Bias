@@ -6,6 +6,7 @@ import { withRouter } from 'react-router'
 import PortalList from '../Portal_list';
 import Footer from '../footer';
 import ExperienceContent from './Experience_Content';
+import CatalyExperienceContent from './Cataly_Experience_Content';
 
 class ExperiencePlan extends React.Component {
     render(){
@@ -19,8 +20,9 @@ class ExperiencePlan extends React.Component {
                 <ExperienceContent />
                 <div className='experience-plan-end'>
                     <p className='experience-plan-intro-title'><span className='p-en bold-text'>Onion Experience Meeting — </span>临床研究浸入式体验</p>
-                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Onion Experience Meeting = Clinician‘s idea + Onion RsearchAI</span><sup className='copy-right'> ®</sup></p>
+                    <p className='experience-plan-intro-subtitle'> <span className='p-en bold-text'>Hospital administrator‘s idea + Onion RsearchAI<sup className='copy-right'> ®</sup> | Cataly = a research protocol</span></p>
                 </div>
+                <CatalyExperienceContent />
                 <Footer/>
             </div>    
         )
