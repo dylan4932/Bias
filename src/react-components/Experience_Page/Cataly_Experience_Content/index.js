@@ -84,7 +84,7 @@ class CatalyExperienceContent extends React.Component {
                 < br/>
                 < br/>
                 <div className='grid-container'>
-                    <div className='portal-content' id='move-down'> 
+                    <div className='portal-content'> 
                         <p className='portal-subtitle'><span className='p-en bold-text'>Onion Cataly</span> 医管循证研究 </p>
                         <p className='portal-subtitle'>专题研究 <span className='p-en bold-text'>Part 2</span> :做个研究者</p>
                         <br />
