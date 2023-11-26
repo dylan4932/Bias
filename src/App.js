@@ -65,9 +65,9 @@ class App extends React.Component {
                         (<CatalyPlan {...props} app={this}/>)}/>
                     <Route exact path='/Experience-Plan' render={props => 
                         (<ExperiencePlan {...props} app={this}/>)}/>
-                    <Route exact path='/Data-Security' render={props => 
+                    <Route exact path='/success-story' render={props => 
                         (<Story {...props} app={this}/>)}/>
-                    <Route exact path='/Bias-home' render={props => 
+                    <Route exact path='/bias-home' render={props => 
                         (<Home {...props} app={this} usr={currentUser}/>)}/>
 
 

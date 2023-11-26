@@ -6,6 +6,7 @@ import { withRouter } from 'react-router'
 import PortalList from '../Portal_list';
 import Footer from '../footer';
 import StoryIntro from './Story_intro';
+import StoryComponent from './Story_component';
 import StoryContent from './Story_content';
 
 import story_col1 from '../../onion_icons/story-col1.png'
@@ -23,22 +24,18 @@ class Story_Page extends React.Component {
                 <PortalList/>
                 <StoryIntro/>
                 <div className='success-story'>
+                    <br/>
+                    <br/>
                     <p className='paper-text'>所有 <span className='bold-text p-en'>Healthcare companies</span> 都需要针对 <span className='bold-text p-en'>KOL</span> 进行系统的管理，与 <span className='bold-text p-en'>KOL</span>  建立战略性的合作。</p>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    {/* <p className='paper-text'>随着信息全球化的发展，中国医疗 <span className='bold-text p-en'>KOL</span>  自身获取前沿信息的能力快速提高，已经不再需要 <span className='bold-text p-en'>Healthcare companies</span> 提供医疗信息，甚至 <span className='bold-text p-en'>KOL</span>  的专业信息已经远远领先于 <span className='bold-text p-en'>Healthcare companies</span> 人员的速度和深度。传统合作方式已经无法为 <span className='bold-text p-en'>KOL</span>  提供高附加值的价值， <span className='bold-text p-en'>Healthcare companies</span> 针对 <span className='bold-text p-en'>KOL</span>  的管理已陷入困局，只能停留在“投入资源”的层面，成为了“单纯的 <span className='bold-text p-en'>Payer</span> ”，也无法获得 <span className='bold-text p-en'>KOL</span> 的感佩，处于被动的地位。</p>
-                    <p className='paper-text'>而另一方面， <span className='bold-text p-en'>Healthcare companies</span> 每年在组织大量的会议，投入巨大。但 <span className='bold-text p-en'>KOL</span>  甚至普通的医生对此些会议没有兴趣。</p>
-                    <p className='paper-text'>一个小范围的调研：<span className='bold-text p-en'>Healthcare companies</span> 的学术会议到会率平均不足<span className='bolx-text p-en'>50%</span>，前往参会的医生与计划邀约的医生相去甚远，匹配率也不足<span className='bold-text p-en'>25%</span>；试想一下，全国总体来看，投入是巨大的，但这些活动的效率不高，加之人力的成本，消耗是惊人的。</p>
-                    <p className='paper-text'><span className='bold-text p-en'>Healthcare companies</span> 与 <span className='bold-text p-en'>KOL</span>  的互动陷入了困局……</p> */}
                 </div>
                 <StoryContent/>
-                <div className='success-story'>
+                {/* <div className='success-story'>
                     <p className='paper-text'>会前，我们的业务人员邀请 <span className='bold-text p-en'>KOL</span> 准备他们拟进行的想法、研究计划、或病例报告。</p>
                     <p className='paper-text'>会中，<span className='bold-text p-en'>KOLs</span> 通过界面上的问题与 <span className='bold-text p-en'>Onion</span> 进行相关研究的信息交互，<span className='bold-text p-en'>Onion</span> 系统记下这些信息，通过 <span className='bold-text p-en'>AI</span> 算法当场提供了这个研究的方案。<span className='bold-text p-en'>KOLs</span> 和他的助手们 饶有兴趣的和自己先前的想法进行对照、思考。 <span className='bold-text p-en'>BJHPA | RDG</span> 小组的专家对 <span className='bold-text p-en'>Onion</span> <span id='copy-right'>TM</span>  方案进一步的解释，引发了 <span className='bold-text p-en'>KOLs</span> & 助手们的热烈讨论……</p>
                     <p className='paper-text'>会后，专家们都意犹未尽，纷纷表示这样的交流非常有趣，并且收获很大。希望常规性的举行这样的会议……</p>
-                </div>
+                </div> */}
+                <StoryComponent/>
                 <div className='story-list'>
                     <div className='subtitle-col'>
                         <div className='story-doc-icon'>
@@ -64,23 +61,26 @@ class Story_Page extends React.Component {
                         <p className='paper-text'>偏倚（<span className='bold-text p-en'>Bias</span>）这问题对于“真实世界研究”如此重要，我需要探究一下。“<span className='bold-text p-en'>Onion</span> 会议”很有趣，希望今后多多举行。</p>
                     </div>
                 </div>
+                
                 <div className='story-container'>
-                    
-                    <ul className='story-ul'>
+                <p className='portal-text'>所有 <span className='p-en bold-text'>Healthcare companies</span> 都需要针对 <span className='p-en bold-text'>KOL</span> 进行系统的管理，与 <span className='p-en bold-text'>KOL</span> 建立战略性的合作。</p>
+                    {/* <ul className='story-ul'>
                         <p className='story-text'> 看着专家们卓有收获的样子，一些想法跃入了我的思想：</p> 
                         <li className='story-li'> “<span className='bold-text p-en'>Onion</span> 会议”！专家们进行的是自己的研究探讨、自己的研究想法得到了建议、不容易的研究方案可以迅速的形成；</li>   
                         <li className='story-li'><span className='bold-text p-en'> Onion</span> 用临床医生容易理解的问题与医生交流研究的信息，这使医生们的研究变得轻松起来；</li>
                         <li className='story-li'> 辅助做好临床研究，是 <span className='bold-text p-en'>KOLs</span> 和专家们显而易见的兴趣和需求；</li>
                         <li className='story-li'><span className='bold-text p-en'> Onion</span> 会议覆盖专家的效率很高，质量也有保证。</li>
-                    </ul>
-
-                    <p className='story-text'>我似乎能够感觉到“创新”火种就在我身边，我想我可以找到它……</p>     
-
-                    <div className='story-content'>
+                    </ul> */}
+                    {/* <div className='story-content'>
                         <p className='portal-text'><span className='bold-text p-en'>Healthcare company</span> 与 <span className='bold-text p-en'>KOL</span> 新的学术互动形式、新的 <span className='bold-text p-en'>KOL</span> 合作模式</p>    
                         <p className='portal-text'>使 <span className='bold-text p-en'>Healthcare company</span> 的人员成为 <span className='bold-text p-en'>KOL</span> 的咨询专家</p>  
                         <p className='portal-text'>使 <span className='bold-text p-en'>Healthcare company</span> 成为业界创新领先</p>  
-                    </div>          
+                    </div>           */}
+                </div>
+                <div className='story-slogen'>
+                    <p className='cataly-plan-intro-title'> <span className='p-en'>Healthcare companies</span> 与 <span className='p-en'>KOL</span> 新的学术互动形式、新的 <span className='p-en'>KOL</span>合作模式</p>
+                    <p className='cataly-plan-intro-subtitle'> 使 <span className='p-en'>Healthcare company</span> 的人员成为 <span className='p-en'>KOL</span> 的咨询专家</p>
+                    <p className='cataly-plan-intro-subtitle'> 使 <span className='p-en'>Healthcare company</span> 成为业界创新领先 </p>
                 </div>
                 <StoryConclude/>
                 <div className='story-container'>

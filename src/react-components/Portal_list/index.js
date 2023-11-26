@@ -56,7 +56,7 @@ class Portal_list extends React.Component {
                         </li>
                         
                         <li>
-                            <a href='./../Data-Security'>
+                            <a href='./../success-story'>
                                 <span className='bold-text p-en'>Successful story</span>
                             </a>
                         </li>
