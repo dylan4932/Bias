@@ -20,7 +20,7 @@ class Slogan extends React.Component {
                 <p><span className='bold-text p-en'>With Onion，Healthcare company employee </span> 可以成为 <span className='bold-text p-en'>KOL</span> 的研究“咨询顾问”</p>
                 <p><span className='bold-text p-en'>With Onion</span>，医学生们有了临床研究的 “<span className='bold-text p-en'>personal AI trainer</span>”</p>
                 <div className='onion-slogan-btn-group'>
-                    <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion/api/index/toLogin'}>
+                    <div className='onion-btn' onClick={() => window.location.href='http://onion.menschen.com.cn'}>
                         <div className='button'>Log in Onion RsearchAI<span id='copy-right'> ®</span></div>
                     </div>
                     <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion2/api//index/toLogin'}>

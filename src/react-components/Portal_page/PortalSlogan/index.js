@@ -20,7 +20,7 @@ class BiasSlogan extends React.Component {
                 <p><span className='bold-text p-en'>With Onion</span>，医学生们有了临床研究的 “<span className='bold-text p-en'>personal AI trainer</span>”</p>
                 <div className='bias-data-btn'>
                     <button className="bias-button">
-                        <a href='http://101.34.173.29/onion/api/index/toLogin'>
+                        <a href='http://onion.menschen.com.cn'>
                             <span>Log in Onion RsearchAI <sup id='copy-right'> ®</sup></span>
                         </a>
                     </button>
