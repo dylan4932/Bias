@@ -25,7 +25,7 @@ class BiasSlogan extends React.Component {
                         </a>
                     </button>
                     <button className="data-button">
-                        <a href='http://101.34.173.29/onion2/api//index/toLogin'>
+                        <a href='http://onion.menschen.com.cn/onion2/api/index/toLogin'>
                             <span>Log in Onion | Cataly <sup id='copy-right'> ®</sup></span>
                         </a>
                     </button>

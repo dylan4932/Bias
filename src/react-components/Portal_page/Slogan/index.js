@@ -23,7 +23,7 @@ class Slogan extends React.Component {
                     <div className='onion-btn' onClick={() => window.location.href='http://onion.menschen.com.cn'}>
                         <div className='button'>Log in Onion RsearchAI<span id='copy-right'> ®</span></div>
                     </div>
-                    <div className='onion-btn' onClick={() => window.location.href='http://101.34.173.29/onion2/api//index/toLogin'}>
+                    <div className='onion-btn' onClick={() => window.location.href='http://onion.menschen.com.cn/onion2/api/index/toLogin'}>
                         <div className='reverse-button'>Log in Onion | Cataly<span id='copy-right'> ®</span></div>
                     </div>
                 </div>
