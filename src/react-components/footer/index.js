@@ -11,7 +11,7 @@ class Footer extends React.Component {
         return (
             <div className='footer-container'>
                 <div className='footer-other-content'></div>
-                <div className='footer-info'> <p>北京目人生殖医学科技有限责任公司 <a className="footer-link" href='https://beian.miit.gov.cn/'>  备案号：京ICP备18062521号 </a> </p> </div>
+                <div className='footer-info'> <p>苏州目人医学科技有限责任公司 <a className="footer-link" href='https://beian.miit.gov.cn/'>  备案号：苏ICP备2024100274号-1 </a> </p> </div>
             </div>    
         )
     }
